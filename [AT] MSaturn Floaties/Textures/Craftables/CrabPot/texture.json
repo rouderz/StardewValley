@@ -1,0 +1,160 @@
+{
+  "ItemName": "Crab Pot",
+  "Type": "Craftable",
+  "TextureWidth": 16,
+  "TextureHeight": 16,
+  "ManualVariations": [
+    {
+      "Id": 0,
+      "Keywords": [ "Sparkles_1" ]
+    },
+    {
+      "Id": 1,
+      "Keywords": [ "Sparkles_2" ]
+    },
+	{
+	  "Id": 2,
+	  "Keywords": [ "LeavesFall_1" ]
+	},
+	{
+      "Id": 3,
+      "Keywords": [ "LeavesFall_2" ]
+    },
+    {
+      "Id": 4,
+      "Keywords": [ "LeavesFall_3" ]
+    },
+	{
+	  "Id": 5,
+	  "Keywords": [ "LeavesGreen_1" ]
+    },
+	{
+	  "Id": 6,
+	  "Keywords": [ "LeavesGreen_2" ]
+	},
+	{
+	  "Id": 7,
+	  "Keywords": [ "LeavesGreen_3" ]
+	},
+	{
+	  "Id": 8,
+	  "Keywords": [ "TinyBoat" ]
+	},
+	{
+	  "Id": 9,
+	  "Keywords": [ "PaperBoat" ]
+	},
+	{
+	  "Id": 10,
+	  "Keywords": [ "Lamp" ]
+	},
+	{
+	  "Id": 11,
+	  "Keywords": [ "BeachBall" ]
+	},
+	{
+	  "Id": 12,
+	  "Keywords": [ "Bubbles" ]
+	},
+	{
+	  "Id": 13,
+	  "Keywords": [ "Candle" ]
+	},
+	{
+	  "Id": 14,
+	  "Keywords": [ "Fruit_Apple" ]
+	},
+	{
+	  "Id": 15,
+	  "Keywords": [ "Fruit_Peach" ]
+	},
+	{
+	  "Id": 16,
+	  "Keywords": [ "TinyClouds" ]
+	},
+	{
+	  "Id": 17,
+	  "Keywords": [ "Planet_Mercury" ]
+	},
+	{
+	  "Id": 18,
+	  "Keywords": [ "Planet_Venus" ]
+	},
+	{
+	  "Id": 19,
+	  "Keywords": [ "Planet_Earth" ]
+	},
+	{
+	  "Id": 20,
+	  "Keywords": [ "Planet_Mars" ]
+	},
+	{
+	  "Id": 21,
+	  "Keywords": [ "Planet_Jupiter" ]
+	},
+	{
+	  "Id": 22,
+	  "Keywords": [ "Planet_Saturn" ]
+	},
+	{
+	  "Id": 23,
+	  "Keywords": [ "Planet_Uranus" ]
+	},
+	{
+	  "Id": 24,
+	  "Keywords": [ "Planet_Neptune" ]
+	},
+	{
+	  "Id": 25,
+	  "Keywords": [ "Planet_Pink" ]
+	},
+	{
+	  "Id": 26,
+	  "Keywords": [ "SeaMonster" ]
+	},
+	{
+	  "Id": 27,
+	  "Keywords": [ "Flower_Sunflower_1" ]
+	},
+	{
+	  "Id": 28,
+	  "Keywords": [ "Flower_Sunflower_2" ]
+	},
+	{
+	  "Id": 29,
+	  "Keywords": [ "Flower_Sunflower_3" ]
+	},
+	{
+	  "Id": 30,
+	  "Keywords": [ "Flower_Rose_Pink_1" ]
+	},
+	{
+	  "Id": 31,
+	  "Keywords": [ "Flower_Rose_Pink_2" ]
+	},
+	{
+	  "Id": 32,
+	  "Keywords": [ "Flower_Rose_Pink_3" ]
+	},
+	{
+	  "Id": 33,
+	  "Keywords": [ "Flower_Rose_Red_1" ]
+	},
+	{
+	  "Id": 34,
+	  "Keywords": [ "Flower_Rose_Red_2" ]
+	},
+	{
+	  "Id": 35,
+	  "Keywords": [ "Flower_Rose_Red_3" ]
+	},
+	{
+	  "Id": 36,
+	  "Keywords": [ "Flower_Blue_1" ]
+	},
+	{
+	  "Id": 37,
+	  "Keywords": [ "Flower_Blue_2" ]
+	}
+	]
+}

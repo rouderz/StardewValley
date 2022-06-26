@@ -1,0 +1,73 @@
+{
+	"Name": "Tiny Greenhouse",
+	"Description": "A tiny greenhouse with room for 30 crops.",
+	"DrawShadow": true,
+	"Size": {
+		"X": 3,
+		"Y": 2
+	},
+	"Id": "Inmognito.TinyGreenhouse.TinyGreenhouse",
+	"CollisionMap": "nXXX\nXXX",
+	"IndoorMap": "TinyGreenhouse",
+	"BuildCost": 10000,
+	"BuildMaterials": [
+		{
+			"ItemID": 338,
+			"Amount": 40
+		},
+		{
+			"ItemID": 335,
+			"Amount": 20
+		},
+		{
+			"ItemID": 390,
+			"Amount": 100
+		}
+	],
+	"BuildDays": 2,
+	"Builder": "Carpenter",
+	"HumanDoor": {
+		"X": 1,
+		"Y": 1
+	},
+	"BuildCondition": "PLAYER_FARMING_LEVEL Current 4",
+	 "Skins": [
+    {
+      "ID": "Weathered",
+      "Name": "Weathered Tiny Greenhouse",
+      "Description": "A new tiny greenhouse",
+      "Texture": "skin_1"
+    },
+    {
+      "ID": "Bleached",
+      "Name": "Bleached Wood Tiny Greenhouse",
+      "Description": "A new tiny greenhouse",
+      "Texture": "skin_2"
+    },
+    {
+      "ID": "Iron",
+      "Name": "Iron-framed Tiny Greenhouse",
+      "Description": "A new tiny greenhouse",
+      "Texture": "skin_3"
+    },
+    {
+      "ID": "Ivy",
+      "Name": "Ivy-covered Tiny Greenhouse",
+      "Description": "A new tiny greenhouse",
+      "Texture": "skin_0"
+    },
+    {
+      "ID": "BleachedIvy",
+      "Name": "Ivy-covered Bleached Wood Tiny Greenhouse",
+      "Description": "A new tiny greenhouse",
+      "Texture": "skin_4"
+    },
+    {
+      "ID": "Iron",
+      "Name": "Ivy-covered Iron-framed Tiny Greenhouse",
+      "Description": "A new tiny greenhouse",
+      "Texture": "skin_5"
+    },
+  ],
+
+}
