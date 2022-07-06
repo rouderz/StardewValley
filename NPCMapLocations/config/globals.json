@@ -2,7 +2,7 @@
   "DebugMode": false,
   "MenuKey": "Tab",
   "TooltipKey": "Space",
-  "NameTooltipMode": 1,
+  "NameTooltipMode": 2,
   "OnlySameLocation": false,
   "ShowHiddenVillagers": false,
   "ShowQuests": true,
