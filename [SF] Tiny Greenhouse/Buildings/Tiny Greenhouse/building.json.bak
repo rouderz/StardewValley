@@ -1,6 +1,6 @@
 {
-	"Name": "Tiny Greenhouse",
-	"Description": "A tiny greenhouse with room for 30 crops.",
+	"Name": "Building.Name.TinyGreenhouse",
+	"Description": "Building.Description.TinyGreenhouse",
 	"DrawShadow": true,
 	"Size": {
 		"X": 3,
@@ -33,38 +33,68 @@
 	"BuildCondition": "PLAYER_FARMING_LEVEL Current 4",
 	 "Skins": [
     {
+      "ID": "Inmognito.TinyGreenhouse.WhiteGothic",
+      "Name": "Skin.Name.000" "White Gothic Tiny Greenhouse",
+      "Description": "A new tiny greenhouse",
+      "Texture": "skin_000"
+    },
+     {
+      "ID": "Inmognito.TinyGreenhouse.Stone",
+      "Name": "Skin.Name.001""An ivy-covered stone tiny greenhouse",
+      "Description": "A new tiny greenhouse",
+      "Texture": "skin_001"
+    },
+    {
+      "ID": "Inmognito.TinyGreenhouse.IronVictorian",
+      "Name": "Skin.Name.002""Iron Victorian Tiny Greenhouse",
+      "Description": "A new tiny greenhouse",
+      "Texture": "skin_002"
+    },
+    {
+      "ID": "Inmognito.TinyGreenhouse.WhiteVictorian",
+      "Name": "Skin.Name.003""White Victorian Tiny Greenhouse",
+      "Description": "White Victoriand Tiny Greenhouse",
+      "Texture": "skin_003"
+    },
+     {
+      "ID": "Inmognito.TinyGreenhouse.GreenVictorian",
+      "Name": "Skin.Name.004""Green Victorian Tiny Greenhouse",
+      "Description": "A new tiny greenhouse",
+      "Texture": "skin_004"
+    },
+    {
       "ID": "Weathered",
-      "Name": "Weathered Tiny Greenhouse",
+      "Name": "Skin.Name.1""Weathered Tiny Greenhouse",
       "Description": "A new tiny greenhouse",
       "Texture": "skin_1"
     },
     {
       "ID": "Bleached",
-      "Name": "Bleached Wood Tiny Greenhouse",
+      "Name": "Skin.Name.2""Bleached Wood Tiny Greenhouse",
       "Description": "A new tiny greenhouse",
       "Texture": "skin_2"
     },
     {
       "ID": "Iron",
-      "Name": "Iron-framed Tiny Greenhouse",
+      "Name": "Skin.Name.3""Iron-framed Tiny Greenhouse",
       "Description": "A new tiny greenhouse",
       "Texture": "skin_3"
     },
     {
       "ID": "Ivy",
-      "Name": "Ivy-covered Tiny Greenhouse",
+      "Name": "Skin.Name.0""Ivy-covered Tiny Greenhouse",
       "Description": "A new tiny greenhouse",
       "Texture": "skin_0"
     },
     {
       "ID": "BleachedIvy",
-      "Name": "Ivy-covered Bleached Wood Tiny Greenhouse",
+      "Name": "Skin.Name.4""Ivy-covered Bleached Wood Tiny Greenhouse",
       "Description": "A new tiny greenhouse",
       "Texture": "skin_4"
     },
     {
-      "ID": "Iron",
-      "Name": "Ivy-covered Iron-framed Tiny Greenhouse",
+      "ID": "IronIvy",
+      "Name": "Skin.Name.5""Ivy-covered Iron-framed Tiny Greenhouse",
       "Description": "A new tiny greenhouse",
       "Texture": "skin_5"
     },

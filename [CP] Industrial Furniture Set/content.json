@@ -1,0 +1,513 @@
+{
+"Format": "1.19.0",
+
+	"ConfigSchema": {
+
+		"CribEnable" : {
+			"AllowValues" : "true, false",
+                                                "Default": "true"
+		},
+		"CribColour" : {
+			"AllowValues" : "light, dark",
+                                                "Default": "light"
+		},
+
+	},
+
+"Changes": [
+/*
+//Player Bed
+			{
+			"Action": "EditImage",
+			"Target": "farmhouse_tiles,Maps/farmhouse_tiles",
+			"FromFile": "assets/bed.png",
+			"ToArea": { "X": 128, "Y": 192, "Width": 48, "Height": 80},
+			"FromArea": { "X": 48, "Y": 0, "Width": 48, "Height": 80},
+			"When" : {
+				"BedEnable" : "true",
+				"BedColour" : "light"
+			}	
+		},
+			{
+			"Action": "EditImage",
+			"Target": "farmhouse_tiles,Maps/farmhouse_tiles",
+			"FromFile": "assets/bed.png",
+			"ToArea": { "X": 16, "Y": 80, "Width": 48, "Height": 32},
+			"FromArea": { "X": 48, "Y": 32, "Width": 48, "Height": 32},
+			"When" : {
+				"BedEnable" : "true",
+				"BedColour" : "light"
+			}	
+		},
+			{
+			"Action": "EditImage",
+			"Target": "farmhouse_tiles,Maps/farmhouse_tiles",
+			"FromFile": "assets/bed.png",
+			"ToArea": { "X": 112, "Y": 80, "Width": 48, "Height": 32},
+			"FromArea": { "X": 48, "Y": 32, "Width": 48, "Height": 32},
+			"When" : {
+				"BedEnable" : "true",
+				"BedColour" : "light"
+			}	
+		},
+			{
+			"Action": "EditImage",
+			"Target": "farmhouse_tiles,Maps/farmhouse_tiles",
+			"FromFile": "assets/bed.png",
+			"ToArea": { "X": 64, "Y": 80, "Width": 48, "Height": 48},
+			"FromArea": { "X": 48, "Y": 32, "Width": 48, "Height": 48},
+			"When" : {
+				"BedEnable" : "true",
+				"BedColour" : "light"
+			}	
+		},
+			{
+			"Action": "EditImage",
+			"Target": "farmhouse_tiles,Maps/farmhouse_tiles",
+			"FromFile": "assets/bed.png",
+			"ToArea": { "X": 128, "Y": 192, "Width": 48, "Height": 80},
+			"FromArea": { "X": 0, "Y": 0, "Width": 48, "Height": 80},
+			"When" : {
+				"BedEnable" : "true",
+				"BedColour" : "dark"
+			}	
+		},
+			{
+			"Action": "EditImage",
+			"Target": "farmhouse_tiles,Maps/farmhouse_tiles",
+			"FromFile": "assets/bed.png",
+			"ToArea": { "X": 16, "Y": 80, "Width": 48, "Height": 32},
+			"FromArea": { "X": 0, "Y": 32, "Width": 48, "Height": 32},
+			"When" : {
+				"BedEnable" : "true",
+				"BedColour" : "dark"
+			}	
+		},
+			{
+			"Action": "EditImage",
+			"Target": "farmhouse_tiles,Maps/farmhouse_tiles",
+			"FromFile": "assets/bed.png",
+			"ToArea": { "X": 112, "Y": 80, "Width": 48, "Height": 32},
+			"FromArea": { "X": 0, "Y": 32, "Width": 48, "Height": 32},
+			"When" : {
+				"BedEnable" : "true",
+				"BedColour" : "dark"
+			}	
+		},
+			{
+			"Action": "EditImage",
+			"Target": "farmhouse_tiles,Maps/farmhouse_tiles",
+			"FromFile": "assets/bed.png",
+			"ToArea": { "X": 64, "Y": 80, "Width": 48, "Height": 48},
+			"FromArea": { "X": 0, "Y": 32, "Width": 48, "Height": 48},
+			"When" : {
+				"BedEnable" : "true",
+				"BedColour" : "dark"
+			}	
+		},
+*/
+
+//Crib
+			{
+			"Action": "EditImage",
+			"Target": "farmhouse_tiles,Maps/farmhouse_tiles",
+			"FromFile": "assets/crib_light.png",
+			"ToArea": { "X": 80, "Y": 240, "Width": 48, "Height": 64},
+			"FromArea": { "X": 0, "Y": 0, "Width": 48, "Height": 64},
+			"When" : {
+				"CribEnable" : "true",
+				"CribColour" : "light"
+			}	
+		},
+			{
+			"Action": "EditImage",
+			"Target": "farmhouse_tiles,Maps/farmhouse_tiles",
+			"FromFile": "assets/crib_light.png",
+			"ToArea": { "X": 128, "Y": 288, "Width": 48, "Height": 32},
+			"FromArea": { "X": 0, "Y": 64, "Width": 48, "Height": 32},
+			"When" : {
+				"CribEnable" : "true",
+				"CribColour" : "light"
+			}	
+		},
+			{
+			"Action": "EditImage",
+			"Target": "farmhouse_tiles,Maps/farmhouse_tiles",
+			"FromFile": "assets/crib_dark.png",
+			"ToArea": { "X": 80, "Y": 240, "Width": 48, "Height": 64},
+			"FromArea": { "X": 0, "Y": 0, "Width": 48, "Height": 64},
+			"When" : {
+				"CribEnable" : "true",
+				"CribColour" : "dark"
+			}	
+		},
+			{
+			"Action": "EditImage",
+			"Target": "farmhouse_tiles,Maps/farmhouse_tiles",
+			"FromFile": "assets/crib_dark.png",
+			"ToArea": { "X": 128, "Y": 288, "Width": 48, "Height": 32},
+			"FromArea": { "X": 0, "Y": 64, "Width": 48, "Height": 32},
+			"When" : {
+				"CribEnable" : "true",
+				"CribColour" : "dark"
+			}	
+		},
+
+//Furnitures
+{
+"LogName": "mi's lamp fix",
+"Action": "EditImage",
+"Target": "Tilesheets/Furniture, TileSheets/furniture.{{language}}",
+"FromFile": "assets/furniture.png",
+"FromArea": { "X": 48, "Y": 736, "Width": 64, "Height": 32 },
+"ToArea": { "X": 48, "Y": 736, "Width": 64, "Height": 32 },
+},
+{
+"Action": "EditImage",
+"Target": "Tilesheets/Furniture, TileSheets/furniture.{{language}}",
+"FromFile": "assets/furniture.png",
+"FromArea": { "X": 144, "Y": 0, "Width": 368, "Height": 32 },
+"ToArea": { "X": 144, "Y": 0, "Width": 368, "Height": 32 },
+},
+{
+"Action": "EditImage",
+"Target": "Tilesheets/Furniture, TileSheets/furniture.{{language}}",
+"FromFile": "assets/furniture.png",
+"FromArea": { "X": 0, "Y": 32, "Width": 512, "Height": 32 },
+"ToArea": { "X": 0, "Y": 32, "Width": 512, "Height": 32 },
+},
+{
+"Action": "EditImage",
+"Target": "Tilesheets/Furniture, TileSheets/furniture.{{language}}",
+"FromFile": "assets/furniture.png",
+"FromArea": { "X": 0, "Y": 64, "Width": 96, "Height": 32 },
+"ToArea": { "X": 0, "Y": 64, "Width": 96, "Height": 32 },
+},
+{
+"Action": "EditImage",
+"Target": "Tilesheets/Furniture, TileSheets/furniture.{{language}}",
+"FromFile": "assets/furniture.png",
+"FromArea": { "X": 240, "Y": 96, "Width": 160, "Height": 48 },
+"ToArea": { "X": 240, "Y": 96, "Width": 160, "Height": 48 },
+},
+{
+"Action": "EditImage",
+"Target": "Tilesheets/Furniture, TileSheets/furniture.{{language}}",
+"FromFile": "assets/furniture.png",
+"FromArea": { "X": 288, "Y": 144, "Width": 192, "Height": 32 },
+"ToArea": { "X": 288, "Y": 144, "Width": 192, "Height": 32 },
+},
+{
+"LogName": "yellow couch",
+"Action": "EditImage",
+"Target": "Tilesheets/Furniture, TileSheets/furniture.{{language}}",
+"FromFile": "assets/furniture.png",
+"FromArea": { "X": 384, "Y": 208, "Width": 128, "Height": 48 },
+"ToArea": { "X": 384, "Y": 208, "Width": 128, "Height": 48 },
+},
+{
+"Action": "EditImage",
+"Target": "Tilesheets/Furniture, TileSheets/furniture.{{language}}",
+"FromFile": "assets/furniture.png",
+"FromArea": { "X": 256, "Y": 256, "Width": 256, "Height": 48 },
+"ToArea": { "X": 256, "Y": 256, "Width": 256, "Height": 48 },
+},
+{
+"Action": "EditImage",
+"Target": "Tilesheets/Furniture, TileSheets/furniture.{{language}}",
+"FromFile": "assets/furniture.png",
+"FromArea": { "X": 160, "Y": 352, "Width": 256, "Height": 48 },
+"ToArea": { "X": 160, "Y": 352, "Width": 256, "Height": 48 },
+},
+{
+"Action": "EditImage",
+"Target": "Tilesheets/Furniture, TileSheets/furniture.{{language}}",
+"FromFile": "assets/furniture.png",
+"FromArea": { "X": 0, "Y": 400, "Width": 448, "Height": 80 },
+"ToArea": { "X": 0, "Y": 400, "Width": 448, "Height": 80 },
+},
+{
+"LogName": "moster trees",
+"Action": "EditImage",
+"Target": "Tilesheets/Furniture, TileSheets/furniture.{{language}}",
+"FromFile": "assets/furniture.png",
+"FromArea": { "X": 224, "Y": 480, "Width": 288, "Height": 128 },
+"ToArea": { "X": 224, "Y": 480, "Width": 288, "Height": 128 },
+},
+{
+"LogName": "small tables",
+"Action": "EditImage",
+"Target": "Tilesheets/Furniture, TileSheets/furniture.{{language}}",
+"FromFile": "assets/furniture.png",
+"FromArea": { "X": 0, "Y": 560, "Width": 512, "Height": 48 },
+"ToArea": { "X": 0, "Y": 560, "Width": 512, "Height": 48 },
+},
+{
+"Action": "EditImage",
+"Target": "Tilesheets/Furniture, TileSheets/furniture.{{language}}",
+"FromFile": "assets/furniture.png",
+"FromArea": { "X": 96, "Y": 608, "Width": 96, "Height": 32 },
+"ToArea": { "X": 96, "Y": 608, "Width": 96, "Height": 32 },
+},
+{
+"Action": "EditImage",
+"Target": "Tilesheets/Furniture, TileSheets/furniture.{{language}}",
+"FromFile": "assets/furniture.png",
+"FromArea": { "X": 48, "Y": 640, "Width": 64, "Height": 48 },
+"ToArea": { "X": 48, "Y": 640, "Width": 64, "Height": 48 },
+},
+{
+"Action": "EditImage",
+"Target": "Tilesheets/Furniture, TileSheets/furniture.{{language}}",
+"FromFile": "assets/furniture.png",
+"FromArea": { "X": 224, "Y": 640, "Width": 80, "Height": 48 },
+"ToArea": { "X": 224, "Y": 640, "Width": 80, "Height": 48 },
+},
+{
+"LogName": "boom box",
+"Action": "EditImage",
+"Target": "Tilesheets/Furniture, TileSheets/furniture.{{language}}",
+"FromFile": "assets/furniture.png",
+"FromArea": { "X": 304, "Y": 640, "Width": 176, "Height": 32 },
+"ToArea": { "X": 304, "Y": 640, "Width": 176, "Height": 32 },
+},
+{
+"Action": "EditImage",
+"Target": "Tilesheets/Furniture, TileSheets/furniture.{{language}}",
+"FromFile": "assets/furniture.png",
+"FromArea": { "X": 0, "Y": 688, "Width": 64, "Height": 32 },
+"ToArea": { "X": 0, "Y": 688, "Width": 64, "Height": 32 },
+},
+{
+"Action": "EditImage",
+"Target": "Tilesheets/Furniture, TileSheets/furniture.{{language}}",
+"FromFile": "assets/furniture.png",
+"FromArea": { "X": 320, "Y": 688, "Width": 16, "Height": 32 },
+"ToArea": { "X": 320, "Y": 688, "Width": 16, "Height": 32 },
+},
+{
+"Action": "EditImage",
+"Target": "Tilesheets/Furniture, TileSheets/furniture.{{language}}",
+"FromFile": "assets/furniture.png",
+"FromArea": { "X": 336, "Y": 672, "Width": 32, "Height": 16 },
+"ToArea": { "X": 336, "Y": 672, "Width": 32, "Height": 16 },
+},
+{
+"Action": "EditImage",
+"Target": "Tilesheets/Furniture, TileSheets/furniture.{{language}}",
+"FromFile": "assets/furniture.png",
+"FromArea": { "X": 368, "Y": 672, "Width": 144, "Height": 48 },
+"ToArea": { "X": 368, "Y": 672, "Width": 144, "Height": 48 },
+},
+{
+"Action": "EditImage",
+"Target": "Tilesheets/Furniture, TileSheets/furniture.{{language}}",
+"FromFile": "assets/furniture.png",
+"FromArea": { "X": 416, "Y": 720, "Width": 96, "Height": 48 },
+"ToArea": { "X": 416, "Y": 720, "Width": 96, "Height": 48 },
+},
+{
+"Action": "EditImage",
+"Target": "Tilesheets/Furniture, TileSheets/furniture.{{language}}",
+"FromFile": "assets/furniture.png",
+"FromArea": { "X": 400, "Y": 768, "Width": 112, "Height": 32 },
+"ToArea": { "X": 400, "Y": 768, "Width": 112, "Height": 32 },
+},
+{
+"LogName": "teddy",
+"Action": "EditImage",
+"Target": "Tilesheets/Furniture, TileSheets/furniture.{{language}}",
+"FromFile": "assets/furniture.png",
+"FromArea": { "X": 0, "Y": 800, "Width": 144, "Height": 96 },
+"ToArea": { "X": 0, "Y": 800, "Width": 144, "Height": 96 },
+},
+{
+"Action": "EditImage",
+"Target": "Tilesheets/Furniture, TileSheets/furniture.{{language}}",
+"FromFile": "assets/furniture.png",
+"FromArea": { "X": 192, "Y": 800, "Width": 32, "Height": 32 },
+"ToArea": { "X": 192, "Y": 800, "Width": 32, "Height": 32 },
+},
+{
+"Action": "EditImage",
+"Target": "Tilesheets/Furniture, TileSheets/furniture.{{language}}",
+"FromFile": "assets/furniture.png",
+"FromArea": { "X": 288, "Y": 800, "Width": 208, "Height": 48 },
+"ToArea": { "X": 288, "Y": 800, "Width": 208, "Height": 48 },
+},
+{
+"Action": "EditImage",
+"Target": "Tilesheets/Furniture, TileSheets/furniture.{{language}}",
+"FromFile": "assets/furniture.png",
+"FromArea": { "X": 176, "Y": 832, "Width": 48, "Height": 32 },
+"ToArea": { "X": 176, "Y": 832, "Width": 48, "Height": 32 },
+},
+{
+"LogName": "Buget TV",
+"Action": "EditImage",
+"Target": "Tilesheets/Furniture, TileSheets/furniture.{{language}}",
+"FromFile": "assets/furniture.png",
+"FromArea": { "X": 256, "Y": 832, "Width": 64, "Height": 32 },
+"ToArea": { "X": 256, "Y": 832, "Width": 64, "Height": 32 },
+},
+{
+"Action": "EditImage",
+"Target": "Tilesheets/Furniture, TileSheets/furniture.{{language}}",
+"FromFile": "assets/furniture.png",
+"FromArea": { "X": 144, "Y": 864, "Width": 368, "Height": 32 },
+"ToArea": { "X": 144, "Y": 864, "Width": 368, "Height": 32 },
+},
+{
+"Action": "EditImage",
+"Target": "Tilesheets/Furniture, TileSheets/furniture.{{language}}",
+"FromFile": "assets/furniture.png",
+"FromArea": { "X": 320, "Y": 896, "Width": 48, "Height": 16 },
+"ToArea": { "X": 320, "Y": 896, "Width": 48, "Height": 16 },
+},
+{
+"LogName": "fireplace",
+"Action": "EditImage",
+"Target": "Tilesheets/Furniture, TileSheets/furniture.{{language}}",
+"FromFile": "assets/furniture.png",
+"FromArea": { "X": 160, "Y": 896, "Width": 352, "Height": 128 },
+"ToArea": { "X": 160, "Y": 896, "Width": 352, "Height": 128 },
+},
+{
+"Action": "EditImage",
+"Target": "Tilesheets/Furniture, TileSheets/furniture.{{language}}",
+"FromFile": "assets/furniture.png",
+"FromArea": { "X": 0, "Y": 976, "Width": 160, "Height": 32 },
+"ToArea": { "X": 0, "Y": 976, "Width": 160, "Height": 32 },
+},
+
+
+
+{
+"LogName": "beds 1",
+"Action": "EditImage",
+"Target": "Tilesheets/Furniture, TileSheets/furniture.{{language}}",
+"FromFile": "assets/furniture.png",
+"FromArea": { "X": 0, "Y": 1024, "Width": 512, "Height": 64 },
+"ToArea": { "X": 0, "Y": 1024, "Width": 512, "Height": 64 },
+},
+{
+"LogName": "beds 2",
+"Action": "EditImage",
+"Target": "Tilesheets/Furniture, TileSheets/furniture.{{language}}",
+"FromFile": "assets/furniture.png",
+"FromArea": { "X": 256, "Y": 1088, "Width": 192, "Height": 64 },
+"ToArea": { "X": 256, "Y": 1088, "Width": 192, "Height": 64 },
+},
+{
+"LogName": "tanks 1",
+"Action": "EditImage",
+"Target": "Tilesheets/Furniture, TileSheets/furniture.{{language}}",
+"FromFile": "assets/furniture.png",
+"FromArea": { "X": 0, "Y": 1152, "Width": 352, "Height": 48 },
+"ToArea": { "X": 0, "Y": 1152, "Width": 352, "Height": 48 },
+},
+{
+"Action": "EditImage",
+"Target": "Tilesheets/Furniture, TileSheets/furniture.{{language}}",
+"FromFile": "assets/furniture.png",
+"FromArea": { "X": 0, "Y": 1360, "Width": 160, "Height": 80 },
+"ToArea": { "X": 0, "Y": 1360, "Width": 160, "Height": 80 },
+},
+{
+"LogName": "lights 1",
+"Action": "EditImage",
+"Target": "Tilesheets/Furniture, TileSheets/furniture.{{language}}",
+"FromFile": "assets/furniture.png",
+"FromArea": { "X": 224, "Y": 1360, "Width": 64, "Height": 32 },
+"ToArea": { "X": 224, "Y": 1360, "Width": 64, "Height": 32 },
+},
+{
+"LogName": "large carpets 1",
+"Action": "EditImage",
+"Target": "Tilesheets/Furniture, TileSheets/furniture.{{language}}",
+"FromFile": "assets/furniture.png",
+"FromArea": { "X": 352, "Y": 1360, "Width": 96, "Height": 64 },
+"ToArea": { "X": 352, "Y": 1360, "Width": 96, "Height": 64 },
+},
+
+//SitFront
+{
+"Action": "EditImage",
+"Target": "Tilesheets/furnitureFront",
+"FromFile": "assets/furnitureFront.png",
+"FromArea": { "X": 224, "Y": 0, "Width": 288, "Height": 64 },
+"ToArea": { "X": 224, "Y": 0, "Width": 288, "Height": 64 },
+},
+{
+"Action": "EditImage",
+"Target": "Tilesheets/furnitureFront",
+"FromFile": "assets/furnitureFront.png",
+"FromArea": { "X": 16, "Y": 32, "Width": 208, "Height": 64 },
+"ToArea": { "X": 16, "Y": 32, "Width": 208, "Height": 64 },
+},
+{
+"Action": "EditImage",
+"Target": "Tilesheets/furnitureFront",
+"FromFile": "assets/furnitureFront.png",
+"FromArea": { "X": 288, "Y": 96, "Width": 224, "Height": 208 },
+"ToArea": { "X": 288, "Y": 96, "Width": 224, "Height": 208 },
+},
+{
+"Action": "EditImage",
+"Target": "Tilesheets/furnitureFront",
+"FromFile": "assets/furnitureFront.png",
+"FromArea": { "X": 272, "Y": 96, "Width": 224, "Height": 208 },
+"ToArea": { "X": 272, "Y": 96, "Width": 224, "Height": 208 },
+},
+{
+"Action": "EditImage",
+"Target": "Tilesheets/furnitureFront",
+"FromFile": "assets/furnitureFront.png",
+"FromArea": { "X": 64, "Y": 1360, "Width": 96, "Height": 64 },
+"ToArea": { "X": 64, "Y": 1360, "Width": 96, "Height": 64 },
+},
+
+
+
+{
+"Action": "EditImage",
+"Target": "Tilesheets/furnitureFront",
+"FromFile": "assets/furnitureFront.png",
+"FromArea": { "X": 0, "Y": 0, "Width": 144, "Height": 32 },
+"ToArea": { "X": 0, "Y": 0, "Width": 144, "Height": 32 },
+			"When" : {
+				"HasMod |contains=mi.country": true,
+			}
+},
+{
+"Action": "EditImage",
+"Target": "Tilesheets/furnitureFront",
+"FromFile": "assets/furnitureFront.png",
+"FromArea": { "X": 0, "Y": 96, "Width": 240, "Height": 32 },
+"ToArea": { "X": 0, "Y": 96, "Width": 240, "Height": 32 },
+			"When" : {
+				"HasMod |contains=mi.country": true,
+			}
+},
+{
+"Action": "EditImage",
+"Target": "Tilesheets/furnitureFront",
+"FromFile": "assets/furnitureFront.png",
+"FromArea": { "X": 32, "Y": 144, "Width": 256, "Height": 32 },
+"ToArea": { "X": 32, "Y": 144, "Width": 256, "Height": 32 },
+			"When" : {
+				"HasMod |contains=mi.country": true,
+			}
+},
+{
+"Action": "EditImage",
+"Target": "Tilesheets/furnitureFront",
+"FromFile": "assets/furnitureFront.png",
+"FromArea": { "X": 0, "Y": 208, "Width": 208, "Height": 96 },
+"ToArea": { "X": 0, "Y": 208, "Width": 208, "Height": 96 },
+			"When" : {
+				"HasMod |contains=mi.country": true,
+			}
+},
+]
+}

@@ -1,0 +1,30 @@
+{
+   "Name": "Industrial Furniture Set",
+   "Author": "DustBeauty",
+   "Version": "1.8",
+   "Description": "Industrial Style furniture set. Use it with country furniture set and cozy firplace.",
+   "UniqueID": "DustBeauty.IndustrialFurnitureSet",
+   "MinimumApiVersion": "2.11.0",
+    "UpdateKeys": ["Nexus:5444"],
+   "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher"
+   },
+   "Dependencies": [
+   {
+      "UniqueID": "mi.country",
+      "IsRequired": false
+   },
+   {
+      "UniqueID": "zosa.furniture",
+      "IsRequired": false
+   },
+   {
+      "UniqueID": "Hesper.RusticCountrysideTownInterior",
+      "IsRequired": false
+   },
+   {
+      "UniqueID": "Yewon_Nam.DarkBrownNCreamFurniture",
+      "IsRequired": false
+   },
+],
+}

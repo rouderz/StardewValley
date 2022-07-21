@@ -1479,7 +1479,7 @@
         "WinterItemIndex": [],
         "UniqueAreaID": "Lucky Four Leaf Clover Forest West spawns",
         "MapName": "Custom_ForestWest",
-        "MinimumSpawnsPerDay": 1,
+        "MinimumSpawnsPerDay": 0,
         "MaximumSpawnsPerDay": 1,
         "IncludeTerrainTypes": [],
         "ExcludeTerrainTypes": [],
@@ -5219,8 +5219,8 @@
         ],
         "UniqueAreaID": "Crimson Badlands Serpent Guards",
         "MapName": "Custom_CrimsonBadlands",
-        "MinimumSpawnsPerDay": 22,
-        "MaximumSpawnsPerDay": 22,
+        "MinimumSpawnsPerDay": 30,
+        "MaximumSpawnsPerDay": 30,
         "IncludeTerrainTypes": [
           "All"
         ],

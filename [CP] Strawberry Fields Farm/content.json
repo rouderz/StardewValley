@@ -1,0 +1,86 @@
+{
+    "Format": "1.18",
+    "ConfigSchema": {
+        "replaces": {
+            "AllowValues": "Standard, Forest, Riverland, Hilltop, Wilderness",
+            "Default": "Standard"
+        }
+    },
+    "DynamicTokens": [
+        {
+            "Name": "file",
+            "Value": "Farm",
+            "When": {
+                "replaces": "Standard"
+            }
+        },
+        {
+            "Name": "file",
+            "Value": "Farm_Foraging",
+            "When": {
+                "replaces": "Forest"
+            }
+        },
+        {
+            "Name": "file",
+            "Value": "Farm_Fishing",
+            "When": {
+                "replaces": "Riverland"
+            }
+        },
+        {
+            "Name": "file",
+            "Value": "Farm_Mining",
+            "When": {
+                "replaces": "Hilltop"
+            }
+        },
+        {
+            "Name": "file",
+            "Value": "Farm_Combat",
+            "When": {
+                "replaces": "Wilderness"
+            }
+        }
+    ],
+    "Changes": [
+        //map
+        {
+            "Action": "Load",
+            "Target": "Maps/{{file}}",
+            "FromFile": "assets/farm.tbin"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/Farm_Greenhouse_Dirt",
+            "FromFile": "assets/Farm_Greenhouse_Dirt.tbin",
+            "When": {
+                "FarmType": "{{replaces}}"
+            }
+        },
+        //pet bowl
+        {
+            "Action": "EditImage",
+            "Target": "{{season}}_outdoorsTileSheet, Maps/{{season}}_outdoorsTileSheet",
+            "FromFile": "assets/petbowl.png",
+            "ToArea": {
+                "X": 208,
+                "Y": 1232,
+                "Width": 32,
+                "Height": 16
+            },
+            "When": {
+                "FarmType": "{{replaces}}"
+            }
+        },
+        //strings
+        {
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": {
+                "Farm.2": "@ Farm^> Bus Stop",
+                "Farm.3": "` Backwoods^@ Farm Cave"
+            }
+        }
+    ]
+}

@@ -3095,7 +3095,7 @@
 	 "Target": "Data/CustomNPCExclusions",
 	 "When": { "Spouse |contains=Lance": false },
 	 "Entries": {
-		"Lance": "ItemDelivery, Socialize, WinterStar, Calendar, ShopDialog, IslandVisit",
+		"Lance": "ItemDelivery, Socialize, WinterStar, ShopDialog, IslandVisit",
 	 }
 },
 
@@ -3649,7 +3649,7 @@
   "Custom_SpriteSpring2": "-1/-1/-1/-1/{{spacechase0.JsonAssets/ObjectId:Goldenfish}} -1 {{spacechase0.JsonAssets/ObjectId:Meteor Carp}} -1/{{spacechase0.JsonAssets/ObjectId:Goldenfish}} -1 {{spacechase0.JsonAssets/ObjectId:Meteor Carp}} -1/{{spacechase0.JsonAssets/ObjectId:Goldenfish}} -1 {{spacechase0.JsonAssets/ObjectId:Meteor Carp}} -1/{{spacechase0.JsonAssets/ObjectId:Goldenfish}} -1 {{spacechase0.JsonAssets/ObjectId:Meteor Carp}} -1/109 .3 120 1 121 .4 119 .3 115 .4 114 .3",
   "Custom_GrampletonFields": "-1/-1/-1/-1/-1/-1/-1/-1/119 1 120 .4 121 .31 109 .21 115 .32 114 .25",
   "Custom_DeepCave": "-1/-1/-1/-1/156 -1 158 -1/156 -1 158 -1/156 -1 158 -1/156 -1 158 -1/-1",
-  "Custom_BlueMoonVineyard": "-1/-1/-1/-1/{{spacechase0.JsonAssets/ObjectId:Minnow}} 1 145 1 143 1 153 1 137 1 706 1 132 1 267 0 129 0 131 0 147 0 148 0 152 0 708 0/{{spacechase0.JsonAssets/ObjectId:Minnow}} 1 138 1 145 1 153 1 144 1 706 1 132 1 267 0 128 0 130 0 146 0 149 0 150 0 152 0 155 0 708 0 701 0/{{spacechase0.JsonAssets/ObjectId:Minnow}} 1 139 1 699 1 143 1 153 1 137 1 706 1 140 1 132 1 129 0 131 0 148 0 150 0 152 0 154 0 155 0 705 0 701 0/{{spacechase0.JsonAssets/ObjectId:Minnow}} 1 699 1 153 1 707 1 141 1 144 1 132 1 708 0 130 0 131 0 146 0 147 0 150 0 151 0 152 0 154 0 705 0/378 .2 110 .2 583 .1 102 .2 390 .25 330 1",
+  "Custom_BlueMoonVineyard": "-1/-1/-1/-1/{{spacechase0.JsonAssets/ObjectId:Minnow}} 1 145 1 143 1 153 1 137 1 706 1 132 1 267 0 129 0 131 0 147 0 148 0 152 0 708 0 {{spacechase0.JsonAssets/ObjectId:Dulse Seaweed}} 0/{{spacechase0.JsonAssets/ObjectId:Minnow}} 1 138 1 145 1 153 1 144 1 706 1 132 1 267 0 128 0 130 0 146 0 149 0 150 0 152 0 155 0 708 0 701 0 {{spacechase0.JsonAssets/ObjectId:Dulse Seaweed}} 0/{{spacechase0.JsonAssets/ObjectId:Minnow}} 1 139 1 699 1 143 1 153 1 137 1 706 1 140 1 132 1 129 0 131 0 148 0 150 0 152 0 154 0 155 0 705 0 701 0 {{spacechase0.JsonAssets/ObjectId:Dulse Seaweed}} 0/{{spacechase0.JsonAssets/ObjectId:Minnow}} 1 699 1 153 1 707 1 141 1 144 1 132 1 708 0 130 0 131 0 146 0 147 0 150 0 151 0 152 0 154 0 705 0 {{spacechase0.JsonAssets/ObjectId:Dulse Seaweed}} 0/378 .2 110 .2 583 .1 102 .2 390 .25 330 1",
   "Custom_JunimoWoods": "-1/-1/-1/-1/{{spacechase0.JsonAssets/ObjectId:Goldenfish}} -1 {{spacechase0.JsonAssets/ObjectId:Meteor Carp}} -1 734 -1 143 -1 136 -1/{{spacechase0.JsonAssets/ObjectId:Goldenfish}} -1 {{spacechase0.JsonAssets/ObjectId:Meteor Carp}} -1 734 -1 143 -1 136 -1/{{spacechase0.JsonAssets/ObjectId:Goldenfish}} -1 {{spacechase0.JsonAssets/ObjectId:Meteor Carp}} -1 734 -1 143 -1 136 -1/{{spacechase0.JsonAssets/ObjectId:Goldenfish}} -1 {{spacechase0.JsonAssets/ObjectId:Meteor Carp}} -1 734 -1 143 -1 136 -1/121 .3 122 .2 123 .4 120 1 104 .3 109 .2 581 .2 582 .4 583 .3",
   "Custom_ShearwaterBridge": "-1/-1/-1/-1/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 {{spacechase0.JsonAssets/ObjectId:Butterfish}} -1 {{spacechase0.JsonAssets/ObjectId:Puppyfish}} -1 143 -1 706 -1/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 {{spacechase0.JsonAssets/ObjectId:Puppyfish}} -1 {{spacechase0.JsonAssets/ObjectId:Butterfish}} -1 138 -1 144 -1 706 -1/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 {{spacechase0.JsonAssets/ObjectId:Butterfish}} -1 {{spacechase0.JsonAssets/ObjectId:Puppyfish}} -1 139 -1 699 -1 143 -1 706 -1 140 -1 269 -1/{{spacechase0.JsonAssets/ObjectId:Minnow}} -1 699 -1 153 -1 707 -1 141 -1 144 -1 132 -1 269 -1/100 1 101 .31 103 .8 105 .7 106 .1 107 .65 114 .1",
   "Custom_GrandpasShedOutside": "-1/-1/-1/-1/-1/-1/-1/-1/100 .4 101 .3 103 .2 105 .31 106 1 107 .55 114 .21",
@@ -5616,6 +5616,7 @@
 	{ "ID": "item_bull_trout", "AfterID": "item_grass_carp" },
 	{ "ID": "item_water_grub", "AfterID": "item_bull_trout" },
 	{ "ID": "item_worm_snatcher", "AfterID": "item_water_grub" },
+	{ "ID": "item_razor_trout", "AfterID": "item_worm_snatcher" },
   ]
 },
 
@@ -6897,7 +6898,7 @@
 	  {
         "Type": "Donate",
         "Text": "[Sophia_Objective_2_Text]",
-        "RequiredCount": "10",
+        "RequiredCount": "5",
         "Data": {
           "DropBox": "SophiaChest",
           "DropBoxGameLocation": "Custom_BlueMoonVineyard",
@@ -8638,7 +8639,7 @@
 {
      "Action": "Load",
 	 "Target": "Maps/Mountain",
-	 "FromFile": "Assets/Maps/Locations/Mountain.tbin",
+	 "FromFile": "Assets/Maps/Locations/Mountain.tmx",
 },
 {
      "Action": "EditMap",
@@ -17854,28 +17855,28 @@
       "Action": "EditMap",
       "Target": "Maps/Town",
       "FromFile": "Assets/Maps/MapPatches/Town-ConeBarricade.tbin",
-	  "When": { "HasSeenEvent |contains=2000008": true, "HasSeenEvent |contains=2000009": false, "HasMod |contains=LemurKat.EastScarpe.CP": false },
+	  "When": { "HasSeenEvent |contains=2000008": true, "HasSeenEvent |contains=2000009": false, "HasMod |contains=LemurKat.EastScarpe.CP": false, "Spouse |contains=Victor": true },
       "ToArea": { "X": 118, "Y": 70, "Width": 2, "Height": 7 }
     },
     {    //Map patches a temporary cone barricade at the old community garden for 2-3 weeks
       "Action": "EditMap",
       "Target": "Maps/Custom_Garden",
       "FromFile": "Assets/Maps/MapPatches/Garden-ConeBarricade.tbin",
-	  "When": { "HasSeenEvent |contains=2000008": true, "HasSeenEvent |contains=2000009": false, "HasMod |contains=LemurKat.EastScarpe.CP": false },
+	  "When": { "HasSeenEvent |contains=2000008": true, "HasSeenEvent |contains=2000009": false, "HasMod |contains=LemurKat.EastScarpe.CP": false, "Spouse |contains=Victor": true },
       "ToArea": { "X": 36, "Y": 25, "Width": 3, "Height": 2 }
     },
     {    //Map patches a temporary cone barricade at Grampleton Fields for 2-3 weeks (if installed)
       "Action": "EditMap",
       "Target": "Maps/Custom_GrampletonFields",
       "FromFile": "Assets/Maps/MapPatches/GrampletonFields-ConeBarricade.tbin",
-	  "When": { "HasSeenEvent |contains=2000008": true, "HasSeenEvent |contains=2000009": false, "HasMod |contains=flashshifter.GrampletonFields": true, "HasMod |contains=LemurKat.EastScarpe.CP": false },
+	  "When": { "HasSeenEvent |contains=2000008": true, "HasSeenEvent |contains=2000009": false, "HasMod |contains=flashshifter.GrampletonFields": true, "HasMod |contains=LemurKat.EastScarpe.CP": false, "Spouse |contains=Victor": true },
       "ToArea": { "X": 0, "Y": 110, "Width": 2, "Height": 4 }
     },
     {    //Map patches a temporary cone barricade at Morris' Property for 2-3 weeks
       "Action": "EditMap",
       "Target": "Maps/Custom_MorrisProperty",
       "FromFile": "Assets/Maps/MapPatches/MorrisProperty-ConeBarricade.tbin",
-	  "When": { "HasSeenEvent |contains=2000008": true, "HasSeenEvent |contains=2000009": false },
+	  "When": { "HasSeenEvent |contains=2000008": true, "HasSeenEvent |contains=2000009": false, "Spouse |contains=Victor": true },
       "ToArea": { "X": 44, "Y": 39, "Width": 5, "Height": 2 }
     },
 
@@ -25111,7 +25112,7 @@
 	 "Target": "data/events/Custom_WizardBasement",
 	 "When": { "HasFlag |contains=jojaMember": false },
 	 "Entries": {
-     "1000035": "WizardSong/-500 -500/farmer -100 -100 2 Wizard -101 -101 1/pause 800/viewport 4 6 true/skippable/pause 1500/playSound stairsdown/warp farmer 4 4/pause 1000/emote farmer 16/pause 1200/move farmer 0 7 2 true/pause 800/globalFade/viewport -1000 -1000 true/halt/warp farmer 16 11/faceDirection farmer 0 true/viewport 15 7 true/move farmer 0 -5 0/pause 700/faceDirection farmer 3 true/pause 1200/faceDirection farmer 0 true/pause 200/faceDirection farmer 1 true/pause 1350/faceDirection farmer 0 true/pause 1000/message \"This room is filled with magical books...\"/pause 1000/move farmer 0 -1 0/pause 1000/showFrame farmer 15/pause 700/message \"You grab a book and start reading the contents.\"/pause 500/showFrame farmer 37/pause 350/playSound newRecipe/playSound newRecipe/pause 1700/emote farmer 40/pause 1300/screenFlash 2/playSound wand/warp Wizard 14 5/pause 250/faceDirection farmer 3 true/pause 200/jump farmer/pause 900/startJittering/pause 120/speak Wizard \"What are you doing?#$b#I only allow those who I trust down here.\"/pause 400/stopJittering/pause 900/emote farmer 40/pause 400/speak Wizard \"Hmm... the book in your hand is over a hundred years old. It outlines the magical properties of a number of mystical plants.#$b#Recently, I was fortunate enough to obtain several seeds of Ancient Fruit, previously believed to be long-extinct, and I'm cultivating them outside.$0#$b#I hope to study their arcane energies as they grow.\"/pause 500/showFrame Wizard 19/pause 700/speak Wizard \"The world holds countless mysteries waiting to be discovered and studied.$0#$b#Our knowledge of some of these mysteries has been passed down among magic practitioners through these books for many generations.\"/pause 200/showFrame Wizard 4/pause 500/speak Wizard \"Visitors from the town here are rare, and not one of them has been drawn to my books, @.#$b#If you choose to pursue deeper arcane knowledge, I'll be delighted to assist.\"/pause 500/showFrame Wizard 4 true/pause 700/speak Wizard \"Perhaps one day, I'll teach you some 'light magic', such as changing your appearance.\"/pause 500/jump farmer/pause 800/speak Wizard \"Glad to see the prospect excites you. You're a true seeker of knowledge!\"/pause 450/emote Wizard 40/pause 500/speak Wizard \"Considering your connection with the 'Junimos' and arcane potential...#$b#I grant you permission to enter my basement. I only ask you stay away from the 'Shrine of Illusions' and the warp hall.$0#$b#Other than those restrictions, browse any books in my collection that interest you.#$b#Don't open them too far, as it could crack the spines. Some of these books are many hundreds of years old.\"/pause 600/globalFade/viewport -1000 -1000/end dialogue Wizard \"Any books in my library strike your fancy?#$e#Hmm? Ah, yes. I may teach you how to change your appearance through the 'Shrine of Illussions'#$b#It requires very little magic.#$e#You'll need to prove your trust first.\"",     
+     "1000035": "WizardSong/-500 -500/farmer -100 -100 2 Wizard -101 -101 1/pause 800/viewport 4 6 true/skippable/pause 1500/playSound stairsdown/warp farmer 4 4/pause 1000/emote farmer 16/pause 1200/move farmer 0 7 2 true/pause 800/globalFade/viewport -1000 -1000 true/halt/warp farmer 16 11/faceDirection farmer 0 true/viewport 15 7 true/move farmer 0 -5 0/pause 700/faceDirection farmer 3 true/pause 1200/faceDirection farmer 0 true/pause 200/faceDirection farmer 1 true/pause 1350/faceDirection farmer 0 true/pause 1000/message \"This room is filled with magical books...\"/pause 1000/move farmer 0 -1 0/pause 1000/showFrame farmer 15/pause 700/message \"You grab a book and start reading the contents.\"/pause 500/showFrame farmer 37/pause 350/playSound newRecipe/playSound newRecipe/pause 1700/emote farmer 40/pause 1300/screenFlash 2/playSound wand/warp Wizard 14 5/pause 250/faceDirection farmer 3 true/pause 200/jump farmer/pause 900/startJittering/pause 120/speak Wizard \"What are you doing?#$b#I only allow those who I trust down here.\"/pause 400/stopJittering/pause 900/emote farmer 40/pause 400/speak Wizard \"Hmm... the book in your hand is over a hundred years old. It outlines the magical properties of a number of mystical plants.#$b#Recently, I was fortunate enough to obtain several seeds of Ancient Fruit, previously believed to be long-extinct, and I'm cultivating them outside.$0#$b#I hope to study their arcane energies as they grow.\"/pause 500/showFrame Wizard 19/pause 700/speak Wizard \"The world holds countless mysteries waiting to be discovered and studied.$0#$b#Our knowledge of some of these mysteries has been passed down among magic practitioners through these books for many generations.\"/pause 200/showFrame Wizard 4/pause 500/speak Wizard \"Visitors from the town here are rare, and not one of them has been drawn to my books, @.#$b#If you choose to pursue deeper arcane knowledge, I'll be delighted to assist.\"/pause 500/showFrame Wizard 4 true/pause 700/speak Wizard \"Perhaps one day, I'll teach you some 'light magic', such as changing your appearance.\"/pause 500/jump farmer/pause 800/speak Wizard \"Glad to see the prospect excites you. You're a true seeker of knowledge!\"/pause 450/emote Wizard 40/pause 500/speak Wizard \"Considering your connection with the 'Junimos' and arcane potential...#$b#I grant you permission to enter my basement. I only ask you stay away from the 'Shrine of Illusions' and the warp hall.$0#$b#Other than those restrictions, browse any books in my collection that interest you.#$b#Don't open them too far, as it could crack the spines. Some of these books are many hundreds of years old.\"/pause 600/globalFade/viewport -1000 -1000/end dialogue Wizard \"Any books in my library strike your fancy?#$e#Hmm? Ah, yes. I may teach you how to change your appearance through the 'Shrine of Illusions'#$b#It requires very little magic.#$e#You'll need to prove your trust first.\"",     
 	 },
 },
 
@@ -25120,7 +25121,7 @@
 	 "Target": "data/events/Custom_WizardBasement",
 	 "When": { "HasFlag |contains=jojaMember": true },
 	 "Entries": {
-     "1000035": "WizardSong/-500 -500/farmer -100 -100 2 Wizard -101 -101 1/pause 800/viewport 4 6 true/skippable/pause 1500/playSound stairsdown/warp farmer 4 4/pause 1000/emote farmer 16/pause 1200/move farmer 0 7 2 true/pause 800/globalFade/viewport -1000 -1000 true/halt/warp farmer 16 11/faceDirection farmer 0 true/viewport 15 7 true/move farmer 0 -5 0/pause 700/faceDirection farmer 3 true/pause 1200/faceDirection farmer 0 true/pause 200/faceDirection farmer 1 true/pause 1350/faceDirection farmer 0 true/pause 1000/message \"This room is filled with magical books...\"/pause 1000/move farmer 0 -1 0/pause 1000/showFrame farmer 15/pause 700/message \"You grab a book and start reading the contents.\"/pause 500/showFrame farmer 37/pause 350/playSound newRecipe/playSound newRecipe/pause 1700/emote farmer 40/pause 1300/screenFlash 2/playSound wand/warp Wizard 14 5/pause 250/faceDirection farmer 3 true/pause 200/jump farmer/pause 900/startJittering/pause 120/speak Wizard \"What are you doing?#$b#I only allow those who I trust down here.\"/pause 400/stopJittering/pause 900/emote farmer 40/pause 400/speak Wizard \"Hmm... the book in your hand is over a hundred years old. It outlines the magical properties of a number of mystical plants.#$b#Recently, I was fortunate enough to obtain several seeds of Ancient Fruit, previously believed to be long-extinct, and I'm cultivating them outside.$0#$b#I hope to study their arcane energies as they grow.\"/pause 500/showFrame Wizard 19/pause 700/speak Wizard \"The world holds countless mysteries waiting to be discovered and studied.$0#$b#Our knowledge of some of these mysteries has been passed down among magic practitioners through these books for many generations.\"/pause 200/showFrame Wizard 4/pause 500/speak Wizard \"Visitors from the town here are rare, and not one of them has been drawn to my books, @.#$b#If you choose to pursue deeper arcane knowledge, I'll be delighted to assist.\"/pause 500/showFrame Wizard 4 true/pause 700/speak Wizard \"Perhaps one day, I'll teach you some 'light magic', such as changing your appearance.\"/pause 500/jump farmer/pause 800/speak Wizard \"Glad to see the prospect excites you. You're a true seeker of knowledge!\"/pause 450/emote Wizard 40/pause 500/speak Wizard \"Considering your arcane potential and expressed interest in higher learning...#$b#I grant you permission to enter my basement. I only ask you stay away from the 'Shrine of Illusions' and the warp hall.$0#$b#Other than those restrictions, browse any books in my collection that interest you.#$b#Don't open them too far, as it could crack the spines. Some of these books are many hundreds of years old.\"/pause 600/globalFade/viewport -1000 -1000/end dialogue Wizard \"Any books in my library strike your fancy?#$e#Hmm? Ah, yes. I may teach you how to change your appearance through the 'Shrine of Illussions'#$b#It requires very little magic.#$e#You'll need to prove your trust first.\"",     
+     "1000035": "WizardSong/-500 -500/farmer -100 -100 2 Wizard -101 -101 1/pause 800/viewport 4 6 true/skippable/pause 1500/playSound stairsdown/warp farmer 4 4/pause 1000/emote farmer 16/pause 1200/move farmer 0 7 2 true/pause 800/globalFade/viewport -1000 -1000 true/halt/warp farmer 16 11/faceDirection farmer 0 true/viewport 15 7 true/move farmer 0 -5 0/pause 700/faceDirection farmer 3 true/pause 1200/faceDirection farmer 0 true/pause 200/faceDirection farmer 1 true/pause 1350/faceDirection farmer 0 true/pause 1000/message \"This room is filled with magical books...\"/pause 1000/move farmer 0 -1 0/pause 1000/showFrame farmer 15/pause 700/message \"You grab a book and start reading the contents.\"/pause 500/showFrame farmer 37/pause 350/playSound newRecipe/playSound newRecipe/pause 1700/emote farmer 40/pause 1300/screenFlash 2/playSound wand/warp Wizard 14 5/pause 250/faceDirection farmer 3 true/pause 200/jump farmer/pause 900/startJittering/pause 120/speak Wizard \"What are you doing?#$b#I only allow those who I trust down here.\"/pause 400/stopJittering/pause 900/emote farmer 40/pause 400/speak Wizard \"Hmm... the book in your hand is over a hundred years old. It outlines the magical properties of a number of mystical plants.#$b#Recently, I was fortunate enough to obtain several seeds of Ancient Fruit, previously believed to be long-extinct, and I'm cultivating them outside.$0#$b#I hope to study their arcane energies as they grow.\"/pause 500/showFrame Wizard 19/pause 700/speak Wizard \"The world holds countless mysteries waiting to be discovered and studied.$0#$b#Our knowledge of some of these mysteries has been passed down among magic practitioners through these books for many generations.\"/pause 200/showFrame Wizard 4/pause 500/speak Wizard \"Visitors from the town here are rare, and not one of them has been drawn to my books, @.#$b#If you choose to pursue deeper arcane knowledge, I'll be delighted to assist.\"/pause 500/showFrame Wizard 4 true/pause 700/speak Wizard \"Perhaps one day, I'll teach you some 'light magic', such as changing your appearance.\"/pause 500/jump farmer/pause 800/speak Wizard \"Glad to see the prospect excites you. You're a true seeker of knowledge!\"/pause 450/emote Wizard 40/pause 500/speak Wizard \"Considering your arcane potential and expressed interest in higher learning...#$b#I grant you permission to enter my basement. I only ask you stay away from the 'Shrine of Illusions' and the warp hall.$0#$b#Other than those restrictions, browse any books in my collection that interest you.#$b#Don't open them too far, as it could crack the spines. Some of these books are many hundreds of years old.\"/pause 600/globalFade/viewport -1000 -1000/end dialogue Wizard \"Any books in my library strike your fancy?#$e#Hmm? Ah, yes. I may teach you how to change your appearance through the 'Shrine of Illusions'#$b#It requires very little magic.#$e#You'll need to prove your trust first.\"",     
 	 },
 },
 
@@ -25356,52 +25357,13 @@
 
       //Adds rejection dialogue to all NPCs, preventing players from gifting their Mermaid Bracelet
 
-{    "Action": "EditData", "Target": "Characters/Dialogue/Alex", "Entries": { "reject_{{spacechase0.JsonAssets/ObjectId:Mermaid's Bracelet}}": "%I shouldn't gift this..." }},
-{    "Action": "EditData", "Target": "Characters/Dialogue/Elliott", "Entries": { "reject_{{spacechase0.JsonAssets/ObjectId:Mermaid's Bracelet}}": "%I shouldn't gift this..." }},
-{    "Action": "EditData", "Target": "Characters/Dialogue/Harvey", "Entries": { "reject_{{spacechase0.JsonAssets/ObjectId:Mermaid's Bracelet}}": "%I shouldn't gift this..." }},
-{    "Action": "EditData", "Target": "Characters/Dialogue/Sam", "Entries": { "reject_{{spacechase0.JsonAssets/ObjectId:Mermaid's Bracelet}}": "%I shouldn't gift this..." }},
-{    "Action": "EditData", "Target": "Characters/Dialogue/Sebastian", "Entries": { "reject_{{spacechase0.JsonAssets/ObjectId:Mermaid's Bracelet}}": "%I shouldn't gift this..." }},
-{    "Action": "EditData", "Target": "Characters/Dialogue/Shane", "Entries": { "reject_{{spacechase0.JsonAssets/ObjectId:Mermaid's Bracelet}}": "%I shouldn't gift this..." }},
-{    "Action": "EditData", "Target": "Characters/Dialogue/Abigail", "Entries": { "reject_{{spacechase0.JsonAssets/ObjectId:Mermaid's Bracelet}}": "%I shouldn't gift this..." }},
-{    "Action": "EditData", "Target": "Characters/Dialogue/Emily", "Entries": { "reject_{{spacechase0.JsonAssets/ObjectId:Mermaid's Bracelet}}": "%I shouldn't gift this..." }},
-{    "Action": "EditData", "Target": "Characters/Dialogue/Haley", "Entries": { "reject_{{spacechase0.JsonAssets/ObjectId:Mermaid's Bracelet}}": "%I shouldn't gift this..." }},
-{    "Action": "EditData", "Target": "Characters/Dialogue/Leah", "Entries": { "reject_{{spacechase0.JsonAssets/ObjectId:Mermaid's Bracelet}}": "%I shouldn't gift this..." }},
-{    "Action": "EditData", "Target": "Characters/Dialogue/Maru", "Entries": { "reject_{{spacechase0.JsonAssets/ObjectId:Mermaid's Bracelet}}": "%I shouldn't gift this..." }},
-{    "Action": "EditData", "Target": "Characters/Dialogue/Penny", "Entries": { "reject_{{spacechase0.JsonAssets/ObjectId:Mermaid's Bracelet}}": "%I shouldn't gift this..." }},
-{    "Action": "EditData", "Target": "Characters/Dialogue/Caroline", "Entries": { "reject_{{spacechase0.JsonAssets/ObjectId:Mermaid's Bracelet}}": "%I shouldn't gift this..." }},
-{    "Action": "EditData", "Target": "Characters/Dialogue/Clint", "Entries": { "reject_{{spacechase0.JsonAssets/ObjectId:Mermaid's Bracelet}}": "%I shouldn't gift this..." }},
-{    "Action": "EditData", "Target": "Characters/Dialogue/Demetrius", "Entries": { "reject_{{spacechase0.JsonAssets/ObjectId:Mermaid's Bracelet}}": "%I shouldn't gift this..." }},
-{    "Action": "EditData", "Target": "Characters/Dialogue/Dwarf", "Entries": { "reject_{{spacechase0.JsonAssets/ObjectId:Mermaid's Bracelet}}": "%I shouldn't gift this..." }},
-{    "Action": "EditData", "Target": "Characters/Dialogue/Evelyn", "Entries": { "reject_{{spacechase0.JsonAssets/ObjectId:Mermaid's Bracelet}}": "%I shouldn't gift this..." }},
-{    "Action": "EditData", "Target": "Characters/Dialogue/George", "Entries": { "reject_{{spacechase0.JsonAssets/ObjectId:Mermaid's Bracelet}}": "%I shouldn't gift this..." }},
-{    "Action": "EditData", "Target": "Characters/Dialogue/Gus", "Entries": { "reject_{{spacechase0.JsonAssets/ObjectId:Mermaid's Bracelet}}": "%I shouldn't gift this..." }},
-{    "Action": "EditData", "Target": "Characters/Dialogue/Jas", "Entries": { "reject_{{spacechase0.JsonAssets/ObjectId:Mermaid's Bracelet}}": "%I shouldn't gift this..." }},
-{    "Action": "EditData", "Target": "Characters/Dialogue/Jodi", "Entries": { "reject_{{spacechase0.JsonAssets/ObjectId:Mermaid's Bracelet}}": "%I shouldn't gift this..." }},
-{    "Action": "EditData", "Target": "Characters/Dialogue/Kent", "Entries": { "reject_{{spacechase0.JsonAssets/ObjectId:Mermaid's Bracelet}}": "%I shouldn't gift this..." }},
-{    "Action": "EditData", "Target": "Characters/Dialogue/Krobus", "Entries": { "reject_{{spacechase0.JsonAssets/ObjectId:Mermaid's Bracelet}}": "%I shouldn't gift this..." }},
-{    "Action": "EditData", "Target": "Characters/Dialogue/Leo", "Entries": { "reject_{{spacechase0.JsonAssets/ObjectId:Mermaid's Bracelet}}": "%I shouldn't gift this..." }},
-{    "Action": "EditData", "Target": "Characters/Dialogue/Linus", "Entries": { "reject_{{spacechase0.JsonAssets/ObjectId:Mermaid's Bracelet}}": "%I shouldn't gift this..." }},
-{    "Action": "EditData", "Target": "Characters/Dialogue/Marnie", "Entries": { "reject_{{spacechase0.JsonAssets/ObjectId:Mermaid's Bracelet}}": "%I shouldn't gift this..." }},
-{    "Action": "EditData", "Target": "Characters/Dialogue/Pam", "Entries": { "reject_{{spacechase0.JsonAssets/ObjectId:Mermaid's Bracelet}}": "%I shouldn't gift this..." }},
-{    "Action": "EditData", "Target": "Characters/Dialogue/Pierre", "Entries": { "reject_{{spacechase0.JsonAssets/ObjectId:Mermaid's Bracelet}}": "%I shouldn't gift this..." }},
-{    "Action": "EditData", "Target": "Characters/Dialogue/Robin", "Entries": { "reject_{{spacechase0.JsonAssets/ObjectId:Mermaid's Bracelet}}": "%I shouldn't gift this..." }},
-{    "Action": "EditData", "Target": "Characters/Dialogue/Sandy", "Entries": { "reject_{{spacechase0.JsonAssets/ObjectId:Mermaid's Bracelet}}": "%I shouldn't gift this..." }},
-{    "Action": "EditData", "Target": "Characters/Dialogue/Vincent", "Entries": { "reject_{{spacechase0.JsonAssets/ObjectId:Mermaid's Bracelet}}": "%I shouldn't gift this..." }},
-{    "Action": "EditData", "Target": "Characters/Dialogue/Willy", "Entries": { "reject_{{spacechase0.JsonAssets/ObjectId:Mermaid's Bracelet}}": "%I shouldn't gift this..." }},
-{    "Action": "EditData", "Target": "Characters/Dialogue/Wizard", "Entries": { "reject_{{spacechase0.JsonAssets/ObjectId:Mermaid's Bracelet}}": "%I shouldn't gift this..." }},
-{    "Action": "EditData", "Target": "Characters/Dialogue/Sophia", "Entries": { "reject_{{spacechase0.JsonAssets/ObjectId:Mermaid's Bracelet}}": "%I shouldn't gift this..." }},
-{    "Action": "EditData", "Target": "Characters/Dialogue/Olivia", "Entries": { "reject_{{spacechase0.JsonAssets/ObjectId:Mermaid's Bracelet}}": "%I shouldn't gift this..." }},
-{    "Action": "EditData", "Target": "Characters/Dialogue/Victor", "Entries": { "reject_{{spacechase0.JsonAssets/ObjectId:Mermaid's Bracelet}}": "%I shouldn't gift this..." }},
-{    "Action": "EditData", "Target": "Characters/Dialogue/Andy", "Entries": { "reject_{{spacechase0.JsonAssets/ObjectId:Mermaid's Bracelet}}": "%I shouldn't gift this..." }},
-{    "Action": "EditData", "Target": "Characters/Dialogue/Susan", "Entries": { "reject_{{spacechase0.JsonAssets/ObjectId:Mermaid's Bracelet}}": "%I shouldn't gift this..." }},
-{    "Action": "EditData", "Target": "Characters/Dialogue/Morgan", "Entries": { "reject_{{spacechase0.JsonAssets/ObjectId:Mermaid's Bracelet}}": "%I shouldn't gift this..." }},
-{    "Action": "EditData", "Target": "Characters/Dialogue/Apples", "Entries": { "reject_{{spacechase0.JsonAssets/ObjectId:Mermaid's Bracelet}}": "%I shouldn't gift this..." }},
-{    "Action": "EditData", "Target": "Characters/Dialogue/MarlonFay", "Entries": { "reject_{{spacechase0.JsonAssets/ObjectId:Mermaid's Bracelet}}": "%I shouldn't gift this..." }},
-{    "Action": "EditData", "Target": "Characters/Dialogue/GuntherSilvian", "Entries": { "reject_{{spacechase0.JsonAssets/ObjectId:Mermaid's Bracelet}}": "%I shouldn't gift this..." }},
-{    "Action": "EditData", "Target": "Characters/Dialogue/Claire", "Entries": { "reject_{{spacechase0.JsonAssets/ObjectId:Mermaid's Bracelet}}": "%I shouldn't gift this..." }},
-{    "Action": "EditData", "Target": "Characters/Dialogue/Martin", "Entries": { "reject_{{spacechase0.JsonAssets/ObjectId:Mermaid's Bracelet}}": "%I shouldn't gift this..." }},
-{    "Action": "EditData", "Target": "Characters/Dialogue/Lewis", "Entries": { "reject_{{spacechase0.JsonAssets/ObjectId:Mermaid's Bracelet}}": "%I shouldn't gift this..." }},
-{    "Action": "EditData", "Target": "Characters/Dialogue/MorrisTod",  "Entries": { "reject_{{spacechase0.JsonAssets/ObjectId:Mermaid's Bracelet}}": "%I shouldn't gift this..." }},
+{ 
+     "Action": "EditData",
+     "Target": "Characters/Dialogue/Alex, Characters/Dialogue/Elliott, Characters/Dialogue/Harvey, Characters/Dialogue/Sam, Characters/Dialogue/Sebastian, Characters/Dialogue/Shane, Characters/Dialogue/Abigail, Characters/Dialogue/Emily, Characters/Dialogue/Haley, Characters/Dialogue/Leah, Characters/Dialogue/Maru, Characters/Dialogue/Penny, Characters/Dialogue/Caroline, Characters/Dialogue/Clint, Characters/Dialogue/Demetrius, Characters/Dialogue/Dwarf, Characters/Dialogue/Evelyn, Characters/Dialogue/George, Characters/Dialogue/Gus, Characters/Dialogue/Jas, Characters/Dialogue/Jodi, Characters/Dialogue/Kent, Characters/Dialogue/Krobus, Characters/Dialogue/Leo, Characters/Dialogue/Linus, Characters/Dialogue/Marnie, Characters/Dialogue/Pam, Characters/Dialogue/Pierre, Characters/Dialogue/Robin, Characters/Dialogue/Sandy, Characters/Dialogue/Vincent, Characters/Dialogue/Willy, Characters/Dialogue/Wizard, Characters/Dialogue/Sophia, Characters/Dialogue/Olivia, Characters/Dialogue/Victor, Characters/Dialogue/Andy, Characters/Dialogue/Susan, Characters/Dialogue/Morgan, Characters/Dialogue/Apples, Characters/Dialogue/MarlonFay, Characters/Dialogue/GuntherSilvian, Characters/Dialogue/Claire, Characters/Dialogue/Martin, Characters/Dialogue/Lewis, Characters/Dialogue/Lance, Characters/Dialogue/Scarlett",
+     "Entries": {
+          "reject_{{spacechase0.JsonAssets/ObjectId:Mermaid's Bracelet}}": "%I shouldn't gift this..."
+     }
+},
 
 
 //*** Load temporary actors for wizard 14 heart event***
@@ -39566,7 +39528,7 @@
 	 "Target": "characters/schedules/Scarlett",
 	 "When": { "HasSeenEvent": "191393", "HasSeenEvent": "3691371" },
 	 "Entries": {
-     "22": "0 Custom_SophiaHouse 23 6 0/610 Custom_SophiaHouse 23 6 1/800 Custom_SophiaHouse 26 23 0/1000 CommunityCenter 11 23 0 \"Strings\\schedules\\Scarlett:CommunityDay_Scarlett\"/1520 CommunityCenter 11 20 2 \"Strings\\schedules\\Scarlett:CommunityDay_Scarlett\"/1630 CommunityCenter 11 23 0 \"Strings\\schedules\\Scarlett:CommunityDay_Scarlett\"/1800 CommunityCenter 11 19 3 \"Strings\\schedules\\Scarlett:CommunityDay_Scarlett\"/1820 Custom_SophiaHouse 23 6 1 scarlett_sleep",
+     "22": "0 Custom_SophiaHouse 23 6 0/610 Custom_SophiaHouse 23 6 1/800 Custom_SophiaHouse 26 23 0/1000 CommunityCenter 11 23 0 \"Strings\\schedules\\Scarlett:CommunityDay_Scarlett\"/1300 CommunityCenter 11 20 2 \"Strings\\schedules\\Scarlett:CommunityDay_Scarlett\"/1800 CommunityCenter 11 19 3 \"Strings\\schedules\\Scarlett:CommunityDay_Scarlett\"/1820 Custom_SophiaHouse 23 6 1 scarlett_sleep",
      },
 },
 {    //Spring Dialogue
@@ -40043,7 +40005,7 @@
 	 "Target": "characters/schedules/Sandy",
 	 "When": { "Hearts:Sandy": "5, 6, 7, 8, 9, 10", "HasSeenEvent": "191393" },
 	 "Entries": {
-     "22": "620 Custom_Sandy_WarpRoom 3 3 2/800 HaleyHouse 4 22 0/1120 CommunityCenter 11 23 2 \"Strings\\schedules\\Sandy:CommunityDay_Sandy\"/1810 HaleyHouse 21 4 3",
+     "22": "620 Custom_Sandy_WarpRoom 3 3 2/800 HaleyHouse 4 22 0/1120 CommunityCenter 11 23 0 \"Strings\\schedules\\Sandy:CommunityDay_Sandy\"/1810 HaleyHouse 21 4 3",
      },
 },
 {    //Spring Dialogue
@@ -41036,14 +40998,6 @@
 	 "When": { "HasSeenEvent |contains=191393": true, "HasSeenEvent |contains=3219873": true, "HasFlag": "ccMovieTheater" },
      "Entries": { 
 	   "22": "0 Custom_Martin_WarpRoom 1 3 3/650 Town 92 44 2/850 MovieTheater 7 5 2 Martin_Blink/2130 BusStop 12 8 0/2340 Custom_DayEnd_WarpRoom 3 3 0"
-   }
-},
-{    //Martin takes over Claire's joja shift on community day
-     "Action": "EditData",
-     "Target": "Characters/schedules/Martin",
-	 "When": { "HasSeenEvent |contains=191393": false, "HasSeenEvent |contains=3219873": true },
-     "Entries": { 
-	   "22": "0 Custom_Martin_WarpRoom 1 3 3/800 JojaMart 9 25 1 Martin_Idle/2200 BusStop 12 8 0/2410 Custom_DayEnd_WarpRoom 3 3 0",
    }
 },
 
@@ -42417,8 +42371,8 @@
 	 "Target": "characters/schedules/Penny",
 	 "When": { "Weather": "Sun", "HasSeenEvent": "5553210" },
 	 "Entries": {
-     "7": "900 Town 83 85 2 penny_read/1330 SamHouse 5 15 1/1600 Saloon 11 20 0/2100 Trailer 4 9 1 penny_sleep",
-	 "21": "900 Town 83 85 2 penny_read/1330 SamHouse 5 15 1/1600 Saloon 11 20 0/2100 Trailer 4 9 1 penny_sleep",
+     "7": "900 Town 83 86 2 penny_read/1330 SamHouse 5 15 1/1600 Saloon 11 20 0/2100 Trailer 4 9 1 penny_sleep",
+	 "21": "900 Town 83 86 2 penny_read/1330 SamHouse 5 15 1/1600 Saloon 11 20 0/2100 Trailer 4 9 1 penny_sleep",
      },
 },
 
@@ -43634,7 +43588,7 @@
 	 "Target": "data/events/farm",
 	 "When": { "HasFlag": "qiCave", "HasFlag": "galaxySword", "HasSeenEvent |contains=1925178": true, "HasSeenEvent |contains=980558": true },  //player completed qi skull cave quest, has galaxy sword, made it to treasure cave in the badlands, and unlocked the jukebox from Gus
 	 "Entries": {
-     "6139583": "none/-500 -500/farmer -100 -100 2 MrQi -99 -99 0/pause 1250/playMusic StardewValleyExpandedTrailer/pause 10/stopMusic/emote farmer 16 true/pause 1000/speak MrQi \"Hey, kid. I've been keeping a close watch on you. Look at how far you've come...\"/pause 650/emote farmer 8 true/pause 1000/speak MrQi \"Let me cut to the chase.#$b#I've added a new soundtrack to your jukebox. It's called 'Stardew Valley Expanded Trailer'.#$b#Think of this as a reward for making it this far: A great soundtrack and a 4th wall break.\"/pause 800/screenFlash 1/playSound wand/warp MrQi -400 -400/pause 1250/end"
+     "6139583": "StardewValleyExpandedTrailer/-500 -500/farmer -100 -100 2 MrQi -99 -99 0/pause 500/playMusic none/pause 10/stopMusic/emote farmer 16 true/pause 1000/speak MrQi \"Hey, kid. I've been keeping a close watch on you. Look at how far you've come...\"/pause 650/emote farmer 8 true/pause 1000/speak MrQi \"Let me cut to the chase.#$b#I've added a new soundtrack to your jukebox. It's called 'Stardew Valley Expanded Trailer'.#$b#Think of this as a reward for making it this far: A great soundtrack and a 4th wall break.\"/pause 800/screenFlash 1/playSound wand/warp MrQi -400 -400/pause 1250/end"
 	 },
 },
 
@@ -45146,6 +45100,16 @@
      "FromFile": "Assets/Maps/MapPatches/Railroad_Aquarium.tbin",
 	 "When": { "HasMod": "Cherry.StardewAquarium" },
      "ToArea": { "X": 29, "Y": 41, "Width": 4, "Height": 2 }
+},
+
+      //Immersive Farm 2 secret woods entrance compatibility patch
+ 
+{
+     "Action": "EditMap",
+     "Target": "Maps/Woods",
+     "FromFile": "Assets/Maps/MapPatches/RemoveWoodsPillar.tmx",
+	 "When": { "HasMod": "zander.immersivefarm2" },
+     "ToArea": { "X": 28, "Y": 4, "Width": 2, "Height": 1 }
 },
 
      //Penny's home compatibility patch
