@@ -1,7 +1,7 @@
 {
-   "Name": "[CP] Fancy Artisan Goods Retexture",
+   "Name": "Fancy Artisan Goods Retexture",
    "Author": "Aimon111",
-   "Version": "1.0.2",
+   "Version": "1.0.3",
    "Description": "Fancier recolor for artisan goods and animal products.",
    "UniqueID": "Aimon111.FancyArtisanGoods",
   "UpdateKeys": ["Nexus:12766"],

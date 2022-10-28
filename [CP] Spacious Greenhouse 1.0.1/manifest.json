@@ -1,0 +1,12 @@
+{
+	"Name": "Spacious Greenhouse",
+    "Author": "mintgal",
+    "Version": "1.0.0",
+    "Description": "Bigger greenhouse with glass windows.",
+    "UniqueID": "mintgal.SpaciousGreenhouse",
+    "MinimumApiVersion": "2.5",
+    "UpdateKeys": [ "Nexus:4137" ],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    }
+}

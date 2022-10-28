@@ -110,6 +110,7 @@
 			"AllowValues": "true, false",
 			"Default": "true",
 		},
+		
 		"Milk": {
 			"AllowValues": "true, false",
 			"Default": "true",
@@ -127,6 +128,10 @@
 		"PaleAle": {
 			"AllowValues": "true, false",
 			"Default": "true",
+		},
+		"PaleAleType": {
+			"AllowValues": "old, new",
+			"Default": "new",
 		},
 		
 		"Pickles": {
@@ -151,7 +156,7 @@
 			"Default": "true",
 		},
 		"Rabbit's Foot Type": {
-			"AllowValues": "paw, carrot",
+			"AllowValues": "paw, carrot, goldencarrot",
 			"Default": "paw",
 		},
 		"Roe": {
@@ -179,6 +184,10 @@
 		"TruffleOil": {
 			"AllowValues": "true, false",
 			"Default": "true",
+		},
+		"TruffleOilType": {
+			"AllowValues": "old, new",
+			"Default": "new",
 		},
 		
 		"Vinegar": {
@@ -222,6 +231,16 @@
 			"When": {
 				"Rabbit's Foot": "True",
 				"Rabbit's Foot Type": "carrot",
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/rabbitsfootalt1.png",
+			"ToArea": { "X": 224, "Y": 288, "Width": 16, "Height": 16 },
+			"When": {
+				"Rabbit's Foot": "True",
+				"Rabbit's Foot Type": "goldencarrot",
 			}
 		},
 	
@@ -611,6 +630,18 @@
 			"ToArea": { "X": 240, "Y": 192, "Width": 16, "Height": 16 },
 			"When": {
 				"PaleAle": "True",
+				"PaleAleType": "old",
+			}
+		},
+		//PaleAle1
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/palealealt.png",
+			"ToArea": { "X": 240, "Y": 192, "Width": 16, "Height": 16 },
+			"When": {
+				"PaleAle": "True",
+				"PaleAleType": "new",
 			}
 		},
 	
@@ -700,6 +731,18 @@
 			"ToArea": { "X": 0, "Y": 288, "Width": 16, "Height": 16 },
 			"When": {
 				"TruffleOil": "True",
+				"TruffleOilType": "old",
+			}
+		},
+		//TruffleOil
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/truffleoilalt.png",
+			"ToArea": { "X": 0, "Y": 288, "Width": 16, "Height": 16 },
+			"When": {
+				"TruffleOil": "True",
+				"TruffleOilType": "new",
 			}
 		},
 		
