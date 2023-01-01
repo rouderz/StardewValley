@@ -1,5 +1,5 @@
 {
-	"Format": "1.19.0",
+	"Format": "1.23.0",
 "ConfigSchema": {
 		
 		"Trees": {
@@ -23,7 +23,7 @@
 			"Default": "true"
 		},
 		"ManualRecolor": {
-			"AllowValues": "VPR, Vanilla, Starblue, Earthy",
+			"AllowValues": "VPR, Vanilla, Starblue, Earthy, Naturally",
 			"AllowBlank":true,
 			"Default": ""
 		},
@@ -74,6 +74,11 @@
 			"When": { "HasMod": "grapeponta.VibrantPastoralRecolor" }
 			}, 
 			{
+			"Name": "Recolor",
+			"Value": "Naturally",
+			"When": { "HasMod": "Narianka.NaturallyValley" }
+			}, 
+			{
 			"Name": "Expansion",
 			"Value": "SVE",
 			"When": { "HasMod": "FlashShifter.StardewValleyExpandedCP" }
@@ -81,7 +86,7 @@
 			{
 			"Name": "Recolor",
 			"Value": "{{ManualRecolor}}",
-			"When": { "ManualRecolor |contains=Vanilla, VPR, Starblue, Earthy": true }
+			"When": { "ManualRecolor |contains=Vanilla, VPR, Starblue, Earthy, Naturally": true }
 			},
 			{
 			"Name": "Recolor",
@@ -95,29 +100,18 @@
 		{
 			"LogName": "Oak",
 			"Action": "EditImage",
-			"Target": "TerrainFeatures/tree1_{{season}}",
-			"FromFile": "assets/{{Recolor}}/TerrainFeatures/tree1_{{season}}.png",
+			"Target": "TerrainFeatures/tree1_spring, TerrainFeatures/tree1_summer, TerrainFeatures/tree1_fall",
+			"FromFile": "assets/{{Recolor}}/{{Target}}.png",
 			"PatchMode": "Replace",
-			"When": {"Season": "spring, summer, fall",
-					"Trees": "true"}
+			"When": {"Trees": "true"}
 		},
 		{
 			"LogName": "Maple",
 			"Action": "EditImage",
-			"Target": "TerrainFeatures/tree2_{{season}}",
-			"FromFile": "assets/{{Recolor}}/TerrainFeatures/tree2_{{season}}.png",
+			"Target": "TerrainFeatures/tree2_spring, TerrainFeatures/tree2_summer, TerrainFeatures/tree2_fall",
+			"FromFile": "assets/{{Recolor}}/{{Target}}.png",
 			"PatchMode": "Replace",
-			"When": {"Season": "spring, summer, fall",
-					"Trees": "true"}
-		},
-		{
-			"LogName": "Pine Summer",
-			"Action": "EditImage",
-			"Target": "TerrainFeatures/tree3_spring",
-			"FromFile": "assets/{{Recolor}}/TerrainFeatures/tree3_spring.png",
-			"PatchMode": "Replace",
-			"When": {"Season": "summer",
-					"Trees": "true"}
+			"When": {"Trees": "true"}
 		},
 		{
 			"LogName": "Pine Summer VPR",
@@ -132,11 +126,10 @@
 		{
 			"LogName": "Pine",
 			"Action": "EditImage",
-			"Target": "TerrainFeatures/tree3_{{season}}",
-			"FromFile": "assets/{{Recolor}}/TerrainFeatures/tree3_{{season}}.png",
+			"Target": "TerrainFeatures/tree3_spring, TerrainFeatures/tree3_fall, TerrainFeatures/tree3_winter",
+			"FromFile": "assets/{{Recolor}}/{{Target}}.png",
 			"PatchMode": "Replace",
-			"When": {"Season": "spring, fall, winter", 
-					"Trees": "true"}
+			"When": {"Trees": "true"}
 		}, 
 		{
 			"LogName": "Mahogany",
@@ -176,7 +169,7 @@
 			"Target": "Maps/DesertTiles",
 			"FromFile": "assets/{{Recolor}}/Maps/DesertTiles.png",
 			"PatchMode": "Replace",
-			"FromArea": {"X":0, "Y":112, "Width":48, "Height":48},
+			"FromArea": {"X":0, "Y":0, "Width":48, "Height":48},
 			"ToArea": {"X":0, "Y":112, "Width":48, "Height":48},
 			"When": {"TileTrees": "true"}
 		},
@@ -186,26 +179,25 @@
 			"Target": "Maps/DesertTiles",
 			"FromFile": "assets/{{Recolor}}/Maps/DesertTiles.png",
 			"PatchMode": "Replace",
-			"FromArea": {"X":16, "Y":160, "Width":16, "Height":32},
+			"FromArea": {"X":16, "Y":0, "Width":16, "Height":32},
 			"ToArea": {"X":16, "Y":160, "Width":16, "Height":32},
 			"When": {"TileTrees": "true"}
 		},
 		{
 			"LogName": "Outdoors Tilesheet Oak Maple",
 			"Action": "EditImage",
-			"Target": "Maps/{{season}}_outdoorsTileSheet",
-			"FromFile": "assets/{{Recolor}}/Maps/{{season}}_outdoorsTilesheet.png",
+			"Target": "Maps/spring_outdoorsTileSheet, Maps/summer_outdoorsTileSheet, Maps/fall_outdoorsTileSheet",
+			"FromFile": "assets/{{Recolor}}/{{Target}}.png",
 			"PatchMode": "Replace",
 			"FromArea": {"X":0, "Y":0, "Width":96, "Height":96},
 			"ToArea": {"X":0, "Y":0, "Width":96, "Height":96},
-			"When": {"TileTrees": "true",
-					"Season": "spring, summer, fall"}
+			"When": {"TileTrees": "true"}
 		},
 		{
 			"LogName": "Outdoors Tilesheet Pine",
 			"Action": "EditImage",
-			"Target": "Maps/{{season}}_outdoorsTileSheet",
-			"FromFile": "assets/{{Recolor}}/Maps/{{season}}_outdoorsTilesheet.png",
+			"Target": "Maps/spring_outdoorsTileSheet, Maps/summer_outdoorsTileSheet, Maps/fall_outdoorsTileSheet, Maps/winter_outdoorsTilesheet",
+			"FromFile": "assets/{{Recolor}}/{{Target}}.png",
 			"PatchMode": "Replace",
 			"FromArea": {"X":160, "Y":0, "Width":48, "Height":96},
 			"ToArea": {"X":160, "Y":0, "Width":48, "Height":96},
@@ -214,8 +206,8 @@
 		{
 			"LogName": "Outdoors Tilesheet Big Bush",
 			"Action": "EditImage",
-			"Target": "Maps/{{season}}_outdoorsTileSheet",
-			"FromFile": "assets/{{Recolor}}/Maps/{{season}}_outdoorsTilesheet.png",
+			"Target": "Maps/spring_outdoorsTileSheet, Maps/summer_outdoorsTileSheet, Maps/fall_outdoorsTileSheet, Maps/winter_outdoorsTilesheet",
+			"FromFile": "assets/{{Recolor}}/{{Target}}.png",
 			"PatchMode": "Replace",
 			"FromArea": {"X":208, "Y":0, "Width":48, "Height":48},
 			"ToArea": {"X":208, "Y":0, "Width":48, "Height":48},
@@ -225,8 +217,8 @@
 		{
 			"LogName": "Outdoors Tilesheet Small Bush",
 			"Action": "EditImage",
-			"Target": "Maps/{{season}}_outdoorsTileSheet",
-			"FromFile": "assets/{{Recolor}}/Maps/{{season}}_outdoorsTilesheet.png",
+			"Target": "Maps/spring_outdoorsTileSheet, Maps/summer_outdoorsTileSheet, Maps/fall_outdoorsTileSheet, Maps/winter_outdoorsTilesheet",
+			"FromFile": "assets/{{Recolor}}/{{Target}}.png",
 			"PatchMode": "Replace",
 			"FromArea": {"X":208, "Y":48, "Width":32, "Height":32},
 			"ToArea": {"X":208, "Y":48, "Width":32, "Height":32},
@@ -236,30 +228,28 @@
 		{
 			"LogName": "Outdoors Tilesheet Big Tree 1a",
 			"Action": "EditImage",
-			"Target": "Maps/{{season}}_outdoorsTileSheet",
-			"FromFile": "assets/{{Recolor}}/Maps/{{season}}_outdoorsTilesheet.png",
+			"Target": "Maps/spring_outdoorsTileSheet, Maps/summer_outdoorsTileSheet, Maps/fall_outdoorsTileSheet",
+			"FromFile": "assets/{{Recolor}}/{{Target}}.png",
 			"PatchMode": "Replace",
 			"FromArea": {"X":96, "Y":0, "Width":64, "Height":64},
 			"ToArea": {"X":96, "Y":0, "Width":64, "Height":64},
-			"When": {"TileTrees": "true",
-					"Season": "spring, summer, fall"}
+			"When": {"TileTrees": "true"}
 		},
 		{
 			"LogName": "Outdoors Tilesheet Big Tree 1b",
 			"Action": "EditImage",
-			"Target": "Maps/{{season}}_outdoorsTileSheet",
-			"FromFile": "assets/{{Recolor}}/Maps/{{season}}_outdoorsTilesheet.png",
+			"Target": "Maps/spring_outdoorsTileSheet, Maps/summer_outdoorsTileSheet, Maps/fall_outdoorsTileSheet",
+			"FromFile": "assets/{{Recolor}}/{{Target}}.png",
 			"PatchMode": "Replace",
 			"FromArea": {"X":112, "Y":64, "Width":33, "Height":48},
 			"ToArea": {"X":112, "Y":64, "Width":33, "Height":48},
-			"When": {"TileTrees": "true",
-					"Season": "spring, summer, fall"}
+			"When": {"TileTrees": "true"}
 		},
 		{
 			"LogName": "Outdoors Tilesheet Big Tree 2a",
 			"Action": "EditImage",
-			"Target": "Maps/{{season}}_outdoorsTileSheet",
-			"FromFile": "assets/{{Recolor}}/Maps/{{season}}_outdoorsTilesheet.png",
+			"Target": "Maps/spring_outdoorsTileSheet, Maps/summer_outdoorsTileSheet, Maps/fall_outdoorsTileSheet, Maps/winter_outdoorsTilesheet",
+			"FromFile": "assets/{{Recolor}}/{{Target}}.png",
 			"PatchMode": "Replace",
 			"FromArea": {"X":256, "Y":0, "Width":96, "Height":64},
 			"ToArea": {"X":256, "Y":0, "Width":96, "Height":64},
@@ -268,42 +258,41 @@
 		{
 			"LogName": "Outdoors Tilesheet Big Tree 2b",
 			"Action": "EditImage",
-			"Target": "Maps/{{season}}_outdoorsTileSheet",
-			"FromFile": "assets/{{recolor}}/Maps/{{season}}_outdoorsTilesheet.png",
+			"Target": "Maps/spring_outdoorsTileSheet, Maps/summer_outdoorsTileSheet, Maps/fall_outdoorsTileSheet, Maps/winter_outdoorsTilesheet",
+			"FromFile": "assets/{{recolor}}/{{Target}}.png",
 			"PatchMode": "Replace",
 			"FromArea": {"X":288, "Y":64, "Width":32, "Height":48},
 			"ToArea": {"X":288, "Y":64, "Width":32, "Height":48},
 			"When": {"TileTrees": "true"}
 		},
 		{
-			"LogName": "Outdoors Tilesheet Big Tree 2 SVE Fix",
-			"Action": "EditImage",
-			"Target": "Maps/{{season}}_outdoorsTileSheet",
-			"FromFile": "assets/{{Recolor}}/Maps/{{season}}_outdoorsTilesheet.png",
-			"PatchMode": "Replace",
-			"FromArea": {"X":256, "Y":112, "Width":96, "Height":64},
-			"ToArea": {"X":256, "Y":0, "Width":96, "Height":64},
-			"When": {"TileTrees": "true",
-					"Expansion |contains=SVE": "true"}
-		},
-		{
 			"LogName": "Outdoors Tilesheet Big Tree 3a",
 			"Action": "EditImage",
-			"Target": "Maps/{{season}}_outdoorsTileSheet2",
-			"FromFile": "assets/{{Recolor}}/Maps/{{season}}_outdoorsTilesheet2.png",
+			"Target": "Maps/spring_outdoorsTileSheet2, Maps/summer_outdoorsTileSheet2, Maps/fall_outdoorsTileSheet2, Maps/winter_outdoorsTilesheet2",
+			"FromFile": "assets/{{Recolor}}/{{Target}}.png",
 			"PatchMode": "Replace",
-			"FromArea": {"X":0, "Y":112, "Width":112, "Height":80},
+			"FromArea": {"X":0, "Y":0, "Width":112, "Height":80},
 			"ToArea": {"X":0, "Y":112, "Width":112, "Height":80},
 			"When": {"TileTrees": "true"}
 		},
 		{
 			"LogName": "Outdoors Tilesheet Big Tree 3b",
 			"Action": "EditImage",
-			"Target": "Maps/{{season}}_outdoorsTileSheet2",
-			"FromFile": "assets/{{Recolor}}/Maps/{{season}}_outdoorsTilesheet2.png",
+			"Target": "Maps/spring_outdoorsTileSheet2, Maps/summer_outdoorsTileSheet2, Maps/fall_outdoorsTileSheet2, Maps/winter_outdoorsTilesheet2",
+			"FromFile": "assets/{{Recolor}}/{{Target}}.png",
 			"PatchMode": "Replace",
-			"FromArea": {"X":16, "Y":192, "Width":64, "Height":32},
+			"FromArea": {"X":16, "Y":80, "Width":64, "Height":32},
 			"ToArea": {"X":16, "Y":192, "Width":64, "Height":32},
+			"When": {"TileTrees": "true"}
+		},
+		{
+			"LogName": "Outdoors Tilesheet Big Tree 3 Door",
+			"Action": "EditImage",
+			"Target": "Maps/spring_outdoorsTileSheet2, Maps/summer_outdoorsTileSheet2, Maps/fall_outdoorsTileSheet2, Maps/winter_outdoorsTilesheet2",
+			"FromFile": "assets/{{Recolor}}/{{Target}}.png",
+			"PatchMode": "Replace",
+			"FromArea": {"X":80, "Y":80, "Width":16, "Height":48},
+			"ToArea": {"X":80, "Y":192, "Width":16, "Height":48},
 			"When": {"TileTrees": "true"}
 		},
 		{
@@ -312,7 +301,7 @@
 			"Target": "Maps/{{season}}_town",
 			"FromFile": "assets/{{Recolor}}/Maps/{{season}}_town.png",
 			"PatchMode": "Replace",
-			"FromArea": {"X":224, "Y":384, "Width":64, "Height":80},
+			"FromArea": {"X":0, "Y":0, "Width":64, "Height":80},
 			"ToArea": {"X":224, "Y":384, "Width":64, "Height":80},
 			"When": {"TileTrees": "true"}
 		},
@@ -322,7 +311,7 @@
 			"Target": "Maps/{{season}}_town",
 			"FromFile": "assets/{{Recolor}}/Maps/{{season}}_town.png",
 			"PatchMode": "Replace",
-			"FromArea": {"X":240, "Y":464, "Width":32, "Height":32},
+			"FromArea": {"X":16, "Y":80, "Width":32, "Height":32},
 			"ToArea": {"X":240, "Y":464, "Width":32, "Height":32},
 			"When": {"TileTrees": "true"}
 		},
@@ -332,7 +321,7 @@
 			"Target": "Maps/{{season}}_town",
 			"FromFile": "assets/{{Recolor}}/Maps/{{season}}_town.png",
 			"PatchMode": "Replace",
-			"FromArea": {"X":288, "Y":384, "Width":48, "Height":48},
+			"FromArea": {"X":64, "Y":0, "Width":48, "Height":48},
 			"ToArea": {"X":288, "Y":384, "Width":48, "Height":48},
 			"When": {"TileTrees": "true",
 					"Bushes": "true"}
@@ -343,49 +332,211 @@
 			"Target": "Maps/{{season}}_town",
 			"FromFile": "assets/{{Recolor}}/Maps/{{season}}_town.png",
 			"PatchMode": "Replace",
-			"FromArea": {"X":288, "Y":432, "Width":32, "Height":32},
+			"FromArea": {"X":64, "Y":48, "Width":32, "Height":32},
 			"ToArea": {"X":288, "Y":432, "Width":32, "Height":32},
 			"When": {"TileTrees": "true",
 					"Bushes": "true"}
 		},
 		{
-			"LogName": "Island Big Tree a",
+			"LogName": "Beach Bush",
 			"Action": "EditImage",
-			"Target": "Maps/{{season}}_island_tilesheet_1",
-			"FromFile": "assets/{{Recolor}}/Maps/{{season}}_island_tilesheet_1.png",
+			"Target": "Maps/spring_beach, Maps/summer_beach, Maps/fall_beach, Maps/winter_beach",
+			"FromFile": "assets/{{Recolor}}/{{Target}}.png",
 			"PatchMode": "Replace",
-			"FromArea": {"X":320, "Y":384, "Width":96, "Height":80},
+			"FromArea": {"X":0, "Y":0, "Width":32, "Height":32},
+			"ToArea": {"X":208, "Y":128, "Width":32, "Height":32},
+			"When": {"TileTrees": "true",
+					"Bushes": "true"}
+		},
+		{
+			"LogName": "Beach Farm Big Tree a",
+			"Action": "EditImage",
+			"Target": "Maps/spring_island_tilesheet_1, Maps/summer_island_tilesheet_1, Maps/fall_island_tilesheet_1,  Maps/winter_island_tilesheet_1",
+			"FromFile": "assets/{{Recolor}}/{{Target}}.png",
+			"PatchMode": "Replace",
+			"FromArea": {"X":0, "Y":0, "Width":96, "Height":80},
 			"ToArea": {"X":320, "Y":384, "Width":96, "Height":80},
 			"When": {"TileTrees": "true"}
 		},
 		{
-			"LogName": "Island Big Tree b",
+			"LogName": "Beach Farm Big Tree b",
 			"Action": "EditImage",
-			"Target": "Maps/{{season}}_island_tilesheet_1",
-			"FromFile": "assets/{{Recolor}}/Maps/{{season}}_island_tilesheet_1.png",
+			"Target": "Maps/spring_island_tilesheet_1, Maps/summer_island_tilesheet_1, Maps/fall_island_tilesheet_1,  Maps/winter_island_tilesheet_1",
+			"FromFile": "assets/{{Recolor}}/{{Target}}.png",
 			"PatchMode": "Replace",
-			"FromArea": {"X":320, "Y":464, "Width":64, "Height":32},
+			"FromArea": {"X":0, "Y":80, "Width":64, "Height":32},
 			"ToArea": {"X":320, "Y":464, "Width":64, "Height":32},
 			"When": {"TileTrees": "true"}
 		},
 		{
-			"LogName": "Island Big Tree c",
+			"LogName": "Beach Farm Big Tree c",
 			"Action": "EditImage",
-			"Target": "Maps/{{season}}_island_tilesheet_1",
-			"FromFile": "assets/{{Recolor}}/Maps/{{season}}_island_tilesheet_1.png",
+			"Target": "Maps/spring_island_tilesheet_1, Maps/summer_island_tilesheet_1, Maps/fall_island_tilesheet_1,  Maps/winter_island_tilesheet_1",
+			"FromFile": "assets/{{Recolor}}/{{Target}}.png",
 			"PatchMode": "Replace",
-			"FromArea": {"X":320, "Y":496, "Width":32, "Height":16},
+			"FromArea": {"X":0, "Y":112, "Width":32, "Height":16},
 			"ToArea": {"X":320, "Y":496, "Width":32, "Height":16},
 			"When": {"TileTrees": "true"}
 		},
 		{
-			"LogName": "Island Bush",
+			"LogName": "Beach Farm Bush 1",
 			"Action": "EditImage",
-			"Target": "Maps/{{season}}_island_tilesheet_1",
-			"FromFile": "assets/{{Recolor}}/Maps/{{season}}_island_tilesheet_1.png",
+			"Target": "Maps/spring_island_tilesheet_1, Maps/summer_island_tilesheet_1, Maps/fall_island_tilesheet_1,  Maps/winter_island_tilesheet_1",
+			"FromFile": "assets/{{Recolor}}/{{Target}}.png",
 			"PatchMode": "Replace",
-			"FromArea": {"X":384, "Y":464, "Width":32, "Height":32},
+			"FromArea": {"X":64, "Y":80, "Width":32, "Height":32},
 			"ToArea": {"X":384, "Y":464, "Width":32, "Height":32},
+			"When": {"TileTrees": "true",
+					"Bushes": "true"}
+		},
+		{
+			"LogName": "Island & Beach Farm Bush 2",
+			"Action": "EditImage",
+			"Target": "Maps/spring_island_tilesheet_1, Maps/summer_island_tilesheet_1, Maps/fall_island_tilesheet_1,  Maps/winter_island_tilesheet_1, Maps/island_tilesheet_1",
+			"FromFile": "assets/{{Recolor}}/{{Target}}.png",
+			"PatchMode": "Replace",
+			"FromArea": {"X":32, "Y":112, "Width":32, "Height":32},
+			"ToArea": {"X":272, "Y":176, "Width":32, "Height":32},
+			"When": {"TileTrees": "true",
+					"Bushes": "true"}
+		},
+		{
+			"LogName": "Island & Beach Farm Bush 3",
+			"Action": "EditImage",
+			"Target": "Maps/spring_island_tilesheet_1, Maps/summer_island_tilesheet_1, Maps/fall_island_tilesheet_1,  Maps/winter_island_tilesheet_1, Maps/island_tilesheet_1",
+			"FromFile": "assets/{{Recolor}}/{{Target}}.png",
+			"PatchMode": "Replace",
+			"FromArea": {"X":64, "Y":112, "Width":32, "Height":32},
+			"ToArea": {"X":208, "Y":128, "Width":32, "Height":32},
+			"When": {"TileTrees": "true",
+					"Bushes": "true"}
+		},
+		{
+			"LogName": "Island Small Bush Row",
+			"Action": "EditImage",
+			"Target": "Maps/island_tilesheet_1",
+			"FromFile": "assets/{{Recolor}}/{{Target}}.png",
+			"PatchMode": "Replace",
+			"FromArea": {"X":0, "Y":80, "Width":48, "Height":32},
+			"ToArea": {"X":16, "Y":368, "Width":48, "Height":32},
+			"When": {"TileTrees": "true",
+					"Bushes": "true"}
+		},
+		{
+			"LogName": "Island Big Bush Patch",
+			"Action": "EditImage",
+			"Target": "Maps/island_tilesheet_1",
+			"FromFile": "assets/{{Recolor}}/{{Target}}.png",
+			"PatchMode": "Replace",
+			"FromArea": {"X":48, "Y":96, "Width":48, "Height":16},
+			"ToArea": {"X":400, "Y":32, "Width":48, "Height":16},
+			"When": {"TileTrees": "true",
+					"Bushes": "true"}
+		},
+		{
+			"LogName": "Island Small Bush Patch",
+			"Action": "EditImage",
+			"Target": "Maps/island_tilesheet_1",
+			"FromFile": "assets/{{Recolor}}/{{Target}}.png",
+			"PatchMode": "Replace",
+			"FromArea": {"X":96, "Y":80, "Width":32, "Height":32},
+			"ToArea": {"X":480, "Y":0, "Width":32, "Height":32},
+			"When": {"TileTrees": "true",
+					"Bushes": "true"}
+		},
+		{
+			"LogName": "Island Cliff Bush 1",
+			"Action": "EditImage",
+			"Target": "Maps/island_tilesheet_1",
+			"FromFile": "assets/{{Recolor}}/{{Target}}.png",
+			"PatchMode": "Replace",
+			"FromArea": {"X":128, "Y":80, "Width":32, "Height":32},
+			"ToArea": {"X":480, "Y":320, "Width":32, "Height":32},
+			"When": {"TileTrees": "true",
+					"Bushes": "true"}
+		},
+		{
+			"LogName": "Island Cliff Bush 2",
+			"Action": "EditImage",
+			"Target": "Maps/island_tilesheet_1",
+			"FromFile": "assets/{{Recolor}}/{{Target}}.png",
+			"PatchMode": "Replace",
+			"FromArea": {"X":128, "Y":112, "Width":32, "Height":32},
+			"ToArea": {"X":384, "Y":288, "Width":32, "Height":32},
+			"When": {"TileTrees": "true",
+					"Bushes": "true"}
+		},
+		{
+			"LogName": "Island Cliff Vine",
+			"Action": "EditImage",
+			"Target": "Maps/island_tilesheet_1",
+			"FromFile": "assets/{{Recolor}}/{{Target}}.png",
+			"PatchMode": "Replace",
+			"FromArea": {"X":144, "Y":160, "Width":16, "Height":32},
+			"ToArea": {"X":400, "Y":336, "Width":16, "Height":32},
+			"When": {"TileTrees": "true"}
+		},
+		{
+			"LogName": "Island Palm 1",
+			"Action": "EditImage",
+			"Target": "Maps/island_tilesheet_1",
+			"FromFile": "assets/{{Recolor}}/{{Target}}.png",
+			"PatchMode": "Replace",
+			"FromArea": {"X":0, "Y":144, "Width":48, "Height":64},
+			"ToArea": {"X":32, "Y":96, "Width":48, "Height":64},
+			"When": {"TileTrees": "true"}
+		},
+		{
+			"LogName": "Island Palm 2",
+			"Action": "EditImage",
+			"Target": "Maps/island_tilesheet_1",
+			"FromFile": "assets/{{Recolor}}/{{Target}}.png",
+			"PatchMode": "Replace",
+			"FromArea": {"X":48, "Y":144, "Width":48, "Height":96},
+			"ToArea": {"X":192, "Y":160, "Width":48, "Height":96},
+			"When": {"TileTrees": "true"}
+		},
+		{
+			"LogName": "Island Jungle Bush 1a",
+			"Action": "EditImage",
+			"Target": "Maps/island_tilesheet_1",
+			"FromFile": "assets/{{Recolor}}/{{Target}}.png",
+			"PatchMode": "Replace",
+			"FromArea": {"X":96, "Y":144, "Width":64, "Height":16},
+			"ToArea": {"X":16, "Y":256, "Width":64, "Height":16},
+			"When": {"TileTrees": "true",
+					"Bushes": "true"}
+		},
+		{
+			"LogName": "Island Jungle Bush 1b",
+			"Action": "EditImage",
+			"Target": "Maps/island_tilesheet_1",
+			"FromFile": "assets/{{Recolor}}/{{Target}}.png",
+			"PatchMode": "Replace",
+			"FromArea": {"X":112, "Y":160, "Width":32, "Height":32},
+			"ToArea": {"X":32, "Y":272, "Width":32, "Height":32},
+			"When": {"TileTrees": "true",
+					"Bushes": "true"}
+		},
+		{
+			"LogName": "Island Jungle Bush 2",
+			"Action": "EditImage",
+			"Target": "Maps/island_tilesheet_1",
+			"FromFile": "assets/{{Recolor}}/{{Target}}.png",
+			"PatchMode": "Replace",
+			"FromArea": {"X":96, "Y":112, "Width":32, "Height":32},
+			"ToArea": {"X":48, "Y":224, "Width":32, "Height":32},
+			"When": {"TileTrees": "true",
+					"Bushes": "true"}
+		},
+		{
+			"LogName": "Island jungle Bush 3",
+			"Action": "EditImage",
+			"Target": "Maps/island_tilesheet_1",
+			"FromFile": "assets/{{Recolor}}/{{Target}}.png",
+			"PatchMode": "Replace",
+			"FromArea": {"X":0, "Y":112, "Width":32, "Height":32},
+			"ToArea": {"X":16, "Y":224, "Width":32, "Height":32},
 			"When": {"TileTrees": "true",
 					"Bushes": "true"}
 		},
@@ -513,24 +664,12 @@
 		},
 //greenfall vpr
 		{
-			"LogName": "Greenfall Outdoors Tilesheet Big Tree 2 SVE Fix",
-			"Action": "EditImage",
-			"Target": "Maps/fall_outdoorsTileSheet",
-			"FromFile": "assets/VPR/Maps/fall_outdoorsTilesheet.png",
-			"PatchMode": "Replace",
-			"FromArea": {"X":0, "Y":112, "Width":96, "Height":64},
-			"ToArea": {"X":256, "Y":0, "Width":96, "Height":64},
-			"When": {"TileTrees": "true",
-					"Expansion |contains=SVE": "true",
-					"VPRFallColor": "green"}
-		},
-		{
 			"LogName": "Greenfall Outdoors Tilesheet Big Tree 2",
 			"Action": "EditImage",
 			"Target": "Maps/fall_outdoorsTileSheet",
 			"FromFile": "assets/VPR/Maps/fall_outdoorsTilesheet.png",
 			"PatchMode": "Overlay",
-			"FromArea": {"X":96, "Y":112, "Width":96, "Height":112},
+			"FromArea": {"X":0, "Y":112, "Width":96, "Height":112},
 			"ToArea": {"X":256, "Y":0, "Width":96, "Height":112},
 			"When": {"TileTrees": "true",
 					"VPRFallColor": "green"}
@@ -541,7 +680,7 @@
 			"Target": "Maps/fall_town",
 			"FromFile": "assets/VPR/Maps/fall_outdoorsTilesheet.png",
 			"PatchMode": "Overlay",
-			"FromArea": {"X":192, "Y":112, "Width":64, "Height":112},
+			"FromArea": {"X":96, "Y":112, "Width":64, "Height":112},
 			"ToArea": {"X":224, "Y":384, "Width":64, "Height":112},
 			"When": {"TileTrees": "true",
 					"VPRFallColor": "green"}
@@ -552,7 +691,7 @@
 			"Target": "Maps/fall_town",
 			"FromFile": "assets/VPR/Maps/fall_outdoorsTilesheet.png",
 			"PatchMode": "Overlay",
-			"FromArea": {"X":352, "Y":112, "Width":48, "Height":80},
+			"FromArea": {"X":160, "Y":112, "Width":48, "Height":80},
 			"ToArea": {"X":288, "Y":384, "Width":48, "Height":80},
 			"When": {"TileTrees": "true",
 					"Bushes": "true",
@@ -564,7 +703,7 @@
 			"Target": "Maps/fall_outdoorsTileSheet",
 			"FromFile": "assets/VPR/Maps/fall_outdoorsTilesheet.png",
 			"PatchMode": "Overlay",
-			"FromArea": {"X":352, "Y":0, "Width":48, "Height":80},
+			"FromArea": {"X":208, "Y":112, "Width":48, "Height":80},
 			"ToArea": {"X":208, "Y":0, "Width":48, "Height":80},
 			"When": {"TileTrees": "true",
 					"Bushes": "true",
@@ -576,7 +715,7 @@
 			"Target": "TileSheets/bushes",
 			"FromFile": "assets/VPR/Maps/fall_outdoorsTilesheet.png",
 			"PatchMode": "Overlay",
-			"FromArea": {"X":352, "Y":48, "Width":32, "Height":32},
+			"FromArea": {"X":208, "Y":160, "Width":32, "Height":32},
 			"ToArea": {"X":0, "Y":61, "Width":32, "Height":32},
 			"When": {"Bushes": "true",
 					"VPRFallColor": "green"}
@@ -587,7 +726,7 @@
 			"Target": "TileSheets/bushes",
 			"FromFile": "assets/VPR/Maps/fall_outdoorsTilesheet.png",
 			"PatchMode": "Overlay",
-			"FromArea": {"X":352, "Y":80, "Width":32, "Height":32},
+			"FromArea": {"X":208, "Y":192, "Width":32, "Height":32},
 			"ToArea": {"X":32, "Y":61, "Width":32, "Height":32},
 			"When": {"Bushes": "true",
 					"VPRFallColor": "green"}
@@ -598,7 +737,7 @@
 			"Target": "TileSheets/bushes",
 			"FromFile": "assets/VPR/Maps/fall_outdoorsTilesheet.png",
 			"PatchMode": "Overlay",
-			"FromArea": {"X":352, "Y":0, "Width":48, "Height":48},
+			"FromArea": {"X":208, "Y":112, "Width":48, "Height":48},
 			"ToArea": {"X":48, "Y":129, "Width":48, "Height":48},
 			"When": {"Bushes": "true",
 					"VPRFallColor": "green"}
@@ -670,6 +809,18 @@
 					"Season": "summer"}
 		},
 		{
+			"LogName": "Flower Bushes Big Island",
+			"Action": "EditImage",
+			"Target": "TileSheets/bushes",
+			"FromFile": "assets/{{Recolor}}/TileSheets/flowers.png",
+			"PatchMode": "Overlay",
+			"FromArea": {"X":48, "Y":0, "Width":48, "Height":48},
+			"ToArea": {"X":0, "Y":128, "Width":48, "Height":48},
+			"When": {"Bushes": "true",
+					"BushFlowers": "true",
+					"LocationContext": "Island"}
+		},
+		{
 			"LogName": "Flower Bushes Big Orange Fall",
 			"Action": "EditImage",
 			"Target": "TileSheets/bushes",
@@ -685,7 +836,7 @@
 			"LogName": "Flower Bushes Big Green Fall",
 			"Action": "EditImage",
 			"Target": "TileSheets/bushes",
-			"FromFile": "assets/VPR/TileSheets/flowers.png",
+			"FromFile": "assets/{{Recolor}}/TileSheets/flowers.png",
 			"PatchMode": "Overlay",
 			"FromArea": {"X":0, "Y":96, "Width":48, "Height":48},
 			"ToArea": {"X":48, "Y":128, "Width":48, "Height":48},

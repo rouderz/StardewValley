@@ -1,9 +1,9 @@
 {
 "Name": "Simple Foliage",
-"Author": "Azrashar/dugongkebalik",
-"Version": "3.4",
+"Author": "Azrashar/itsanette",
+"Version": "3.6",
 "UniqueID": "Az.Foliage",
-"MinimumApiVersion": "2.11.2",
+"MinimumApiVersion": "1.19.1",
 "UpdateKeys": [ "Nexus:8164" ],
 "Dependencies": [{"UniqueID": "grapeponta.VibrantPastoralRecolor",
                 "IsRequired": false
@@ -13,8 +13,11 @@
                 },
                 {"UniqueID": "DaisyNiko.EarthyRecolour",
                 "IsRequired": false
+                },
+                {"UniqueID": "Narianka.NaturallyValley",
+                "IsRequired": false
                 }
-            ],
+                ],
 "ContentPackFor": {"UniqueID": "Pathoschild.ContentPatcher",
                 "MinimumVersion": "1.9"
                 }
