@@ -1,0 +1,103 @@
+{
+   "Format": "1.22.0",
+   "ConfigSchema": {
+		"SprinklerFriendly": {
+			"AllowValues": "True, False",
+			"Default": "False",
+			"Description": "Whether sprinklers work on this farm or not"
+		},
+		"ConnectingLand": {
+			"AllowValues": "True, False",
+			"Default": "False",
+			"Description": "Whether the islands are connected by land or not"
+			},
+		"Debris": {
+			"AllowValues": "True, False",
+			"Default": "True",
+			"Description": "Whether the vanilla unremovable debris is there or not"
+			}
+	},
+   "Changes": [
+      {
+         "Action": "Load",
+         "Target": "Maps/Farm_Island",
+         "FromFile": "assets/Farm_Island.tbin",
+		 "When": {
+			"SprinklerFriendly": "False",
+			"ConnectingLand": "False",
+			"Debris": "True"
+			}
+      },
+	  {
+         "Action": "Load",
+         "Target": "Maps/Farm_Island",
+         "FromFile": "assets/Farm_Island_Sprinklers.tbin",
+		 "When": {
+			"SprinklerFriendly": "True",
+			"ConnectingLand": "False",
+			"Debris": "True"
+			}
+		},
+      {
+         "Action": "Load",
+         "Target": "Maps/Farm_Island",
+         "FromFile": "assets/Farm_Island_Connect.tbin",
+		 "When": {
+			"SprinklerFriendly": "False",
+			"ConnectingLand": "True",
+			"Debris": "True"
+			}
+      },
+	  {
+         "Action": "Load",
+         "Target": "Maps/Farm_Island",
+         "FromFile": "assets/Farm_Island_Sprinklers_Connect.tbin",
+		 "When": {
+			"SprinklerFriendly": "True",
+			"ConnectingLand": "True",
+			"Debris": "True"
+			}
+      },
+	        {
+         "Action": "Load",
+         "Target": "Maps/Farm_Island",
+         "FromFile": "assets/Farm_Island_Debris.tbin",
+		 "When": {
+			"SprinklerFriendly": "False",
+			"ConnectingLand": "False",
+			"Debris": "False"
+			}
+      },
+	  {
+         "Action": "Load",
+         "Target": "Maps/Farm_Island",
+         "FromFile": "assets/Farm_Island_Sprinklers_Debris.tbin",
+		 "When": {
+			"SprinklerFriendly": "True",
+			"ConnectingLand": "False",
+			"Debris": "False"
+			}
+		},
+      {
+         "Action": "Load",
+         "Target": "Maps/Farm_Island",
+         "FromFile": "assets/Farm_Island_Connect_Debris.tbin",
+		 "When": {
+			"SprinklerFriendly": "False",
+			"ConnectingLand": "True",
+			"Debris": "False"
+			}
+      },
+	  {
+         "Action": "Load",
+         "Target": "Maps/Farm_Island",
+         "FromFile": "assets/Farm_Island_Sprinklers_Connect_Debris.tbin",
+		 "When": {
+			"SprinklerFriendly": "True",
+			"ConnectingLand": "True",
+			"Debris": "False"
+			}
+      }
+	  
+   ]
+}
