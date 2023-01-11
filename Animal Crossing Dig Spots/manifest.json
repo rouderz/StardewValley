@@ -1,0 +1,13 @@
+{
+   "Name": "Animal Crossing Dig Spots",
+   "Author": "Lechet, adapted for Content Patcher by m2pt5",
+   "Version": "1.3",
+   "Description": "Animal Crossing Artifact Dig Spots for Content Patcher",
+   "UniqueID": "AC.Digspots",
+   "MinimumApiVersion": "2.0",
+   "UpdateKeys": [ "Nexus:2129" ],
+   "ContentPackFor": {
+    	"UniqueID": "Pathoschild.ContentPatcher", // the ID of required mod
+    	"MinimumVersion": "1.3.0" // optional
+  }
+}
