@@ -14,6 +14,10 @@
 			"AllowValues": "true,false",
 			"Default": "true"
 		},
+		"TileBushes": {
+			"AllowValues": "true,false",
+			"Default": "true"
+		},
 		"FruitTrees": {
 			"AllowValues": "true,false",
 			"Default": "true"
@@ -211,8 +215,7 @@
 			"PatchMode": "Replace",
 			"FromArea": {"X":208, "Y":0, "Width":48, "Height":48},
 			"ToArea": {"X":208, "Y":0, "Width":48, "Height":48},
-			"When": {"TileTrees": "true",
-					"Bushes": "true"}
+			"When": {"TileBushes": "true"}
 		},
 		{
 			"LogName": "Outdoors Tilesheet Small Bush",
@@ -222,8 +225,7 @@
 			"PatchMode": "Replace",
 			"FromArea": {"X":208, "Y":48, "Width":32, "Height":32},
 			"ToArea": {"X":208, "Y":48, "Width":32, "Height":32},
-			"When": {"TileTrees": "true",
-					"Bushes": "true"}
+			"When": {"TileBushes": "true"}
 		},
 		{
 			"LogName": "Outdoors Tilesheet Big Tree 1a",
@@ -313,8 +315,7 @@
 			"PatchMode": "Replace",
 			"FromArea": {"X":64, "Y":0, "Width":48, "Height":48},
 			"ToArea": {"X":288, "Y":384, "Width":48, "Height":48},
-			"When": {"TileTrees": "true",
-					"Bushes": "true"}
+			"When": {"TileBushes": "true"}
 		},
 		{
 			"LogName": "Small Town Bush",
@@ -324,8 +325,7 @@
 			"PatchMode": "Replace",
 			"FromArea": {"X":64, "Y":48, "Width":32, "Height":32},
 			"ToArea": {"X":288, "Y":432, "Width":32, "Height":32},
-			"When": {"TileTrees": "true",
-					"Bushes": "true"}
+			"When": {"TileBushes": "true"}
 		},
 		{
 			"LogName": "Beach Bush",
@@ -335,8 +335,7 @@
 			"PatchMode": "Replace",
 			"FromArea": {"X":0, "Y":0, "Width":32, "Height":32},
 			"ToArea": {"X":208, "Y":128, "Width":32, "Height":32},
-			"When": {"TileTrees": "true",
-					"Bushes": "true"}
+			"When": {"TileBushes": "true"}
 		},
 		{
 			"LogName": "Beach Farm Big Tree a",
@@ -376,8 +375,7 @@
 			"PatchMode": "Replace",
 			"FromArea": {"X":64, "Y":80, "Width":32, "Height":32},
 			"ToArea": {"X":384, "Y":464, "Width":32, "Height":32},
-			"When": {"TileTrees": "true",
-					"Bushes": "true"}
+			"When": {"TileBushes": "true"}
 		},
 		{
 			"LogName": "Island & Beach Farm Bush 2",
@@ -387,8 +385,7 @@
 			"PatchMode": "Replace",
 			"FromArea": {"X":32, "Y":112, "Width":32, "Height":32},
 			"ToArea": {"X":272, "Y":176, "Width":32, "Height":32},
-			"When": {"TileTrees": "true",
-					"Bushes": "true"}
+			"When": {"TileBushes": "true"}
 		},
 		{
 			"LogName": "Island & Beach Farm Bush 3",
@@ -398,8 +395,7 @@
 			"PatchMode": "Replace",
 			"FromArea": {"X":64, "Y":112, "Width":32, "Height":32},
 			"ToArea": {"X":208, "Y":128, "Width":32, "Height":32},
-			"When": {"TileTrees": "true",
-					"Bushes": "true"}
+			"When": {"TileBushes": "true"}
 		},
 		{
 			"LogName": "Island Small Bush Row",
@@ -409,8 +405,7 @@
 			"PatchMode": "Replace",
 			"FromArea": {"X":0, "Y":80, "Width":48, "Height":32},
 			"ToArea": {"X":16, "Y":368, "Width":48, "Height":32},
-			"When": {"TileTrees": "true",
-					"Bushes": "true"}
+			"When": {"TileBushes": "true"}
 		},
 		{
 			"LogName": "Island Big Bush Patch",
@@ -420,8 +415,7 @@
 			"PatchMode": "Replace",
 			"FromArea": {"X":48, "Y":96, "Width":48, "Height":16},
 			"ToArea": {"X":400, "Y":32, "Width":48, "Height":16},
-			"When": {"TileTrees": "true",
-					"Bushes": "true"}
+			"When": {"TileBushes": "true"}
 		},
 		{
 			"LogName": "Island Small Bush Patch",
@@ -431,8 +425,7 @@
 			"PatchMode": "Replace",
 			"FromArea": {"X":96, "Y":80, "Width":32, "Height":32},
 			"ToArea": {"X":480, "Y":0, "Width":32, "Height":32},
-			"When": {"TileTrees": "true",
-					"Bushes": "true"}
+			"When": {"TileBushes": "true"}
 		},
 		{
 			"LogName": "Island Cliff Bush 1",
@@ -442,8 +435,7 @@
 			"PatchMode": "Replace",
 			"FromArea": {"X":128, "Y":80, "Width":32, "Height":32},
 			"ToArea": {"X":480, "Y":320, "Width":32, "Height":32},
-			"When": {"TileTrees": "true",
-					"Bushes": "true"}
+			"When": {"TileBushes": "true"}
 		},
 		{
 			"LogName": "Island Cliff Bush 2",
@@ -453,8 +445,7 @@
 			"PatchMode": "Replace",
 			"FromArea": {"X":128, "Y":112, "Width":32, "Height":32},
 			"ToArea": {"X":384, "Y":288, "Width":32, "Height":32},
-			"When": {"TileTrees": "true",
-					"Bushes": "true"}
+			"When": {"TileBushes": "true"}
 		},
 		{
 			"LogName": "Island Cliff Vine",
@@ -464,7 +455,7 @@
 			"PatchMode": "Replace",
 			"FromArea": {"X":144, "Y":160, "Width":16, "Height":32},
 			"ToArea": {"X":400, "Y":336, "Width":16, "Height":32},
-			"When": {"TileTrees": "true"}
+			"When": {"TileBushes": "true"}
 		},
 		{
 			"LogName": "Island Palm 1",
@@ -494,8 +485,7 @@
 			"PatchMode": "Replace",
 			"FromArea": {"X":96, "Y":144, "Width":64, "Height":16},
 			"ToArea": {"X":16, "Y":256, "Width":64, "Height":16},
-			"When": {"TileTrees": "true",
-					"Bushes": "true"}
+			"When": {"TileBushes": "true"}
 		},
 		{
 			"LogName": "Island Jungle Bush 1b",
@@ -505,8 +495,7 @@
 			"PatchMode": "Replace",
 			"FromArea": {"X":112, "Y":160, "Width":32, "Height":32},
 			"ToArea": {"X":32, "Y":272, "Width":32, "Height":32},
-			"When": {"TileTrees": "true",
-					"Bushes": "true"}
+			"When": {"TileBushes": "true"}
 		},
 		{
 			"LogName": "Island Jungle Bush 2",
@@ -516,19 +505,17 @@
 			"PatchMode": "Replace",
 			"FromArea": {"X":96, "Y":112, "Width":32, "Height":32},
 			"ToArea": {"X":48, "Y":224, "Width":32, "Height":32},
-			"When": {"TileTrees": "true",
-					"Bushes": "true"}
+			"When": {"TileBushes": "true"}
 		},
 		{
-			"LogName": "Island jungle Bush 3",
+			"LogName": "Island Jungle Bush 3",
 			"Action": "EditImage",
 			"Target": "Maps/island_tilesheet_1",
 			"FromFile": "assets/{{Recolor}}/{{Target}}.png",
 			"PatchMode": "Replace",
 			"FromArea": {"X":0, "Y":112, "Width":32, "Height":32},
 			"ToArea": {"X":16, "Y":224, "Width":32, "Height":32},
-			"When": {"TileTrees": "true",
-					"Bushes": "true"}
+			"When": {"TileBushes": "true"}
 		},
 		{
 			"LogName": "Fruit Trees",
@@ -683,8 +670,7 @@
 			"PatchMode": "Overlay",
 			"FromArea": {"X":160, "Y":112, "Width":48, "Height":80},
 			"ToArea": {"X":288, "Y":384, "Width":48, "Height":80},
-			"When": {"TileTrees": "true",
-					"Bushes": "true",
+			"When": {"TileBushes": "true",
 					"VPRFallColor": "green"}
 		},
 		{
@@ -695,8 +681,7 @@
 			"PatchMode": "Overlay",
 			"FromArea": {"X":208, "Y":112, "Width":48, "Height":80},
 			"ToArea": {"X":208, "Y":0, "Width":48, "Height":80},
-			"When": {"TileTrees": "true",
-					"Bushes": "true",
+			"When": {"TileBushes": "true",
 					"VPRFallColor": "green"}
 		},
 		{
@@ -828,7 +813,7 @@
 			"Target": "TileSheets/bushes",
 			"FromFile": "assets/{{Recolor}}/TileSheets/flowers.png",
 			"PatchMode": "Overlay",
-			"FromArea": {"X":0, "Y":96, "Width":48, "Height":48},
+			"FromArea": {"X":0, "Y":48, "Width":48, "Height":48},
 			"ToArea": {"X":48, "Y":128, "Width":48, "Height":48},
 			"When": {"Bushes": "true",
 					"BushFlowers": "true",
