@@ -27,11 +27,11 @@
     "hasGivenBirthdayWish": false,
     "hasGivenBirthdayGift": false
   },
-  "Vincent": {
+  "Sam": {
     "hasGivenBirthdayWish": false,
     "hasGivenBirthdayGift": false
   },
-  "Sam": {
+  "Vincent": {
     "hasGivenBirthdayWish": false,
     "hasGivenBirthdayGift": false
   },
@@ -47,11 +47,11 @@
     "hasGivenBirthdayWish": false,
     "hasGivenBirthdayGift": false
   },
-  "Pierre": {
+  "Abigail": {
     "hasGivenBirthdayWish": false,
     "hasGivenBirthdayGift": false
   },
-  "Abigail": {
+  "Pierre": {
     "hasGivenBirthdayWish": false,
     "hasGivenBirthdayGift": false
   },
@@ -59,11 +59,11 @@
     "hasGivenBirthdayWish": false,
     "hasGivenBirthdayGift": false
   },
-  "Penny": {
+  "Pam": {
     "hasGivenBirthdayWish": false,
     "hasGivenBirthdayGift": false
   },
-  "Pam": {
+  "Penny": {
     "hasGivenBirthdayWish": false,
     "hasGivenBirthdayGift": false
   },
@@ -99,11 +99,11 @@
     "hasGivenBirthdayWish": false,
     "hasGivenBirthdayGift": false
   },
-  "Jas": {
+  "Marnie": {
     "hasGivenBirthdayWish": false,
     "hasGivenBirthdayGift": false
   },
-  "Marnie": {
+  "Jas": {
     "hasGivenBirthdayWish": false,
     "hasGivenBirthdayGift": false
   },
@@ -171,11 +171,11 @@
     "hasGivenBirthdayWish": false,
     "hasGivenBirthdayGift": false
   },
-  "Victor": {
+  "Olivia": {
     "hasGivenBirthdayWish": false,
     "hasGivenBirthdayGift": false
   },
-  "Olivia": {
+  "Victor": {
     "hasGivenBirthdayWish": false,
     "hasGivenBirthdayGift": false
   },
@@ -215,6 +215,10 @@
     "hasGivenBirthdayWish": false,
     "hasGivenBirthdayGift": false
   },
+  "Gale": {
+    "hasGivenBirthdayWish": false,
+    "hasGivenBirthdayGift": false
+  },
   "Gertrude": {
     "hasGivenBirthdayWish": false,
     "hasGivenBirthdayGift": false
@@ -239,23 +243,19 @@
     "hasGivenBirthdayWish": false,
     "hasGivenBirthdayGift": false
   },
-  "HighlandsDwarf": {
-    "hasGivenBirthdayWish": false,
-    "hasGivenBirthdayGift": false
-  },
-  "Edmund": {
-    "hasGivenBirthdayWish": false,
-    "hasGivenBirthdayGift": false
-  },
-  "Gale": {
-    "hasGivenBirthdayWish": false,
-    "hasGivenBirthdayGift": false
-  },
   "Drake": {
     "hasGivenBirthdayWish": false,
     "hasGivenBirthdayGift": false
   },
+  "HighlandsDwarf": {
+    "hasGivenBirthdayWish": false,
+    "hasGivenBirthdayGift": false
+  },
   "Jolyne": {
+    "hasGivenBirthdayWish": false,
+    "hasGivenBirthdayGift": false
+  },
+  "Edmund": {
     "hasGivenBirthdayWish": false,
     "hasGivenBirthdayGift": false
   },
