@@ -1,0 +1,12 @@
+﻿{
+	"Name": "Gloves and Sleeves Pack",
+	"Author": "plurffle",
+	"Version": "1.1",
+	"Description": "Adds gloves and sleeves for the Fashion Sense framework.",
+	"UniqueID": "Plurffle.GlovesAndSleevesPack",
+	"UpdateKeys": [ "Nexus:15431" ],	
+	"ContentPackFor": {
+		"UniqueID": "PeacefulEnd.FashionSense",
+		"MinimumVersion": "4.11.3"
+  }
+}

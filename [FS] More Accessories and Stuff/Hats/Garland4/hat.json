@@ -1,0 +1,104 @@
+{
+  "Name": "Garland 4",
+
+	// FRONT
+  "FrontHat": {
+    "ColorMasks": [
+      [ 254, 254, 254 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": -2,
+      "Y": -2
+    },
+    "HatSize": {
+      "Width": 16,
+      "Length": 16
+    },
+    "UniformAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 5000
+      }
+    ]
+  },
+
+	// RIGHT
+  "RightHat": {
+    "ColorMasks": [
+      [ 254, 254, 254 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 16
+    },
+    "HeadPosition": {
+      "X": -3,
+      "Y": -2
+    },
+    "HatSize": {
+      "Width": 16,
+      "Length": 16
+    },
+    "UniformAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 5000
+      }
+    ]
+  },
+
+	// LEFT
+  "LeftHat": {
+    "ColorMasks": [
+      [ 254, 254, 254 ]
+    ],
+    "Flipped": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 16
+    },
+    "HeadPosition": {
+      "X": -1,
+      "Y": -2
+    },
+    "HatSize": {
+      "Width": 16,
+      "Length": 16
+    },
+    "UniformAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 5000
+      }
+    ]
+  },
+
+	// BACK
+  "BackHat": {
+    "ColorMasks": [
+      [ 254, 254, 254 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 32
+    },
+    "HeadPosition": {
+      "X": -2,
+      "Y": -2
+    },
+    "HatSize": {
+      "Width": 16,
+      "Length": 16
+    },
+    "UniformAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 5000
+      }
+    ]
+  }
+}

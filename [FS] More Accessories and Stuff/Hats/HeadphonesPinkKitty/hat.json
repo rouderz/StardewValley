@@ -1,0 +1,120 @@
+{
+  "Name": "Headphones (Pink Kitty)",
+
+	// FRONT
+  "FrontHat": {
+    "ColorMasks": [
+      [ 254, 254, 254 ],
+      [ 217, 217, 217 ],
+      [ 165, 165, 165 ]
+    ],
+    "IsPrismatic": true,
+    "PrismaticAnimationSpeedMultiplier	": 2.0,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": -2,
+      "Y": -3
+    },
+    "HatSize": {
+      "Width": 16,
+      "Length": 16
+    },
+    "UniformAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 5000
+      }
+    ]
+  },
+
+	// RIGHT
+  "RightHat": {
+    "ColorMasks": [
+      [ 254, 254, 254 ],
+      [ 217, 217, 217 ],
+      [ 165, 165, 165 ]
+    ],
+    "IsPrismatic": true,
+    "PrismaticAnimationSpeedMultiplier	": 2.0,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 16
+    },
+    "HeadPosition": {
+      "X": -2,
+      "Y": -3
+    },
+    "HatSize": {
+      "Width": 16,
+      "Length": 16
+    },
+    "UniformAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 5000
+      }
+    ]
+  },
+
+	// LEFT
+  "LeftHat": {
+    "ColorMasks": [
+      [ 254, 254, 254 ],
+      [ 217, 217, 217 ],
+      [ 165, 165, 165 ]
+    ],
+    "IsPrismatic": true,
+    "PrismaticAnimationSpeedMultiplier	": 2.0,
+    "Flipped": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 16
+    },
+    "HeadPosition": {
+      "X": -2,
+      "Y": -3
+    },
+    "HatSize": {
+      "Width": 16,
+      "Length": 16
+    },
+    "UniformAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 5000
+      }
+    ]
+  },
+
+	// BACK
+  "BackHat": {
+    "ColorMasks": [
+      [ 254, 254, 254 ],
+      [ 217, 217, 217 ],
+      [ 165, 165, 165 ]
+    ],
+    "IsPrismatic": true,
+    "PrismaticAnimationSpeedMultiplier	": 2.0,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 32
+    },
+    "HeadPosition": {
+      "X": -2,
+      "Y": -3
+    },
+    "HatSize": {
+      "Width": 16,
+      "Length": 16
+    },
+    "UniformAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 5000
+      }
+    ]
+  }
+}
