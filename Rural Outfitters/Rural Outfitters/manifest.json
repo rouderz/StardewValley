@@ -1,7 +1,7 @@
 {
   "Name": " = RURAL OUTFITTERS =",
   "Author": "billi",
-  "Version": "1.0.0",
+  "Version": "1.0.2",
   "Description": "Adds shirts, accessories, hats, and pants via fashion sense.",
   "UniqueID": "ruraloutfitters",
   "UpdateKeys": [ "Nexus:10295" ],

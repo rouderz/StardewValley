@@ -1,0 +1,78 @@
+{
+  "Name": "Zenith Farm",
+  "Author": "DaisyNiko",
+  "Description": "A farm high atop the mountains with a beautiful view of the valley.",
+  "MapFile" : "ZenithFarm.tmx",
+  "Icon": "icon.png",
+  "Preview": null,
+  "WorldMapOverlay": "Hills",
+
+  "Properties":{
+  	"SpawnMonstersAtNight":false,
+  	"FishSplashing":true
+  },
+
+  "Warps":{
+  	"Bus Stop":"87,43",
+  	"Forest":"69,88",
+  	"Backwoods":"87,28",
+  	"Farm Cave":"42,41",
+  	"Warp Totem":"35,16"
+  },
+
+  "Locations":{
+  	"Farm House":"44,17",
+  	"Greenhouse": "64,26",
+  	"Spouse Area":"31,14",
+  	"Mailbox":"54,19",
+  	"Shipping Bin":"55,19",
+  	"Grandpa Shrine":"46,39"
+  },
+
+  "StartFurniture":[
+  	{"ID": "Budget TV", "Position": "8,4"}
+  ],	
+  
+  "DailyUpdates": [
+  	//forage
+	  {
+	  	"Type":"SpawnForagingDrops",
+	  	"Attempts":5,
+	  	"Chance":0.2,
+	  	"Backgrounds": [ "Grass" ]
+	  },
+	  //weeds
+		{ 
+			"Type": "TransformWeeds", 
+			"Attempts": 20, 
+			"Chance": 0.2 
+		},
+		//stumps
+		{
+			"Type": "SpawnResourceClumps",
+			"Position": "5,78",
+			"Name": "Large Stump"
+		},
+		{ 
+			"Type": "SpawnResourceClumps", 
+			"Position": "3,81", 
+			"Name": "Large Stump" 
+		},
+		{ 
+			"Type": "SpawnResourceClumps", 
+			"Position": "8,80", 
+			"Name": "Large Stump" 
+		},
+		{ 
+			"Type": "SpawnResourceClumps",
+			"Position": "7,82", 
+			"Name": "Large Stump" 
+		},
+		{ 
+			"Type": "SpawnResourceClumps",
+			"Position": "12,82", 
+			"Name": "Large Stump" 
+		}		
+  ],  
+  "DescriptionTranslations": {  }
+}

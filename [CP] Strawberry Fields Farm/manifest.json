@@ -1,7 +1,7 @@
 {
     "Name": "Strawberry Fields Farm",
     "Author": "DaisyNiko",
-    "Version": "1.2.3",
+    "Version": "1.2.4",
     "UniqueID": "DaisyNiko.StrawberryFields",
     "MinimumApiVersion": "2.5",
     "UpdateKeys": ["Nexus:3856"],
