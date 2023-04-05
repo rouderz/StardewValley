@@ -1,0 +1,285 @@
+{
+    "Changes": [
+
+//	FENCES
+
+//	//	ALL
+		
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm, Maps/WaFFLE_Farm",
+			"FromFile": "options/EX_Options.tmx",
+			"FromArea": { "X": 147, "Y": 43, "Width": 8, "Height": 4 },
+			"ToArea": { "X": 69, "Y": 6, "Width": 8, "Height": 4 },
+			"PatchMode": "Replace",
+			"When": { "Less_Fences": "True" }
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm, Maps/WaFFLE_Farm",
+			"FromFile": "options/EX_Options.tmx",
+			"FromArea": { "X": 146, "Y": 48, "Width": 13, "Height": 7 },
+			"ToArea": { "X": 47, "Y": 63, "Width": 13, "Height": 7 },
+			"PatchMode": "Replace",
+			"When": { "Less_Fences": "True" }
+		},
+		
+//	//	WAFFLE
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFFLE_Farm",
+			"FromFile": "options/EX_Options.tmx",
+			"FromArea": { "X": 146, "Y": 56, "Width": 12, "Height": 10 },
+			"ToArea": { "X": 148, "Y": 58, "Width": 12, "Height": 10 },
+			"PatchMode": "Replace",
+			"When": { "Less_Fences": "True" }
+		},
+		
+//	PENS
+
+//	//	WAFF
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/EX_Options.tmx",
+			"FromArea": { "X": 0, "Y": 71, "Width": 19, "Height": 21 },
+			"ToArea": { "X": 0, "Y": 45, "Width": 19, "Height": 21 },
+			"PatchMode": "Replace",
+			"When": { "Use_Animal_Pen_WaFF": "1_Med, 2_Med, 1_Large" }
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/EX_Options.tmx",
+			"FromArea": { "X": 31, "Y": 72, "Width": 4, "Height": 2 },
+			"ToArea": { "X": 10, "Y": 64, "Width": 4, "Height": 2 },
+			"PatchMode": "Replace",
+			"When": { "Use_Animal_Pen_WaFF": "2_Med, 1_Large" }
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/EX_Options.tmx",
+			"FromArea": { "X": 22, "Y": 75, "Width": 18, "Height": 17 },
+			"ToArea": { "X": 19, "Y": 49, "Width": 18, "Height": 17 },
+			"PatchMode": "Replace",
+			"When": { "Use_Animal_Pen_WaFF": "2_Med, 1_Large" }
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/EX_Options.tmx",
+			"FromArea": { "X": 20, "Y": 71, "Width": 1, "Height": 21 },
+			"ToArea": { "X": 18, "Y": 45, "Width": 1, "Height": 21 },
+			"PatchMode": "Replace",
+			"When": { "Use_Animal_Pen_WaFF": "1_Large" }
+		},
+
+//	//	WAFFLE
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFFLE_Farm",
+			"FromFile": "options/EX_Options.tmx",
+			"FromArea": { "X": 0, "Y": 71, "Width": 19, "Height": 21 },
+			"ToArea": { "X": 0, "Y": 45, "Width": 19, "Height": 21 },
+			"PatchMode": "Replace",
+			"When": { "Use_Animal_Pen_WaFFLE": "1_Med, 2_Med, 1_Large" }
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFFLE_Farm",
+			"FromFile": "options/EX_Options.tmx",
+			"FromArea": { "X": 31, "Y": 72, "Width": 4, "Height": 2 },
+			"ToArea": { "X": 10, "Y": 64, "Width": 4, "Height": 2 },
+			"PatchMode": "Replace",
+			"When": { "Use_Animal_Pen_WaFFLE": "2_Med, 1_Large" }
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFFLE_Farm",
+			"FromFile": "options/EX_Options.tmx",
+			"FromArea": { "X": 22, "Y": 75, "Width": 18, "Height": 17 },
+			"ToArea": { "X": 19, "Y": 49, "Width": 18, "Height": 17 },
+			"PatchMode": "Replace",
+			"When": { "Use_Animal_Pen_WaFFLE": "2_Med, 1_Large" }
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFFLE_Farm",
+			"FromFile": "options/EX_Options.tmx",
+			"FromArea": { "X": 20, "Y": 71, "Width": 1, "Height": 21 },
+			"ToArea": { "X": 18, "Y": 45, "Width": 1, "Height": 21 },
+			"PatchMode": "Replace",
+			"When": { "Use_Animal_Pen_WaFFLE": "1_Large" }
+		},
+		
+//	PETHOUSE
+
+//	//	WAFF
+		
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/EX_Options.tmx",
+			"FromArea": { "X": 7, "Y": 118, "Width": 3, "Height": 3 },
+			"ToArea": { "X": 50, "Y": 3, "Width": 3, "Height": 3 },
+			"PatchMode": "Replace",
+			"When": {
+				"HasMod": "Gweniaczek.Medieval_buildings",			
+				"Pethouse_Type_WaFF": "Auto"
+			}
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/EX_Options.tmx",
+			"FromArea": { "X": 7, "Y": 118, "Width": 3, "Height": 3 },
+			"ToArea": { "X": 50, "Y": 3, "Width": 3, "Height": 3 },
+			"PatchMode": "Replace",
+			"When": { "Pethouse_Type_WaFF": "Old" }
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/EX_Options.tmx",
+			"FromArea": { "X": 7, "Y": 122, "Width": 3, "Height": 3 },
+			"ToArea": { "X": 50, "Y": 3, "Width": 3, "Height": 3 },
+			"PatchMode": "Replace",
+			"When": { "Pethouse_Type_WaFF": "Plants" }
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/EX_Options.tmx",
+			"FromArea": { "X": 0, "Y": 118, "Width": 6, "Height": 7 },
+			"ToArea": { "X": 50, "Y": 3, "Width": 6, "Height": 7 },
+			"PatchMode": "Replace",
+			"When": { "Pethouse_Type_WaFF": "None" }
+		},
+		
+//	//	WAFFLE
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFFLE_Farm",
+			"FromFile": "options/EX_Options.tmx",
+			"FromArea": { "X": 7, "Y": 118, "Width": 3, "Height": 3 },
+			"ToArea": { "X": 50, "Y": 3, "Width": 3, "Height": 3 },
+			"PatchMode": "Replace",
+			"When": {
+				"HasMod": "Gweniaczek.Medieval_buildings",			
+				"Pethouse_Type_WaFFLE": "Auto"
+			}
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFFLE_Farm",
+			"FromFile": "options/EX_Options.tmx",
+			"FromArea": { "X": 7, "Y": 118, "Width": 3, "Height": 3 },
+			"ToArea": { "X": 50, "Y": 3, "Width": 3, "Height": 3 },
+			"PatchMode": "Replace",
+			"When": { "Pethouse_Type_WaFFLE": "Old" }
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFFLE_Farm",
+			"FromFile": "options/EX_Options.tmx",
+			"FromArea": { "X": 7, "Y": 122, "Width": 3, "Height": 3 },
+			"ToArea": { "X": 50, "Y": 3, "Width": 3, "Height": 3 },
+			"PatchMode": "Replace",
+			"When": { "Pethouse_Type_WaFFLE": "Plants" }
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFFLE_Farm",
+			"FromFile": "options/EX_Options.tmx",
+			"FromArea": { "X": 0, "Y": 118, "Width": 6, "Height": 7 },
+			"ToArea": { "X": 50, "Y": 3, "Width": 6, "Height": 7 },
+			"PatchMode": "Replace",
+			"When": { "Pethouse_Type_WaFFLE": "None" }
+		},
+		
+//	WOODEN BRIDGES
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFFLE_Farm",
+			"FromFile": "options/EX_Options.tmx",
+			"FromArea": { "X": 127, "Y": 32, "Width": 12, "Height": 4 },
+			"ToArea": { "X": 129, "Y": 0, "Width": 12, "Height": 4 },
+			"PatchMode": "Replace",
+			"When": { "Use_Wooden_Bridges": "True" }
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFFLE_Farm",
+			"FromFile": "options/EX_Options.tmx",
+			"FromArea": { "X": 126, "Y": 21, "Width": 14, "Height": 10 },
+			"ToArea": { "X": 124, "Y": 25, "Width": 14, "Height": 10 },
+			"PatchMode": "Replace",
+			"When": { "Use_Wooden_Bridges": "True" }
+		},
+		
+//	WOODS
+
+//	//	WAFF
+		
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/EX_Options.tmx",
+			"FromArea": { "X": 107, "Y": 80, "Width": 18, "Height": 18 },
+			"ToArea": { "X": 4, "Y": 77, "Width": 18, "Height": 18 },
+			"PatchMode": "Replace",
+			"When": {"Dense_Forest_Area": "Both, WaFF"}
+		},
+		
+//	//	WAFFLE
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFFLE_Farm",
+			"FromFile": "options/EX_Options.tmx",
+			"FromArea": { "X": 107, "Y": 80, "Width": 18, "Height": 18 },
+			"ToArea": { "X": 4, "Y": 77, "Width": 18, "Height": 18 },
+			"PatchMode": "Replace",
+			"When": {"Dense_Forest_Area": "Both, WaFFLE"}
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFFLE_Farm",
+			"FromFile": "options/EX_Options.tmx",
+			"FromArea": { "X": 92, "Y": 80, "Width": 14, "Height": 12 },
+			"ToArea": { "X": 146, "Y": 46, "Width": 14, "Height": 12 },
+			"PatchMode": "Replace",
+			"When": { "Dense_Forest_Area": "Both, WaFFLE" }
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFFLE_Farm",
+			"FromFile": "options/EX_Options.tmx",
+			"FromArea": { "X": 95, "Y": 93, "Width": 11, "Height": 7 },
+			"ToArea": { "X": 149, "Y": 58, "Width": 11, "Height": 7 },
+			"PatchMode": "Replace",
+			"When": { "Dense_Forest_Area": "Both, WaFFLE" }
+		}
+	]
+}	  

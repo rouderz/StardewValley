@@ -1,0 +1,19 @@
+{
+    "Name": "Waterfall Forest Farms [FTM]",
+    "Author": "Archibald_TK",
+	
+    "Version": "3.1.0",
+	"UniqueID": "ArchieTK.FarmProjectForaging.FTM",
+    "Description": "FTM Rules for Waterfall Forest Farm",
+	
+    "MinimumApiVersion": "2.11.0",
+    "UpdateKeys": ["Nexus:-8913"],
+    "ContentPackFor": {"UniqueID": "Esca.FarmTypeManager"},
+	
+	"Dependencies": [
+		{
+		"UniqueID": "A_TK.FarmProjectForaging",
+		"IsRequired": true
+		}
+	]
+}

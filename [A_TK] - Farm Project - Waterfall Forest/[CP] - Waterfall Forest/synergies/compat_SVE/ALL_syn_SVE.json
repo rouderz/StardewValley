@@ -1,0 +1,155 @@
+{
+    "Changes": [
+	
+//	STARDEW VALLEY EXPANDED
+
+//	// EVENTS
+
+//	//	//	ALL  
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm, Maps/WaFFLE_Farm",
+			"FromFile": "synergies/compat_SVE/ALL_Syn_SVE.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 3, "Height": 3 },
+			"ToArea": { "X": 47, "Y": 6, "Width": 3, "Height": 3 },
+			"PatchMode": "Replace",
+			"Update": "OnLocationChange",
+			"When": { 
+				"HasMod": "FlashShifter.StardewValleyExpandedCP",
+				"HasSeenEvent": "908074"
+			}
+		},
+        {
+            "Action": "EditMap",
+            "Target": "Maps/WaFF_Farm, Maps/WaFFLE_Farm",
+		    "TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": ["MapProperties", "Light"],
+					"Value": "48 6 4",
+					"Delimiter": " "
+				}
+			],
+			"When": { 
+				"HasMod": "FlashShifter.StardewValleyExpandedCP",
+				"HasSeenEvent": "908074"
+			}
+        },
+
+//	//	//	WAFF
+
+		{
+			"Action": "EditData",
+			"Target": "data/events/Farmhouse",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFF", 
+				"HasMod": "FlashShifter.StardewValleyExpandedCP",
+				"HasSeenEvent": "908072"
+			},
+			"Entries": {
+				"908074/t 600 2600": "continue/-500 -500/farmer -50 -50 0/skippable/pause 1000/changeLocation farm/warp farmer 48 9/faceDirection farmer 0 true/makeInvisible 48 7 1 3/viewport 48 9 clamp true/pause 2000/showFrame farmer 15/pause 100/startJittering/pause 250/addObject 48 7 24/playSound stoneStep/playSound stoneStep/pause 300/stopJittering/pause 230/showFrame farmer 12 true/pause 1500/playSound dwop/showFrame farmer 65 true/pause 1250/screenFlash 1/playSound wand/playSound wand/removeSprite 48 7/addLantern 1000 48 7 1/addTemporaryActor MagicWarp 48 48 47 8 2 false/positionOffset MagicaWarp 7 -6/pause 400/showFrame farmer 12 true/pause 350/playSound secret1/pause 2500/globalFade/viewport -1000 -1000/end"
+			}
+		},
+//
+		{  
+			"Action": "EditMap",
+			"Target": "Maps/Custom_EnchantedGrove",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			},
+			"Update": "OnLocationChange",
+			"MapTiles": [
+				{
+				"Position": { "X": 30, "Y": 14 },
+				"Layer": "Back",
+				"SetProperties": { "TouchAction": "MagicWarp Farm 48 7" }
+				}
+			]
+		},
+
+//	//	//	WAFFLE
+
+		{
+			"Action": "EditData",
+			"Target": "data/events/Farmhouse",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFFLE", 
+				"HasMod": "FlashShifter.StardewValleyExpandedCP",
+				"HasSeenEvent": "908072"
+			},
+			"Entries": {
+				"908074/t 600 2600": "continue/-500 -500/farmer -50 -50 0/skippable/pause 1000/changeLocation farm/warp farmer 48 9/faceDirection farmer 0 true/makeInvisible 48 7 1 3/viewport 48 9 clamp true/pause 2000/showFrame farmer 15/pause 100/startJittering/pause 250/addObject 48 7 24/playSound stoneStep/playSound stoneStep/pause 300/stopJittering/pause 230/showFrame farmer 12 true/pause 1500/playSound dwop/showFrame farmer 65 true/pause 1250/screenFlash 1/playSound wand/playSound wand/removeSprite 48 7/addLantern 1000 48 7 1/addTemporaryActor MagicWarp 48 48 47 8 2 false/positionOffset MagicaWarp 7 -6/pause 400/showFrame farmer 12 true/pause 350/playSound secret1/pause 2500/globalFade/viewport -1000 -1000/end"
+			}
+		},
+//
+		{  
+			"Action": "EditMap",
+			"Target": "Maps/Custom_EnchantedGrove",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFFLE",
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			},
+			"Update": "OnLocationChange",
+			"MapTiles": [
+				{
+				"Position": { "X": 30, "Y": 14 },
+				"Layer": "Back",
+				"SetProperties": { "TouchAction": "MagicWarp Farm 48 7" }
+				}
+			]
+		},
+		
+//	//	NORTHERN PATH DECORATION
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_path_north",
+			"FromFile": "options/paths/EX_Options_Paths.tmx",
+			"FromArea": { "X": 0, "Y": 14, "Width": 4, "Height": 16 },
+			"ToArea": { "X": 98, "Y": 0, "Width": 4, "Height": 16 },
+			"PatchMode": "Replace",
+			"When": { "HasMod": "FlashShifter.StardewValleyExpandedCP" }
+		},
+
+//	//	SECRET WOODS SHORTCUT
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm, Maps/WaFFLE_Farm",
+			"AddWarps": [
+				"-1 3 Woods 66 7",
+				"-1 4 Woods 66 7"
+				],
+			"When": { 
+				"HasMod": "FlashShifter.StardewValleyExpandedCP",
+				"Secret_Woods_Shortcut": "True",
+				"HasFlag" : "beenToWoods"
+			}
+		},	
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Woods",
+			"AddWarps": [ "66 6 Farm 1 4" ],
+			"When": {
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"HasMod": "FlashShifter.StardewValleyExpandedCP",
+				"Secret_Woods_Shortcut": "True",
+				"HasFlag" : "beenToWoods"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Woods",
+			"AddWarps": [ "66 6 Farm 1 4" ],
+			"When": {
+				"FarmType": "A_TK.FarmProjectForaging/WaFFLE",
+				"HasMod": "FlashShifter.StardewValleyExpandedCP",
+				"Secret_Woods_Shortcut": "True",
+				"HasFlag" : "beenToWoods"
+			}
+		}
+	]
+}	  

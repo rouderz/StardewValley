@@ -1,0 +1,225 @@
+{
+	"config.section.Intro.name": "Format des fermes: WaFF> moyenne, WaFFLE> large",
+
+	"config.World_Map_Colors.name": "Couleurs de la carte du monde",
+	"config.World_Map_Colors.description": "Change la couleur de la ferme sur la carte du monde pour aller de pair avec un changement de textures. Ne marchera pas forcement avec SVE si le changement de texture lui-même n'est pas compatible avec SVE.",
+	"config.World_Map_Colors.values.Default_Stardew_Valley": "Couleurs de base du jeu",
+	"config.World_Map_Colors.values.Earthy_Recolour": "Daisy Niko's Earthy Recolour",
+	"config.World_Map_Colors.values.Vibrant_Pastoral_Green": "Vibrant Pastoral (Green Fall)",
+	"config.World_Map_Colors.values.Vibrant_Pastoral_Red": "Vibrant Pastoral (Red Fall)",
+	"config.World_Map_Colors.values.Wittily_Named_Dark": "Wittily Named Recolor (Dark Dirt)",
+	"config.World_Map_Colors.values.Wittily_Named_Light": "Wittily Named Recolor (Light Dirt)",
+	
+	"config.section.Additional_Locations.name": "> Lieux additionels",
+
+	"config.Use_Northern_Path.name": "Utiliser le Chemin Nord",
+	"config.Use_Northern_Path.description": "Ajoute une nouvelle zone entre la sortie Nord de la ferme et la forêt inexploitée.",
+	"config.Use_Northern_Path.values.Both": "Pour les deux fermes",
+	"config.Use_Northern_Path.values.WaFF": "WaFF seulement",
+	"config.Use_Northern_Path.values.WaFFLE": "WaFFLE seulement",
+	"config.Use_Northern_Path.values.None": "Pas de Chemin Nord",
+	
+	"config.WaFF_Smaller_Path.name": "Chemin réduit pour WaFF",
+	"config.WaFF_Smaller_Path.description": "Uniquement sur WaFF, allonge la rivière du Chemin Nord afin de réduire la quantité de terrain utilisable. Il est conseillé de nettoyer la zone de tout débris avant d'activer cette option.",
+	
+	"config.section.Abandoned_Shed_Ex.name": "> Extérieur du cabanon abandonné",
+
+	"config.Abandoned_Shed_Location_WaFF.name": "Emplacement sur WaFF",
+	"config.Abandoned_Shed_Location_WaFF.description": "Sélectionne la position du cabanon abandonné pour la ferme moyenne ou le désactive complètement.",
+	"config.Abandoned_Shed_Location_WaFF.values.Northern_Path": "Chemin Nord",
+	"config.Abandoned_Shed_Location_WaFF.values.Farm_Pen": "Ferme (Sud de la tombe)",
+	"config.Abandoned_Shed_Location_WaFF.values.Farm_TFall": "Ferme (Chuttes jumelles)",
+	"config.Abandoned_Shed_Location_WaFF.values.No_Shed": "Désactive le cabanon",
+	
+	"config.Abandoned_Shed_Location_WaFFLE.name": "Emplacement sur WaFFLE",
+	"config.Abandoned_Shed_Location_WaFFLE.description": "Sélectionne la position du cabanon abandonné pour la grande ferme ou le désactive complètement.",
+	"config.Abandoned_Shed_Location_WaFFLE.values.Northern_Path": "Chemin Nord",
+	"config.Abandoned_Shed_Location_WaFFLE.values.Farm_Pen": "Ferme (Sud de la tombe)",
+	"config.Abandoned_Shed_Location_WaFFLE.values.Farm_TFall": "Ferme (Chuttes jumelles)",
+	"config.Abandoned_Shed_Location_WaFFLE.values.No_Shed": "Désactive le cabanon",
+	
+	"config.Abandoned_Shed_Appearance.name": "Apparence du cabanon",
+	"config.Abandoned_Shed_Appearance.description": "Laisse le jeu décider ou sélectionne manuellement l'apparence du cabanon pour aller de pair avec différents packs de textures.",
+	"config.Abandoned_Shed_Appearance.values.Auto": "Détection automatique",	
+	"config.Abandoned_Shed_Appearance.values.Default": "Style de base du jeu",
+	"config.Abandoned_Shed_Appearance.values.Gwen": "Gwen's Medieval",
+
+	"config.section.Abandoned_Shed_In.name": "> Intérieur du cabanon abandonné",
+	
+	"config.Shed_Wood_Color.name": "Couleur des planches",
+	"config.Shed_Wood_Color.description": "Sélectionne la couleur des planches adjacentes aux murs & piliers ou les retire complètement du sol.",
+	"config.Shed_Wood_Color.values.Clear": "Planches claires",
+	"config.Shed_Wood_Color.values.Dark": "Planches sombres",
+	"config.Shed_Wood_Color.values.Mixed": "Couleurs mixtes",
+	"config.Shed_Wood_Color.values.Stone": "Dalles de pierre",
+	"config.Shed_Wood_Color.values.None": "Sol nu",
+	
+	"config.Shed_Wood_Type.name": "Texture des planches",
+	"config.Shed_Wood_Type.description": "Sélectionne la texture des planches adjacentes aux murs & piliers.",
+	"config.Shed_Wood_Type.values.Default": "Textures de base du jeu",
+	"config.Shed_Wood_Type.values.Gwen": "Gwen's Medieval",
+	
+	"config.Remove_Shed_Pillars.name": "Retire les piliers",
+	"config.Remove_Shed_Pillars.description": "Accroit la visibilité et la place libre à l'intérieur du cabanon en retirant les piliers de soutien.",
+	
+	"config.Basement_Light.name": "Sous-sol éclairé",
+	"config.Basement_Light.description": "Accroit la luminosité du sous-sol au même niveau que les autres étages du cabanon.",
+	
+	"config.Roof_Greenhouse_Type.name": "Agencement de la serre",
+	"config.Roof_Greenhouse_Type.description": "Agence la serre à l'étage pour qu'elle puisse accommoder au choix: 8 arroseurs en iridium & 20 arbres, 12 arroseurs & 4 arbres, ou 2 arroseurs & 40 arbres.",
+	"config.Roof_Greenhouse_Type.values.Fields_Trees": "Champs & arbres",
+	"config.Roof_Greenhouse_Type.values.Fields": "Plus de champs",
+	"config.Roof_Greenhouse_Type.values.Trees": "Plus d'arbres",
+	
+	"config.Roof_Greenhouse_Empty_Walls.name": "Mur de la serre vide",
+	"config.Roof_Greenhouse_Empty_Walls.description": "Retire les décorations du mur du fond de la serre.",
+	
+	"config.section.Cave_Shortcuts.name": "> Grotte & Raccourcis",
+
+	"config.Use_Waterfall_Cave.name": "Changement de grotte",
+	"config.Use_Waterfall_Cave.description": "Permet à la Grotte des Chutes de remplacer celle de la ferme. Si cette option n'est pas utilisée, la grotte restera celle du jeu de base (ce qui permettra d'utiliser la grotte d'un autre mod).",
+	"config.Use_Waterfall_Cave.values.Both": "Pour les deux fermes",
+	"config.Use_Waterfall_Cave.values.WaFF": "WaFF seulement",
+	"config.Use_Waterfall_Cave.values.WaFFLE": "WaFFLE seulement",
+	"config.Use_Waterfall_Cave.values.None": "Pas de changement",
+
+	"config.Smaller_Shortcut_Caves.name": "Petites entrées de raccourcis",
+	"config.Smaller_Shortcut_Caves.description": "Rend l'entrée de raccourcis plus étroite. Les chevaux ne pourront plus les emprunter.",
+	
+	"config.Secret_Woods_Shortcut.name": "Raccourci de la Forêt Secrête",
+	"config.Secret_Woods_Shortcut.description": "Après s'être rendu au moins une fois dans la Forêt Secrête, libère un chemin près de la tombe qui permet d'y accéder rapidement.",	
+
+	"config.section.Animals_Monsters.name": "> Animaux",
+	
+	"config.Pethouse_Type_WaFF.name": "Niche sur WaFF",
+	"config.Pethouse_Type_WaFF.description": "Retire la niche ou change son apparance pour aller de pair avec différents packs de textures.",
+	"config.Pethouse_Type_WaFF.values.Auto": "Détection automatique",	
+	"config.Pethouse_Type_WaFF.values.New": "Style moderne",
+	"config.Pethouse_Type_WaFF.values.Old": "Style ancien",
+	"config.Pethouse_Type_WaFF.values.Plants": "Plantes vertes",
+	"config.Pethouse_Type_WaFF.values.None": "Pas de niche",
+	
+	"config.Use_Animal_Pen_WaFF.name": "Enclos sur WaFF",
+	"config.Use_Animal_Pen_WaFF.description": "Place un ou plusieurs enclos à l'ouest de la ferme moyenne.",
+	"config.Use_Animal_Pen_WaFF.values.1_Med": "Un enclos moyen",
+	"config.Use_Animal_Pen_WaFF.values.2_Med": "Deux enclos moyens",
+	"config.Use_Animal_Pen_WaFF.values.1_Large": "Un grand enclos",
+	"config.Use_Animal_Pen_WaFF.values.None": "Pas d'enclos",
+
+	"config.Pethouse_Type_WaFFLE.name": "Niche sur WaFFLE",
+	"config.Pethouse_Type_WaFFLE.description": "Retire la niche ou change son apparance pour aller de pair avec différents packs de textures.",
+	"config.Pethouse_Type_WaFFLE.values.Auto": "Détection automatique",	
+	"config.Pethouse_Type_WaFFLE.values.New": "Style moderne",
+	"config.Pethouse_Type_WaFFLE.values.Old": "Style ancien",
+	"config.Pethouse_Type_WaFFLE.values.Plants": "Plantes vertes",
+	"config.Pethouse_Type_WaFFLE.values.None": "Pas de niche",
+	
+	"config.Use_Animal_Pen_WaFFLE.name": "Enclos sur WaFFLE",
+	"config.Use_Animal_Pen_WaFFLE.description": "Place un ou plusieurs enclos à l'ouest de la grande ferme.",
+	"config.Use_Animal_Pen_WaFFLE.values.1_Med": "Un enclos moyen",
+	"config.Use_Animal_Pen_WaFFLE.values.2_Med": "Deux enclos moyens",
+	"config.Use_Animal_Pen_WaFFLE.values.1_Large": "Un grand enclos",
+	"config.Use_Animal_Pen_WaFFLE.values.None": "Pas d'enclos",
+	
+	"config.Use_Invisible_Barriers.name": "Barrières invisibles",
+	"config.Use_Invisible_Barriers.description": "Enpêche les animaux d'utiliser les escaliers, ponts ou de quitter les enclos.",	
+	
+	"config.section.Water_Features.name": "> Options aquatiques",
+	
+	"config.Beach_Type_WaFF.name": "Type de plage pour WaFF",
+	"config.Beach_Type_WaFF.description": "Choisir pour la ferme moyenne entre un plage asséchée remplie de sable, une plage verdoyante et son lac d'eau douce ou une plage maritime et ses palmiers.",
+	"config.Beach_Type_WaFF.values.Dry": "Plage asséchée",
+	"config.Beach_Type_WaFF.values.Dry_Pond": "Plage asséchée (& mare)",
+	"config.Beach_Type_WaFF.values.Lake": "Plage d'eau douce",
+	"config.Beach_Type_WaFF.values.Sea": "Plage maritime",
+
+	"config.Fish_Pool_WaFF.name": "Poisson pêchable sur WaFF",
+	"config.Fish_Pool_WaFF.description": "Sélectionne le type de poisson pêchable sur la ferme moyenne (cette option changera après la mise à jour 1.6 de Stardew Valley). Les poissons marins ne peuvent être péchés que si la plage maritime est active.",
+	"config.Fish_Pool_WaFF.values.Town": "Poissons de ville",
+	"config.Fish_Pool_WaFF.values.Mountain": "Poissons des montagnes",
+	"config.Fish_Pool_WaFF.values.Beach": "Poissons marins (plage maritime)",
+
+	"config.Beach_Type_WaFFLE.name": "Type de plage pour WaFFLE",
+	"config.Beach_Type_WaFFLE.description": "Choisir pour la grande ferme entre un plage asséchée remplie de sable, une plage verdoyante et son lac d'eau douce ou une plage maritime et ses palmiers.",
+	"config.Beach_Type_WaFFLE.values.Dry": "Plage asséchée",
+	"config.Beach_Type_WaFFLE.values.Dry_Pond": "Plage asséchée (& mare)",
+	"config.Beach_Type_WaFFLE.values.Lake": "Plage d'eau douce",
+	"config.Beach_Type_WaFFLE.values.Sea": "Plage maritime",
+
+	"config.Fish_Pool_WaFFLE.name": "Poisson pêchable sur WaFFLE",
+	"config.Fish_Pool_WaFFLE.description": "Sélectionne le type de poisson pêchable sur la grande ferme (cette option changera après la mise à jour 1.6 de Stardew Valley). Les poissons marins ne peuvent être péchés que si la plage maritime est active.",
+	"config.Fish_Pool_WaFFLE.values.Town": "Poissons de ville",
+	"config.Fish_Pool_WaFFLE.values.Mountain": "Poissons des montagnes",
+	"config.Fish_Pool_WaFFLE.values.Beach": "Poissons marins (plage maritime)",
+	
+	"config.Marine_Crab_Pots.name": "Casiers à crabes marins",
+	"config.Marine_Crab_Pots.description": "Autorise les casiers à capturer des poissons marins plutôt que d'eau douce (nécessite la plage maritime).",
+
+	"config.Turn_Pond_into_Spa.name": "Source de soins",
+	"config.Turn_Pond_into_Spa.description": "Transforme la petite mare au sud des chutes jumelles en une source capable de soigner et régénérer l'endurance.",
+	
+	"config.No_Water_Spa.name": "Pas d'eau dans la source",
+	"config.No_Water_Spa.description": "Retire les effets visuels d'eau de la source de soins. Utile pour des questions de compatibilité, cette option est automatiquement activée si vous utilisez le mod de nage (Swim Mod).",	
+	
+	"config.section.Terrain_Features.name": "> Options de terrain",
+	
+	"config.TF_Dirt_Color.name": "Couleur de la terre au sud",
+	"config.TF_Dirt_Color.description": "Détermine le couleur de la terre autour des chutes jumelles. La détection automatique laisse la terre sombre mais la changera si un autre mod pose des problèmes de compatibilité (commme un mod transformant par erreur toute la terre sombre sur la ferme en carrière de pierre).",
+	"config.TF_Dirt_Color.values.Automatic": "Détection automatique",
+	"config.TF_Dirt_Color.values.Dark": "Terre sombre",
+	"config.TF_Dirt_Color.values.Light": "Terre claire",
+	
+	"config.Use_Small_Ridges.name": "Petites crêtes",
+	"config.Use_Small_Ridges.description": "Rajoute deux petites crêtes sur les fermes, une au sud de la maison et une à proximité du pont sud-est.",
+	"config.Use_Small_Ridges.values.Both": "Sur les deux fermes",
+	"config.Use_Small_Ridges.values.WaFF": "WaFF seulement",
+	"config.Use_Small_Ridges.values.WaFFLE": "WaFFLE seulement",
+	"config.Use_Small_Ridges.values.None": "Pas de crêtes",
+
+	"config.Less_Cliffs_N.name": "Retrait de la falaise Nord",
+	"config.Less_Cliffs_N.description": "Retire la petite falaise située au sud-ouest de la maison de ferme.",
+	"config.Less_Cliffs_N.values.Both": "Sur les deux fermes",
+	"config.Less_Cliffs_N.values.WaFF": "WaFF seulement",
+	"config.Less_Cliffs_N.values.WaFFLE": "WaFFLE seulement",
+	"config.Less_Cliffs_N.values.None": "Pas de retrait",	
+
+	"config.Less_Cliffs.name": "Retrait des falaises",
+	"config.Less_Cliffs.description": "Retire quelques falaises de la partie Est de la ferme afin d'offrir un large espace libre.",
+	"config.Less_Cliffs.values.Both": "Sur les deux fermes",
+	"config.Less_Cliffs.values.WaFF": "WaFF seulement",
+	"config.Less_Cliffs.values.WaFFLE": "WaFFLE seulement",
+	"config.Less_Cliffs.values.None": "Pas de retrait",
+	
+	"config.Fountain_Decoration.name": "Fontaines décorées",
+	"config.Fountain_Decoration.description": "Rajoute une fontaine et sa zone décorée sur les fermes sélectionnées.",
+	"config.Fountain_Decoration.values.Both": "Sur les deux fermes",
+	"config.Fountain_Decoration.values.WaFF": "WaFF seulement",
+	"config.Fountain_Decoration.values.WaFFLE": "WaFFLE seulement",
+	"config.Fountain_Decoration.values.None": "Pas de fontaines",
+
+	"config.Use_Wooden_Bridges.name": "Ponts de bois sur WaFFLE",
+	"config.Use_Wooden_Bridges.description": "Redonne aux deux ponts de pierre à l'est de WaFFLE leur ancienne apparance en bois.",
+
+	"config.section.Foliage.name": "> Clôtures & Feuillage",
+	
+	"config.Less_Fences.name": "Moins de clôtures",
+	"config.Less_Fences.description": "Retire les clôtures non essentielles.",		
+
+	"config.Dense_Forest_Area.name": "Zones forestières denses",
+	"config.Dense_Forest_Area.description": "Ajoute des arbres décoratifs et un feuillage dense au dessus des souches à l'ouest des fermes et à l'est (WaFFLE uniquement).",
+	"config.Dense_Forest_Area.values.Both": "Pour les deux fermes",
+	"config.Dense_Forest_Area.values.WaFF": "WaFF seulement",
+	"config.Dense_Forest_Area.values.WaFFLE": "WaFFLE seulement",
+	"config.Dense_Forest_Area.values.None": "Pas de zones denses",
+
+	"config.section.Bonus.name": "> Bonus & Debug",
+	
+	"config.Unlock_Shed.name": "Activation du cabanon",
+	"config.Unlock_Shed.description": "Donne accès au cabanon abandonné ainsi que tous ses étages additionels quel que soit l'état d'avancement de la ferme. (Le cellier est toujours nécessaire pour pouvoir utiliser des fût en sous-sol). Utile si un bug quelconque empêche le cabanon de se mettre à jour par lui même.",
+
+	"config.Cellar_Allows_Casks_in_Cave.name": "Fûts dans la grotte & cabanon",
+	"config.Cellar_Allows_Casks_in_Cave.description": "Une fois le cellier bâti, la Grotte des Chutes et le rez-de-chaussée du cabanon abandoné seront aussi en mesure d'accueillir des fût.",
+	
+	"config.Add_Dark_Shrine.name": "Sanctuaire sombre",
+	"config.Add_Dark_Shrine.description": "Ajoute un sanctuaire sombre à la ferme, aux côtés de la tombe. Utile pour corriger les versions 4.X ou plus anciennes du mod où les monstres apparaissent sur la ferme par erreur."
+}

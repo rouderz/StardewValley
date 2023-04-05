@@ -1,0 +1,209 @@
+{
+	"config.section.Intro.name": "Farm size reminder: WaFF> medium, WaFFLE> large",
+
+	"config.World_Map_Colors.name": "World Map Colors",
+	"config.World_Map_Colors.description": "Change the color of the farm area on the world map to fit the recolor you're using. May not work alongside SVE if the recolor mod itself doesn't support SVE.",
+	"config.World_Map_Colors.values.Default_Stardew_Valley": "Default Stardew Valley Color",
+	"config.World_Map_Colors.values.Earthy_Recolour": "Daisy Niko's Earthy Recolour",
+	"config.World_Map_Colors.values.Vibrant_Pastoral_Green": "Vibrant Pastoral (Green Fall)",
+	"config.World_Map_Colors.values.Vibrant_Pastoral_Red": "Vibrant Pastoral (Red Fall)",
+	"config.World_Map_Colors.values.Wittily_Named_Dark": "Wittily Named Recolor (Dark Dirt)",
+	"config.World_Map_Colors.values.Wittily_Named_Light": "Wittily Named Recolor (Light Dirt)",
+	
+	"config.section.Additional_Locations.name": "> Additional locations",
+
+	"config.Use_Northern_Path.name": "Use the Northern Path",
+	"config.Use_Northern_Path.description": "Add a new map between the farm's northern exit and the Backwoods.",
+	"config.Use_Northern_Path.values.Both": "On both farms",
+	"config.Use_Northern_Path.values.WaFF": "WaFF only",
+	"config.Use_Northern_Path.values.WaFFLE": "WaFFLE only",
+	"config.Use_Northern_Path.values.None": "No Northern Path",
+	
+	"config.section.Abandoned_Shed_Ex.name": "> Abandoned Shed Exterior",
+
+	"config.Abandoned_Shed_Location_WaFF.name": "Shed location on WaFF",
+	"config.Abandoned_Shed_Location_WaFF.description": "Either set the abandoned shed location on the medium map or disable it entirely.",
+	"config.Abandoned_Shed_Location_WaFF.values.Northern_Path": "Northern Path",
+	"config.Abandoned_Shed_Location_WaFF.values.Farm_Pen": "Farm (Shrine lake southern shore)",
+	"config.Abandoned_Shed_Location_WaFF.values.Farm_TFall": "Farm (Twin falls lake)",
+	"config.Abandoned_Shed_Location_WaFF.values.No_Shed": "Disable the shed",
+	
+	"config.Abandoned_Shed_Location_WaFFLE.name": "Shed location on WaFFLE",
+	"config.Abandoned_Shed_Location_WaFFLE.description": "Either set the abandoned shed location on the large map or disable it entirely.",
+	"config.Abandoned_Shed_Location_WaFFLE.values.Northern_Path": "Northern Path",
+	"config.Abandoned_Shed_Location_WaFFLE.values.Farm_Pen": "Farm (Shrine lake southern shore)",
+	"config.Abandoned_Shed_Location_WaFFLE.values.Farm_TFall": "Farm (Twin waterfalls lake)",
+	"config.Abandoned_Shed_Location_WaFFLE.values.No_Shed": "Disable the shed",
+	
+	"config.Abandoned_Shed_Appearance.name": "Shed appearance",
+	"config.Abandoned_Shed_Appearance.description": "Either let the game decide or manually select the appearance of the shed to fit different textures packs.",
+	"config.Abandoned_Shed_Appearance.values.Auto": "Automatic detection",	
+	"config.Abandoned_Shed_Appearance.values.Default": "Default Stardew Valley",
+	"config.Abandoned_Shed_Appearance.values.Gwen": "Gwen's Medieval",
+
+	"config.section.Abandoned_Shed_In.name": "> Abandoned Shed Interior",
+	
+	"config.Shed_Wood_Color.name": "Floor planks color",
+	"config.Shed_Wood_Color.description": "Either select the color of the floor planks adjacent to the shed's walls and pillars or leave the ground as stone.",
+	"config.Shed_Wood_Color.values.Clear": "Clear planks",
+	"config.Shed_Wood_Color.values.Dark": "Dark planks",
+	"config.Shed_Wood_Color.values.Mixed": "Mixed colors planks",
+	"config.Shed_Wood_Color.values.Stone": "Replace planks with stones",
+	"config.Shed_Wood_Color.values.None": "Empty floor",
+	
+	"config.Shed_Wood_Type.name": "Floor planks texture",
+	"config.Shed_Wood_Type.description": "Select the texture of the floor planks adjacent to the shed's walls and pillars.",
+	"config.Shed_Wood_Type.values.Default": "Default Stardew Valley",
+	"config.Shed_Wood_Type.values.Gwen": "Gwen's Medieval",
+	
+	"config.Remove_Shed_Pillars.name": "Remove the pillars",
+	"config.Remove_Shed_Pillars.description": "Increase visibility and available space inside the abandoned shed by removing the support pillars.",
+	
+	"config.Roof_Greenhouse_Type.name": "Roof greenhouse layout",
+	"config.Roof_Greenhouse_Type.description": "Set the roof greenhouse to accommodate either 8 iridium sprinklers and 20 trees, 12 sprinklers and 4 trees, or 2 sprinklers and 40 trees.",
+	"config.Roof_Greenhouse_Type.values.Fields_Trees": "Fields and trees",
+	"config.Roof_Greenhouse_Type.values.Fields": "Mainly fields",
+	"config.Roof_Greenhouse_Type.values.Trees": "Mainly trees",
+
+	"config.section.Cave_Shortcuts.name": "> Cave & Shortcuts",
+
+	"config.Use_Waterfall_Cave.name": "Farm's cave replacement",
+	"config.Use_Waterfall_Cave.description": "Allow the Waterfall cave to no longer act as an extra location but replace the farm's cave instead. As long as that option is NOT used, the farm's cave will be left untouched (allowing for the use of a different mod's cave if desired). WARNING! Empty your cave before activating that option as cave's content is not transferred automatically!",
+	"config.Use_Waterfall_Cave.values.Both": "On both farms",
+	"config.Use_Waterfall_Cave.values.WaFF": "WaFF only",
+	"config.Use_Waterfall_Cave.values.WaFFLE": "WaFFLE only",
+	"config.Use_Waterfall_Cave.values.None": "No replacement",
+	
+	"config.Smaller_Shortcut_Caves.name": "Smaller shortcut entrances",
+	"config.Smaller_Shortcut_Caves.description": "Make the shortcuts' entrances smaller. Regular horses will no longer be able to use them.",
+	
+	"config.Secret_Woods_Shortcut.name": "Shortcut to Secret Woods",
+	"config.Secret_Woods_Shortcut.description": "Unlock a path next to the farm's shrine that will quickly lead to the Secret Woods if the player has already been there at least once.",	
+
+	"config.section.Animals_Monsters.name": "> Animals Features",
+	
+	"config.Pethouse_Type_WaFF.name": "WaFF pet house",
+	"config.Pethouse_Type_WaFF.description": "Either remove the pet house or change its appearance to fit different textures styles.",
+	"config.Pethouse_Type_WaFF.values.Auto": "Automatic detection",	
+	"config.Pethouse_Type_WaFF.values.New": "Modern pet house",
+	"config.Pethouse_Type_WaFF.values.Old": "Ancient pet house",
+	"config.Pethouse_Type_WaFF.values.Plants": "Decorative Plants",
+	"config.Pethouse_Type_WaFF.values.None": "No pet house",
+	
+	"config.Use_Animal_Pen_WaFF.name": "WaFF animal pens",
+	"config.Use_Animal_Pen_WaFF.description": "Place one or more animal pens on the western side of the medium sized farm.",
+	"config.Use_Animal_Pen_WaFF.values.1_Med": "One medium sized pen",
+	"config.Use_Animal_Pen_WaFF.values.2_Med": "Two medium sized pens",
+	"config.Use_Animal_Pen_WaFF.values.1_Large": "One large sized pen",
+	"config.Use_Animal_Pen_WaFF.values.None": "No animal pen",
+
+	"config.Pethouse_Type_WaFFLE.name": "WaFFLE pet house",
+	"config.Pethouse_Type_WaFFLE.description": "Either remove the pet house or change its appearance to fit different textures styles.",
+	"config.Pethouse_Type_WaFFLE.values.Auto": "Automatic detection",	
+	"config.Pethouse_Type_WaFFLE.values.New": "Modern pet house",
+	"config.Pethouse_Type_WaFFLE.values.Old": "Ancient pet house",
+	"config.Pethouse_Type_WaFFLE.values.Plants": "Decorative Plants",
+	"config.Pethouse_Type_WaFFLE.values.None": "No pet house",
+	
+	"config.Use_Animal_Pen_WaFFLE.name": "WaFFLE animal pens",
+	"config.Use_Animal_Pen_WaFFLE.description": "Place one or more animal pens on the western side of the large farm.",
+	"config.Use_Animal_Pen_WaFFLE.values.1_Med": "One medium sized pen",
+	"config.Use_Animal_Pen_WaFFLE.values.2_Med": "Two medium sized pens",
+	"config.Use_Animal_Pen_WaFFLE.values.1_Large": "One large sized pen",
+	"config.Use_Animal_Pen_WaFFLE.values.None": "No animal pen",
+	
+	"config.Use_Invisible_Barriers.name": "Invisible animal barriers",
+	"config.Use_Invisible_Barriers.description": "Prevent animals from using stairs, bridges or leaving the pen. Disable to let them roam the farm freely.",	
+	
+	"config.section.Water_Features.name": "> Water Features",
+	
+	"config.Beach_Type_WaFF.name": "WaFF beach type",
+	"config.Beach_Type_WaFF.description": "When playing on the medium map, choose between a dry beach full of sand with very few water, a grassy beach with a large lake or a saltwater one with sea forage and palm trees.",
+	"config.Beach_Type_WaFF.values.Dry": "Dry beach",
+	"config.Beach_Type_WaFF.values.Dry_Pond": "Dry beach (with pond)",
+	"config.Beach_Type_WaFF.values.Lake": "Lake beach",
+	"config.Beach_Type_WaFF.values.Sea": "Sea beach",
+
+	"config.Fish_Pool_WaFF.name": "WaFF catchable fish",
+	"config.Fish_Pool_WaFF.description": "When playing on the medium map, select the type of fishes that can be caught on the farm (this feature will change after Stardew Valley 1.6 update). Sea fishes can only be caught if the sea beach is active.",
+	"config.Fish_Pool_WaFF.values.Town": "Town fishes",
+	"config.Fish_Pool_WaFF.values.Mountain": "Mountain fishes",
+	"config.Fish_Pool_WaFF.values.Beach": "Sea fishes (Require sea beach)",
+
+	"config.Beach_Type_WaFFLE.name": "WaFFLE beach type",
+	"config.Beach_Type_WaFFLE.description": "When playing on the large map, choose between a dry beach full of sand with very few water, a grassy beach with a large lake or a saltwater one with sea forage and palm trees.",
+	"config.Beach_Type_WaFFLE.values.Dry": "Dry beach",
+	"config.Beach_Type_WaFFLE.values.Dry_Pond": "Dry beach (with pond)",
+	"config.Beach_Type_WaFFLE.values.Lake": "Lake beach",
+	"config.Beach_Type_WaFFLE.values.Sea": "Sea beach",
+
+	"config.Fish_Pool_WaFFLE.name": "WaFFLE catchable fish",
+	"config.Fish_Pool_WaFFLE.description": "When playing on the large map, select the type of fishes that can be caught on the farm (this feature will change after Stardew Valley 1.6 update). Sea fishes can only be caught if the sea beach is active.",
+	"config.Fish_Pool_WaFFLE.values.Town": "Town fishes",
+	"config.Fish_Pool_WaFFLE.values.Mountain": "Mountain fishes",
+	"config.Fish_Pool_WaFFLE.values.Beach": "Sea fishes (Require sea beach)",
+	
+	"config.Marine_Crab_Pots.name": "Marine crab pots",
+	"config.Marine_Crab_Pots.description": "Allow crab pots to catch sea fishes instead of freshwater ones. Will only work if the sea beach is active.",
+
+	"config.Turn_Pond_into_Spa.name": "Healing pond",
+	"config.Turn_Pond_into_Spa.description": "Turn the small pond south of the twin waterfalls into a healing pond.",
+	
+	"config.No_Water_Spa.name": "No water effects in pond",
+	"config.No_Water_Spa.description": "Remove water effects and properties from the healing pond (usefull for some mod compatibility issues, note that this is automatically actived when using the Swim mod).",	
+	
+	"config.section.Terrain_Features.name": "> Terrain Features",
+	
+	"config.TF_Dirt_Color.name": "Southern dirt color",
+	"config.TF_Dirt_Color.description": "Select the color of the dirt around the twin falls area. The automatic option will leave the dirt dark and only change it in case of compatibility issues (like mods trying to use said dirt as quarry tiles).",
+	"config.TF_Dirt_Color.values.Automatic": "Automatic detection",
+	"config.TF_Dirt_Color.values.Dark": "Dark dirt",
+	"config.TF_Dirt_Color.values.Light": "Light dirt",
+	
+	"config.Use_Small_Ridges.name": "Add small ridges",
+	"config.Use_Small_Ridges.description": "Add two small ridges south of the farmhouse and near the south-eastern bridge.",
+	"config.Use_Small_Ridges.values.Both": "On both farms",
+	"config.Use_Small_Ridges.values.WaFF": "WaFF only",
+	"config.Use_Small_Ridges.values.WaFFLE": "WaFFLE only",
+	"config.Use_Small_Ridges.values.None": "No ridges",
+	
+	"config.Less_Cliffs.name": "Cliffs removal",
+	"config.Less_Cliffs.description": "Remove some cliffs from the farm to create larger flat areas.",
+	"config.Less_Cliffs.values.Both": "On both farms",
+	"config.Less_Cliffs.values.WaFF": "WaFF only",
+	"config.Less_Cliffs.values.WaFFLE": "WaFFLE only",
+	"config.Less_Cliffs.values.None": "No removal",
+	
+	"config.Fountain_Decoration.name": "Decorated fountain area",
+	"config.Fountain_Decoration.description": "Add fountains and their decorated surroundings to the selected farms.",
+	"config.Fountain_Decoration.values.Both": "On both farms",
+	"config.Fountain_Decoration.values.WaFF": "WaFF only",
+	"config.Fountain_Decoration.values.WaFFLE": "WaFFLE only",
+	"config.Fountain_Decoration.values.None": "No fountains",
+
+	"config.Use_Wooden_Bridges.name": "Wooden bridges on WaFFLE",
+	"config.Use_Wooden_Bridges.description": "Revert the eastern stone bridges on WaFFLE to their previous wooden form.",
+	
+	"config.section.Foliage.name": "> Fences & Foliage",
+
+	"config.Less_Fences.name": "Less fences",
+	"config.Less_Fences.description": "Remove non essential fences.",	
+
+	"config.Dense_Forest_Area.name": "Dense forested areas",
+	"config.Dense_Forest_Area.description": "Add trees and a dense foliage above the tree stumps West of both farms and East of WaFFLE.",
+	"config.Dense_Forest_Area.values.Both": "On both farms",
+	"config.Dense_Forest_Area.values.WaFF": "WaFF only",
+	"config.Dense_Forest_Area.values.WaFFLE": "WaFFLE only",
+	"config.Dense_Forest_Area.values.None": "No dense areas",
+
+	"config.section.Bonus.name": "> Bonus & Debug Menu",
+	
+	"config.Unlock_Shed.name": "Unlock the upgraded shed",
+	"config.Unlock_Shed.description": "Unlock and fully upgrade the abandoned shed, no matter the advancement of your farmhouse (casks still need the cellar in order to work). Useful if any issue prevents the upgrades from unlocking the normal way.",
+
+	"config.Cellar_Allows_Casks_in_Cave.name": "More casks in the cave & shed",
+	"config.Cellar_Allows_Casks_in_Cave.description": "Once the farmhouse cellar is built, also extend the usage of casks to the Waterfall Cave and the entry floor of the abandoned shed.",
+	
+		"config.Add_Dark_Shrine.name": "Add Dark Shrine to the farm",
+	"config.Add_Dark_Shrine.description": "Generate a statue next to Grandpa's shrine that'll behave as a Dark Shrine. Useful to correct older versions of the farm where monsters spawning was incorrectly activated."
+}

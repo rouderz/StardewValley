@@ -1,7 +1,7 @@
 {
     "Name": "Zenith Farm CFL",
     "Author": "DaisyNiko",
-    "Version": "1.1.3",
+    "Version": "1.1.4",
     "UniqueID": "DaisyNiko.ZenithFarm.CFL",
     "MinimumApiVersion": "2.11.2",
     "UpdateKeys": [ "Nexus:15618" ],

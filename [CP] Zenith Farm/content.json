@@ -24,10 +24,10 @@
 			"Default":"Northeast Farm"
 		},		
 		"SouthWestMinecartName":{
-			"Default":"SouthwestFarm"
+			"Default":"Southwest Farm"
 		},
 		"SouthEastMinecartName":{
-			"Default":"SoutheastFarm"
+			"Default":"Southeast Farm"
 		}
 	},
 	"Changes":[
@@ -96,7 +96,8 @@
 			},
 			"When":{
 				"HasMod":"mod.kitchen.minecartpatcher",
-				"EnableMinecarts":"true"
+				"EnableMinecarts":"true",
+				"FarmType":"DaisyNiko.ZenithFarm.CFL/Zenith Farm"
 			}
 		},
 		//patch decorations

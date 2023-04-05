@@ -1,0 +1,793 @@
+{
+    "Changes": [
+	
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"MapProperties": { "AmbientLight": "255 255 255" }
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 21, "Y": 40, "Width": 1, "Height": 2 },
+			"ToArea": { "X": 6, "Y": 1, "Width": 1, "Height": 2 },
+			"PatchMode": "Overlay",
+			"When": { "HasMod |contains=A_TK.FarmProjectForaging.CDA": "false" }
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 21, "Y": 40, "Width": 1, "Height": 2 },
+			"ToArea": { "X": 23, "Y": 1, "Width": 1, "Height": 2 },
+			"PatchMode": "Overlay",
+			"When": { "HasMod |contains=A_TK.FarmProjectForaging.CDA": "false" }
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"MapProperties": { "NightTiles": "Front 6 1 1253 Front 6 2 1285 Front 23 1 1253 Front 23 2 1285" },
+			"When": { "HasMod |contains=A_TK.FarmProjectForaging.CDA": "false" }
+		},
+		
+//	TEXTURES
+
+		{
+			"Action": "EditImage",
+			"Target": "Maps/ALL_Waterfall_Shed",
+			"FromFile": "options/shed/tilesets/Gwen_Medieval/IN_Waterfall_Shed_Floor.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 224, "Height": 64 },
+			"ToArea": { "X": 0, "Y": 160, "Width": 224, "Height": 64 },
+			"PatchMode": "Replace",
+			"When": { "Shed_Wood_Type": "Gwen" }
+		},
+//
+		{
+			"Action": "EditImage",
+			"Target": "Maps/ALL_Waterfall_Shed",
+			"FromFile": "options/shed/tilesets/Grape_Ponta/IN_Waterfall_Shed_Walls.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 80, "Height": 48 },
+			"ToArea": { "X": 224, "Y": 160, "Width": 80, "Height": 48 },
+			"PatchMode": "Replace",
+			"When": { "HasMod": "grapeponta.VanillaInteriors" }
+		},
+
+//	UPGRADE STEPS
+
+//	//	STEP 0 TO 2
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 18, "Y": 36, "Width": 1, "Height": 3 },
+			"ToArea": { "X": 6, "Y": 33, "Width": 1, "Height": 3 },
+			"PatchMode": "Overlay",
+			"When": { 
+				"FarmhouseUpgrade": "0, 1, 2",
+				"Unlock_Shed": "false",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},
+		
+//	//	STEP 3
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"AddWarps": [ "6 34 Custom_waterfall_shed_B1 11 0" ],
+			"When": { 
+				"FarmhouseUpgrade": 3,
+				"Unlock_Shed": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"AddWarps": [ "6 34 Custom_waterfall_shed_B1 11 0" ],
+			"When": { "Unlock_Shed": "true" }
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"MapProperties": { "CanCaskHere": "T" },
+			"When": {
+				"Cellar_Allows_Casks_in_Cave": "True",
+				"FarmhouseUpgrade": 3
+			}
+		},
+		
+//	//	STEP 4
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 18, "Y": 40, "Width": 2, "Height": 5 },
+			"ToArea": { "X": 14, "Y": 5, "Width": 2, "Height": 5 },
+			"PatchMode": "Overlay",
+			"When": { 
+				"IsCommunityCenterComplete": "false",
+				"IsJojaMartComplete": "false",
+				"Unlock_Shed": "false",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"AddWarps": [ 
+				"14 6 Custom_waterfall_shed_F1 14 6",
+				"15 6 Custom_waterfall_shed_F1 15 6"
+			],
+			"When": { 
+				"IsCommunityCenterComplete": "true",
+				"Unlock_Shed": "false"
+			}
+		},	
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"AddWarps": [ 
+				"14 6 Custom_waterfall_shed_F1 14 6",
+				"15 6 Custom_waterfall_shed_F1 15 6"
+			],
+			"When": { 
+				"IsJojaMartComplete": "true",
+				"Unlock_Shed": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"AddWarps": [ 
+				"14 6 Custom_waterfall_shed_F1 14 6",
+				"15 6 Custom_waterfall_shed_F1 15 6"
+			],
+			"When": { "Unlock_Shed": "true" }
+		},
+
+//	WOOD COLOR
+
+//	//	CLEAR
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 8, "Y": 0, "Width": 11, "Height": 2 },
+			"ToArea": { "X": 1, "Y": 3, "Width": 11, "Height": 2 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Shed_Wood_Color": "Clear",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 18 },
+			"ToArea": { "X": 1, "Y": 5, "Width": 1, "Height": 18 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Shed_Wood_Color": "Clear",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 8, "Y": 3, "Width": 11, "Height": 2 },
+			"ToArea": { "X": 18, "Y": 3, "Width": 11, "Height": 2 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Shed_Wood_Color": "Clear",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 2, "Y": 0, "Width": 1, "Height": 18 },
+			"ToArea": { "X": 28, "Y": 5, "Width": 1, "Height": 18 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Shed_Wood_Color": "Clear",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 8, "Y": 0, "Width": 11, "Height": 2 },
+			"ToArea": { "X": 1, "Y": 26, "Width": 11, "Height": 2 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Shed_Wood_Color": "Clear",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 8, "Y": 24, "Width": 1, "Height": 6 },
+			"ToArea": { "X": 1, "Y": 28, "Width": 1, "Height": 6 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Shed_Wood_Color": "Clear",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 8, "Y": 3, "Width": 11, "Height": 2 },
+			"ToArea": { "X": 18, "Y": 26, "Width": 11, "Height": 2 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Shed_Wood_Color": "Clear",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 10, "Y": 24, "Width": 1, "Height": 6 },
+			"ToArea": { "X": 28, "Y": 28, "Width": 1, "Height": 6 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Shed_Wood_Color": "Clear",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},		
+		
+//	//	DARK
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 8, "Y": 6, "Width": 11, "Height": 2 },
+			"ToArea": { "X": 1, "Y": 3, "Width": 11, "Height": 2 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Shed_Wood_Color": "Dark",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 4, "Y": 0, "Width": 1, "Height": 18 },
+			"ToArea": { "X": 1, "Y": 5, "Width": 1, "Height": 18 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Shed_Wood_Color": "Dark",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 8, "Y": 9, "Width": 11, "Height": 2 },
+			"ToArea": { "X": 18, "Y": 3, "Width": 11, "Height": 2 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Shed_Wood_Color": "Dark",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 6, "Y": 0, "Width": 1, "Height": 18 },
+			"ToArea": { "X": 28, "Y": 5, "Width": 1, "Height": 18 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Shed_Wood_Color": "Dark",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 8, "Y": 6, "Width": 11, "Height": 2 },
+			"ToArea": { "X": 1, "Y": 26, "Width": 11, "Height": 2 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Shed_Wood_Color": "Dark",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 12, "Y": 24, "Width": 1, "Height": 6 },
+			"ToArea": { "X": 1, "Y": 28, "Width": 1, "Height": 6 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Shed_Wood_Color": "Dark",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 8, "Y": 9, "Width": 11, "Height": 2 },
+			"ToArea": { "X": 18, "Y": 26, "Width": 11, "Height": 2 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Shed_Wood_Color": "Dark",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 14, "Y": 24, "Width": 1, "Height": 6 },
+			"ToArea": { "X": 28, "Y": 28, "Width": 1, "Height": 6 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Shed_Wood_Color": "Dark",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},	
+
+		//	//	MIXED
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 8, "Y": 12, "Width": 11, "Height": 2 },
+			"ToArea": { "X": 1, "Y": 3, "Width": 11, "Height": 2 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Shed_Wood_Color": "Mixed",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 0, "Y": 19, "Width": 1, "Height": 18 },
+			"ToArea": { "X": 1, "Y": 5, "Width": 1, "Height": 18 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Shed_Wood_Color": "Mixed",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 8, "Y": 15, "Width": 11, "Height": 2 },
+			"ToArea": { "X": 18, "Y": 3, "Width": 11, "Height": 2 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Shed_Wood_Color": "Mixed",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 2, "Y": 19, "Width": 1, "Height": 18 },
+			"ToArea": { "X": 28, "Y": 5, "Width": 1, "Height": 18 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Shed_Wood_Color": "Mixed",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 8, "Y": 12, "Width": 11, "Height": 2 },
+			"ToArea": { "X": 1, "Y": 26, "Width": 11, "Height": 2 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Shed_Wood_Color": "Mixed",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 8, "Y": 31, "Width": 1, "Height": 6 },
+			"ToArea": { "X": 1, "Y": 28, "Width": 1, "Height": 6 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Shed_Wood_Color": "Mixed",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 8, "Y": 15, "Width": 11, "Height": 2 },
+			"ToArea": { "X": 18, "Y": 26, "Width": 11, "Height": 2 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Shed_Wood_Color": "Mixed",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 10, "Y": 31, "Width": 1, "Height": 6 },
+			"ToArea": { "X": 28, "Y": 28, "Width": 1, "Height": 6 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Shed_Wood_Color": "Mixed",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},
+
+//	//	STONE
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 8, "Y": 18, "Width": 11, "Height": 2 },
+			"ToArea": { "X": 1, "Y": 3, "Width": 11, "Height": 2 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Shed_Wood_Color": "Stone",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 4, "Y": 19, "Width": 1, "Height": 18 },
+			"ToArea": { "X": 1, "Y": 5, "Width": 1, "Height": 18 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Shed_Wood_Color": "Stone",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 8, "Y": 21, "Width": 11, "Height": 2 },
+			"ToArea": { "X": 18, "Y": 3, "Width": 11, "Height": 2 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Shed_Wood_Color": "Stone",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 6, "Y": 19, "Width": 1, "Height": 18 },
+			"ToArea": { "X": 28, "Y": 5, "Width": 1, "Height": 18 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Shed_Wood_Color": "Stone",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 8, "Y": 18, "Width": 11, "Height": 2 },
+			"ToArea": { "X": 1, "Y": 26, "Width": 11, "Height": 2 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Shed_Wood_Color": "Stone",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 12, "Y": 31, "Width": 1, "Height": 6 },
+			"ToArea": { "X": 1, "Y": 28, "Width": 1, "Height": 6 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Shed_Wood_Color": "Stone",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 8, "Y": 21, "Width": 11, "Height": 2 },
+			"ToArea": { "X": 18, "Y": 26, "Width": 11, "Height": 2 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Shed_Wood_Color": "Stone",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 14, "Y": 31, "Width": 1, "Height": 6 },
+			"ToArea": { "X": 28, "Y": 28, "Width": 1, "Height": 6 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Shed_Wood_Color": "Stone",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},			
+				
+//	PILLARS COLOR		
+		
+//	//	CLEAR
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 8, "Y": 38, "Width": 3, "Height": 5 },
+			"ToArea": { "X": 5, "Y": 6, "Width": 3, "Height": 5 },
+			"PatchMode": "Overlay",
+			"When": { 
+				"Remove_Shed_Pillars": "False",
+				"Shed_Wood_Color": "Clear",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},		
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 8, "Y": 38, "Width": 3, "Height": 5 },
+			"ToArea": { "X": 5, "Y": 14, "Width": 3, "Height": 5 },
+			"PatchMode": "Overlay",
+			"When": { 
+				"Remove_Shed_Pillars": "False",
+				"Shed_Wood_Color": "Clear",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},		
+
+//	//	DARK
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 4, "Y": 38, "Width": 3, "Height": 5 },
+			"ToArea": { "X": 22, "Y": 6, "Width": 3, "Height": 5 },
+			"PatchMode": "Overlay",
+			"When": { 
+				"Remove_Shed_Pillars": "False",
+				"Shed_Wood_Color": "Dark",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 4, "Y": 38, "Width": 3, "Height": 5 },
+			"ToArea": { "X": 22, "Y": 14, "Width": 3, "Height": 5 },
+			"PatchMode": "Overlay",
+			"When": { 
+				"Remove_Shed_Pillars": "False",
+				"Shed_Wood_Color": "Dark",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},
+
+//	//	MIXED	
+		
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 0, "Y": 38, "Width": 3, "Height": 5 },
+			"ToArea": { "X": 5, "Y": 6, "Width": 3, "Height": 5 },
+			"PatchMode": "Overlay",
+			"When": { 
+				"Remove_Shed_Pillars": "False",
+				"Shed_Wood_Color": "Mixed, Dark",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},		
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 0, "Y": 38, "Width": 3, "Height": 5 },
+			"ToArea": { "X": 5, "Y": 14, "Width": 3, "Height": 5 },
+			"PatchMode": "Overlay",
+			"When": { 
+				"Remove_Shed_Pillars": "False",
+				"Shed_Wood_Color": "Mixed, Dark",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},		
+//	
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 12, "Y": 38, "Width": 3, "Height": 5 },
+			"ToArea": { "X": 22, "Y": 6, "Width": 3, "Height": 5 },
+			"PatchMode": "Overlay",
+			"When": { 
+				"Remove_Shed_Pillars": "False",
+				"Shed_Wood_Color": "Mixed, Clear",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 12, "Y": 38, "Width": 3, "Height": 5 },
+			"ToArea": { "X": 22, "Y": 14, "Width": 3, "Height": 5 },
+			"PatchMode": "Overlay",
+			"When": { 
+				"Remove_Shed_Pillars": "False",
+				"Shed_Wood_Color": "Mixed, Clear",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},
+		
+//	//	STONE
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 16, "Y": 24, "Width": 3, "Height": 5 },
+			"ToArea": { "X": 5, "Y": 6, "Width": 3, "Height": 5 },
+			"PatchMode": "Overlay",
+			"When": { 
+				"Remove_Shed_Pillars": "False",
+				"Shed_Wood_Color": "Stone",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},		
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 16, "Y": 24, "Width": 3, "Height": 5 },
+			"ToArea": { "X": 5, "Y": 14, "Width": 3, "Height": 5 },
+			"PatchMode": "Overlay",
+			"When": { 
+				"Remove_Shed_Pillars": "False",
+				"Shed_Wood_Color": "Stone",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},		
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 16, "Y": 30, "Width": 3, "Height": 5 },
+			"ToArea": { "X": 22, "Y": 6, "Width": 3, "Height": 5 },
+			"PatchMode": "Overlay",
+			"When": { 
+				"Remove_Shed_Pillars": "False",
+				"Shed_Wood_Color": "Stone",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 16, "Y": 30, "Width": 3, "Height": 5 },
+			"ToArea": { "X": 22, "Y": 14, "Width": 3, "Height": 5 },
+			"PatchMode": "Overlay",
+			"When": { 
+				"Remove_Shed_Pillars": "False",
+				"Shed_Wood_Color": "Stone",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},
+		
+//	//	NONE
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 16, "Y": 36, "Width": 1, "Height": 4 },
+			"ToArea": { "X": 6, "Y": 6, "Width": 1, "Height": 4 },
+			"PatchMode": "Overlay",
+			"When": { 
+				"Remove_Shed_Pillars": "False",
+				"Shed_Wood_Color": "None",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},		
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 16, "Y": 36, "Width": 1, "Height": 4 },
+			"ToArea": { "X": 6, "Y": 14, "Width": 1, "Height": 4 },
+			"PatchMode": "Overlay",
+			"When": { 
+				"Remove_Shed_Pillars": "False",
+				"Shed_Wood_Color": "None",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},		
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 16, "Y": 41, "Width": 1, "Height": 4 },
+			"ToArea": { "X": 23, "Y": 6, "Width": 1, "Height": 4 },
+			"PatchMode": "Overlay",
+			"When": { 
+				"Remove_Shed_Pillars": "False",
+				"Shed_Wood_Color": "None",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/IN_Options_Shed.tmx",
+			"FromArea": { "X": 16, "Y": 41, "Width": 1, "Height": 4 },
+			"ToArea": { "X": 23, "Y": 14, "Width": 1, "Height": 4 },
+			"PatchMode": "Overlay",
+			"When": { 
+				"Remove_Shed_Pillars": "False",
+				"Shed_Wood_Color": "None",
+				"HasMod |contains=A_TK.FarmProjectForaging.CDA": "false"
+			}
+		}
+	]
+}	  
+
+  
