@@ -1,7 +1,7 @@
 {
 	"Name": "Spacious Greenhouse",
     "Author": "mintgal",
-    "Version": "1.0.0",
+    "Version": "1.0.1",
     "Description": "Bigger greenhouse with glass windows.",
     "UniqueID": "mintgal.SpaciousGreenhouse",
     "MinimumApiVersion": "2.5",

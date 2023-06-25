@@ -1,0 +1,70 @@
+{
+    "Changes": [
+	
+//	MAIN MAP FUNCTIONS
+
+		{
+            "Action": "EditData",
+            "Target": "Strings/UI",
+            "Entries": { "ATK_WaFFLE_Description": "Waterfall Forest LE_Eine große Karte, die dir die Wohltaten eines Waldes bietet und von Wasserfällen umgeben ist!" },
+			"When": { "Language": "de" }
+        },
+//
+		{
+            "Action": "EditData",
+            "Target": "Strings/UI",
+            "Entries": { "ATK_WaFFLE_Description": "Waterfall Forest LE_Une ferme de grande taille, offrant les bénéfices d'une forêt et entourée de chutes d'eau!" },
+			"When": { "Language": "fr" }
+        },
+
+//	SECRET WOODS SHORTCUT
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFFLE_Farm",
+			"FromFile": "options/WaFFLE_EX_Options.tmx",
+			"FromArea": { "X": 4, "Y": 48, "Width": 1, "Height": 2 },
+			"ToArea": { "X": 4, "Y": 2, "Width": 1, "Height": 2 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Language": "de",
+				"Secret_Woods_Shortcut_WaFFLE": "True",
+				"HasFlag |contains=beenToWoods": "false"
+			}
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFFLE_Farm",
+			"FromFile": "options/WaFFLE_EX_Options.tmx",
+			"FromArea": { "X": 8, "Y": 48, "Width": 1, "Height": 2 },
+			"ToArea": { "X": 4, "Y": 2, "Width": 1, "Height": 2 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Language": "fr",
+				"Secret_Woods_Shortcut_WaFFLE": "True",
+				"HasFlag |contains=beenToWoods": "false"
+			}
+		},
+		
+//	SV1.5 FIXES MAILS
+
+//	//	DARK SHRINE
+
+		{
+			"Action": "EditData",
+			"Target": "Data/mail",
+			"Entries": { "A_TK_day1_bun_WaFFLE": "Bonjour @,^^Une étrange statue a été découvertes dans la Forêt des Cataractes, à proximité de la tombe de votre grand-père. Elle semble capable de repousser ou d'attirer les monstres!^^Afin d'en faire usage au plus vite nous vous avons envoyé cette mystérieuse patisserie qui, nous l'espérons, vous sera utile! %item object 203 1 %%[#]Découverte d'une étrange statue" },
+			"When": { "Language": "fr" },		
+		},
+
+//	//	TV
+
+		{
+			"Action": "EditData",
+			"Target": "Data/mail",
+			"Entries": { "A_TK_day1_TV_WaFFLE": "Nous avons appris que certains résidents avaient rencontré des problèmes avec leur TV. Dans le cas où la votre serait manquante après votre emménagement, nous vous en avons envoyé une nouvelle gratuitement!^^PS - S'il s'avère que vous ayez déjà une TV fonctionnelle il est inutile de nous la renvoyer. Vous être libre de la garder! %item furniture 1680 %%[#]Livraison de TV" },
+			"When": { "Language": "fr" },
+		}
+	]
+}	  

@@ -1,9 +1,9 @@
 ﻿{
   "Name": "Shardust's Animated Hairstyles for Fashion Sense",
   "Author": "Shardust",
-  "Version": "6.0.0",
+  "Version": "10.0.0",
   "Description": "Animated hairstyles for the Fashion Sense framework.",
-  "UniqueID": "Shardust.AnimatedHairstylesFashionSensePack",
+  "UniqueID": "Shardust.AnimatedHairstyles.FashionSensePack",
   "UpdateKeys": ["Nexus:10294"],
   "Dependencies": [],
   "ContentPackFor": {

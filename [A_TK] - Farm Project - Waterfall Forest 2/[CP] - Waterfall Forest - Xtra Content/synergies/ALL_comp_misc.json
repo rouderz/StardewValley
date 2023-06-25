@@ -1,0 +1,62 @@
+{
+    "Changes": [
+
+//	STARDEW VALLEY EXPANDED
+
+//	// EVENTS
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm, Maps/WaFFLE_Farm",
+			"FromFile": "synergies/comp_assets/ALL_Syn_SVE.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 3, "Height": 3 },
+			"ToArea": { "X": 47, "Y": 6, "Width": 3, "Height": 3 },
+			"PatchMode": "Replace",
+			"Update": "OnLocationChange",
+			"When": { 
+				"HasMod": "FlashShifter.StardewValleyExpandedCP",
+				"HasSeenEvent": "908074"
+			}
+		},
+        {
+            "Action": "EditMap",
+            "Target": "Maps/WaFF_Farm, Maps/WaFFLE_Farm",
+		    "TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": ["MapProperties", "Light"],
+					"Value": "48 7 4",
+					"Delimiter": " "
+				}
+			],
+			"When": { 
+				"HasMod": "FlashShifter.StardewValleyExpandedCP",
+				"HasSeenEvent": "908074"
+			}
+        },
+		
+//	//	NORTHERN PATH
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_path_north",
+			"FromFile": "options/ALL_EX_Options.tmx",
+			"FromArea": { "X": 75, "Y": 0, "Width": 4, "Height": 16 },
+			"ToArea": { "X": 98, "Y": 0, "Width": 4, "Height": 16 },
+			"PatchMode": "Replace",
+			"When": { "HasMod": "FlashShifter.StardewValleyExpandedCP" }
+		},
+
+//	STARDEW VALLEY REIMAGINED III
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_path_north",
+			"FromFile": "options/ALL_EX_Options.tmx",
+			"FromArea": { "X": 0, "Y": 30, "Width": 26, "Height": 15 },
+			"ToArea": { "X": 84, "Y": 0, "Width": 26, "Height": 15 },
+			"PatchMode": "Replace",
+			"When": { "HasMod": "DaisyNiko.SVR3" }
+		}
+	]
+}	  

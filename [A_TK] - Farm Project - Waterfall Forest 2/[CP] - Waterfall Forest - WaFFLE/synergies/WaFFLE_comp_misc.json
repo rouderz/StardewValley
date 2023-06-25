@@ -1,0 +1,163 @@
+{
+    "Changes": [
+
+//	MINECART PATCHER
+
+		{
+			"Action": "EditData",
+			"Target": "MinecartPatcher.Minecarts",
+			"Entries": {
+				"morecarts.waterfall_farmcave": {
+					"LocationName": "FarmCave",
+					"DisplayName": "Waterfall Cave",
+					"LandingPointX": 12,
+					"LandingPointY": 4,
+					"LandingPointDirection": 2,
+					"IsUnderground": false
+				}
+			},
+			"When": { 
+				"HasMod": "mod.kitchen.minecartpatcher",
+				"FarmType": "A_TK.FarmProjectForaging/WaFFLE",				
+				"Use_Waterfall_Cave_WaFFLE": "True",
+				"Replace_Normal_Cave_WaFFLE": "True"
+			}
+		},
+//
+		{
+			"Action": "EditData",
+			"Target": "MinecartPatcher.Minecarts",
+			"Entries": {
+				"morecarts.waterfall_altcave": {
+					"LocationName": "Custom_waterfall_cave_WaFFLE",
+					"DisplayName": "Waterfall Cave",
+					"LandingPointX": 49,
+					"LandingPointY": 4,
+					"LandingPointDirection": 2,
+					"IsUnderground": false
+				}
+			},
+			"When": { 
+				"HasMod": "mod.kitchen.minecartpatcher",
+				"FarmType": "A_TK.FarmProjectForaging/WaFFLE",				
+				"Use_Waterfall_Cave_WaFFLE": "True",
+				"Replace_Normal_Cave_WaFFLE": "False"
+			}
+		},
+
+		//	SECRET WOODS EXTRA AREA
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFFLE_Farm",
+			"AddWarps": [ "1 5 Custom_Ts.SecretWoodsExtraArea 43 13" ],
+			"When": { 
+				"HasMod": "Tikamin557.CP.SecretWoodsExtraArea",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+				"Secret_Woods_Shortcut_WaFFLE": "True",
+				"HasFlag" : "beenToWoods"
+			}
+		},	
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_Ts.SecretWoodsExtraArea",
+			"AddWarps": [ "45 12 Farm 1 3" ],
+			"When": {
+				"FarmType": "A_TK.FarmProjectForaging/WaFFLE",
+				"HasMod": "Tikamin557.CP.SecretWoodsExtraArea",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+				"Secret_Woods_Shortcut_WaFFLE": "True",
+				"HasFlag" : "beenToWoods"
+			}
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_Ts.SecretWoodsExtraArea",
+			"FromFile": "synergies/comp_assets/WaFFLE_Syn_SWEA.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 3, "Height": 5 },
+			"ToArea": { "X": 42, "Y": 11, "Width": 3, "Height": 5 },
+			"PatchMode": "Replace",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFFLE",
+				"HasMod": "Tikamin557.CP.SecretWoodsExtraArea",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+				"Secret_Woods_Shortcut_WaFFLE": "True",
+				"HasFlag" : "beenToWoods"
+			}
+		},
+
+//	STARDEW VALLEY EXPANDED
+
+//	//	EVENTS
+
+		{
+			"Action": "EditData",
+			"Target": "data/events/Farmhouse",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFFLE", 
+				"HasMod": "FlashShifter.StardewValleyExpandedCP",
+				"HasSeenEvent": "908072"
+			},
+			"Entries": {
+				"908074/t 600 2600": "continue/-500 -500/farmer -50 -50 0/skippable/pause 1000/changeLocation farm/warp farmer 48 9/faceDirection farmer 0 true/makeInvisible 48 7 1 3/viewport 48 9 clamp true/pause 2000/showFrame farmer 15/pause 100/startJittering/pause 250/addObject 48 7 24/playSound stoneStep/playSound stoneStep/pause 300/stopJittering/pause 230/showFrame farmer 12 true/pause 1500/playSound dwop/showFrame farmer 65 true/pause 1250/screenFlash 1/playSound wand/playSound wand/removeSprite 48 7/addLantern 1000 48 7 1/addTemporaryActor MagicWarp 48 48 47 8 2 false/positionOffset MagicaWarp 7 -6/pause 400/showFrame farmer 12 true/pause 350/playSound secret1/pause 2500/globalFade/viewport -1000 -1000/end"
+			}
+		},
+//
+		{  
+			"Action": "EditMap",
+			"Target": "Maps/Custom_EnchantedGrove",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFFLE",
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			},
+			"Update": "OnLocationChange",
+			"MapTiles": [
+				{
+				"Position": { "X": 30, "Y": 14 },
+				"Layer": "Back",
+				"SetProperties": { "TouchAction": "MagicWarp Farm 48 7" }
+				}
+			]
+		},
+		
+//	//	SECRET WOODS SHORTCUT
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFFLE_Farm",
+			"AddWarps": [ "1 5 Woods 66 1" ],
+			"When": { 
+				"HasMod": "FlashShifter.StardewValleyExpandedCP",
+				"Secret_Woods_Shortcut_WaFFLE": "True",
+				"HasFlag" : "beenToWoods"
+			}
+		},	
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Woods",
+			"AddWarps": [ "66 -1 Farm 1 3" ],
+			"When": {
+				"FarmType": "A_TK.FarmProjectForaging/WaFFLE",
+				"HasMod": "FlashShifter.StardewValleyExpandedCP",
+				"Secret_Woods_Shortcut_WaFFLE": "True",
+				"HasFlag" : "beenToWoods"
+			}
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Woods",
+			"FromFile": "synergies/comp_assets/WaFFLE_Syn_SVE.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 5, "Height": 7 },
+			"ToArea": { "X": 64, "Y": 0, "Width": 5, "Height": 7 },
+			"PatchMode": "Replace",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFFLE",
+				"HasMod": "FlashShifter.StardewValleyExpandedCP",
+				"Secret_Woods_Shortcut_WaFFLE": "True",
+				"HasFlag" : "beenToWoods"
+			}
+		}
+	]
+}	  

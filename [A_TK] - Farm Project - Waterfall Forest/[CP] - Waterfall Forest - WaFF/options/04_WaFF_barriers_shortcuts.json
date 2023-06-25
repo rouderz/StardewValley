@@ -1,0 +1,344 @@
+{
+    "Changes": [
+	  
+//	INVISIBLE BARRIERS
+
+//	//	BRIDGES
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/WaFF_EX_Options.tmx",
+			"FromArea": { "X": 129, "Y": 37, "Width": 6, "Height": 2 },
+			"ToArea": { "X": 79, "Y": 17, "Width": 6, "Height": 2 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Use_Invisible_Barriers_WaFF": "True",
+				"Old_Main_Bridge_WaFF": "False"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/WaFF_EX_Options.tmx",
+			"FromArea": { "X": 89, "Y": 58, "Width": 8, "Height": 2 },
+			"ToArea": { "X": 78, "Y": 16, "Width": 8, "Height": 2 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Use_Invisible_Barriers_WaFF": "True",
+				"Old_Main_Bridge_WaFF": "True"
+			}
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/WaFF_EX_Options.tmx",
+			"FromArea": { "X": 138, "Y": 16, "Width": 2, "Height": 4 },
+			"ToArea": { "X": 30, "Y": 40, "Width": 2, "Height": 4 },
+			"PatchMode": "Replace",
+			"When": { "Use_Invisible_Barriers_WaFF": "True" }
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/WaFF_EX_Options.tmx",
+			"FromArea": { "X": 138, "Y": 0, "Width": 2, "Height": 8 },
+			"ToArea": { "X": 58, "Y": 40, "Width": 2, "Height": 8 },
+			"PatchMode": "Replace",
+			"When": { "Use_Invisible_Barriers_WaFF": "True" }
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/WaFF_EX_Options.tmx",
+			"FromArea": { "X": 138, "Y": 9, "Width": 2, "Height": 6 },
+			"ToArea": { "X": 89, "Y": 73, "Width": 2, "Height": 6 },
+			"PatchMode": "Replace",
+			"When": { "Use_Invisible_Barriers_WaFF": "True" }
+		},
+		
+//	//	PEN
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/WaFF_EX_Options.tmx",
+			"FromArea": { "X": 26, "Y": 71, "Width": 4, "Height": 1 },
+			"ToArea": { "X": 3, "Y": 46, "Width": 4, "Height": 1 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Use_Animal_Pen_WaFF": "True",
+				"Animal_Pen_Size_WaFF": "1_Med, 2_Med, 1_Large",
+				"Use_Invisible_Barriers_WaFF": "True"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/WaFF_EX_Options.tmx",
+			"FromArea": { "X": 36, "Y": 73, "Width": 4, "Height": 1 },
+			"ToArea": { "X": 10, "Y": 65, "Width": 4, "Height": 1 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Use_Animal_Pen_WaFF": "True",
+				"Animal_Pen_Size_WaFF": "2_Med, 1_Large",
+				"Use_Invisible_Barriers_WaFF": "True"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/WaFF_EX_Options.tmx",
+			"FromArea": { "X": 22, "Y": 71, "Width": 1, "Height": 3 },
+			"ToArea": { "X": 18, "Y": 56, "Width": 1, "Height": 3 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Use_Animal_Pen_WaFF": "True",
+				"Animal_Pen_Size_WaFF": "1_Med, 2_Med",
+				"Use_Invisible_Barriers_WaFF": "True"
+			}
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/WaFF_EX_Options.tmx",
+			"FromArea": { "X": 26, "Y": 73, "Width": 4, "Height": 1 },
+			"ToArea": { "X": 29, "Y": 50, "Width": 4, "Height": 1 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Use_Animal_Pen_WaFF": "True",
+				"Animal_Pen_Size_WaFF": "2_Med, 1_Large",
+				"Use_Invisible_Barriers_WaFF": "True"
+			}
+		},	
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/WaFF_EX_Options.tmx",
+			"FromArea": { "X": 24, "Y": 71, "Width": 1, "Height": 3 },
+			"ToArea": { "X": 36, "Y": 54, "Width": 1, "Height": 3 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Use_Animal_Pen_WaFF": "True",
+				"Animal_Pen_Size_WaFF": "2_Med, 1_Large",
+				"Use_Invisible_Barriers_WaFF": "True"
+			}
+		},
+		
+//	//	STAIRS
+	
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/WaFF_EX_Options.tmx",
+			"FromArea": { "X": 138, "Y": 22, "Width": 2, "Height": 5 },
+			"ToArea": { "X": 41, "Y": 68, "Width": 2, "Height": 5 },
+			"PatchMode": "Replace",
+			"When": { "Use_Invisible_Barriers_WaFF": "True" }
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/WaFF_EX_Options.tmx",
+			"FromArea": { "X": 138, "Y": 34, "Width": 2, "Height": 5 },
+			"ToArea": { "X": 41, "Y": 76, "Width": 2, "Height": 5 },
+			"PatchMode": "Replace",
+			"When": { "Use_Invisible_Barriers_WaFF": "True" }
+		},		
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/WaFF_EX_Options.tmx",
+			"FromArea": { "X": 138, "Y": 22, "Width": 2, "Height": 5 },
+			"ToArea": { "X": 41, "Y": 84, "Width": 2, "Height": 5 },
+			"PatchMode": "Replace",
+			"When": { "Use_Invisible_Barriers_WaFF": "True" }
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/WaFF_EX_Options.tmx",
+			"FromArea": { "X": 138, "Y": 22, "Width": 2, "Height": 5 },
+			"ToArea": { "X": 114, "Y": 84, "Width": 2, "Height": 5 },
+			"PatchMode": "Replace",
+			"When": { "Use_Invisible_Barriers_WaFF": "True" }
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/WaFF_EX_Options.tmx",
+			"FromArea": { "X": 138, "Y": 28, "Width": 2, "Height": 5 },
+			"ToArea": { "X": 117, "Y": 12, "Width": 2, "Height": 5 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Use_Invisible_Barriers_WaFF": "True",
+				"Small_Stairs_Hills_WaFF": "False"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/WaFF_EX_Options.tmx",
+			"FromArea": { "X": 136, "Y": 28, "Width": 1, "Height": 5 },
+			"ToArea": { "X": 117, "Y": 12, "Width": 1, "Height": 5 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Use_Invisible_Barriers_WaFF": "True",
+				"Small_Stairs_Hills_WaFF": "True"
+			}
+		},		
+//	
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/WaFF_EX_Options.tmx",
+			"FromArea": { "X": 138, "Y": 22, "Width": 2, "Height": 5 },
+			"ToArea": { "X": 114, "Y": 31, "Width": 2, "Height": 5 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Use_Invisible_Barriers_WaFF": "True",
+				"Small_Stairs_Hills_WaFF": "False"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/WaFF_EX_Options.tmx",
+			"FromArea": { "X": 136, "Y": 22, "Width": 1, "Height": 5 },
+			"ToArea": { "X": 114, "Y": 31, "Width": 1, "Height": 5 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Use_Invisible_Barriers_WaFF": "True",
+				"Small_Stairs_Hills_WaFF": "True"
+			}
+		},		
+		
+//	SHORTCUTS OPTIONS
+
+//	//	FARM
+  
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"AddWarps": [
+				"47 4 Farm 37 74",
+				"37 72 Farm 47 6"
+				]
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"AddWarps": [
+				"46 4 Farm 37 74",
+				"38 72 Farm 46 6"
+				],
+			"When": { "Smaller_Shortcut_Caves_WaFF": "False" }
+		},
+
+//	  
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/WaFF_EX_Options.tmx",
+			"FromArea": { "X": 123, "Y": 31, "Width": 2, "Height": 4 },
+			"ToArea": { "X": 45, "Y": 3, "Width": 2, "Height": 4 },
+			"PatchMode": "Replace",
+			"When": { "Smaller_Shortcut_Caves_WaFF": "True" }
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/WaFF_EX_Options.tmx",
+			"FromArea": { "X": 126, "Y": 31, "Width": 2, "Height": 4 },
+			"ToArea": { "X": 38, "Y": 71, "Width": 2, "Height": 4 },
+			"PatchMode": "Replace",
+			"When": { "Smaller_Shortcut_Caves_WaFF": "True" }
+		},		
+
+//	//	SECRET WOODS
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/WaFF_EX_Options.tmx",
+			"FromArea": { "X": 121, "Y": 31, "Width": 1, "Height": 2 },
+			"ToArea": { "X": 4, "Y": 2, "Width": 1, "Height": 2 },
+			"PatchMode": "Replace",
+			"When": { "Secret_Woods_Shortcut_WaFF": "False" }
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/WaFF_EX_Options.tmx",
+			"FromArea": { "X": 118, "Y": 31, "Width": 2, "Height": 2 },
+			"ToArea": { "X": 3, "Y": 2, "Width": 2, "Height": 2 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Secret_Woods_Shortcut_WaFF": "True",
+				"HasFlag" : "beenToWoods"
+			}
+		},		
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"AddWarps": [ "1 5 Woods 47 1" ],
+			"When": { 
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+				"HasMod |contains=Tikamin557.CP.SecretWoodsExtraArea": "false",
+				"Secret_Woods_Shortcut_WaFF": "True",
+				"HasFlag" : "beenToWoods"
+			}
+		},	
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Woods",
+			"AddWarps": [ "47 -1 Farm 1 3" ],
+			"When": {
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+				"HasMod |contains=Tikamin557.CP.SecretWoodsExtraArea": "false",
+				"Secret_Woods_Shortcut_WaFF": "True",
+				"HasFlag" : "beenToWoods"
+			}
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Woods",
+			"FromFile": "options/WaFF_EX_Options.tmx",
+			"FromArea": { "X": 89, "Y": 61, "Width": 5, "Height": 3 },
+			"ToArea": { "X": 45, "Y": 0, "Width": 5, "Height": 3 },
+			"PatchMode": "Replace",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+				"HasMod |contains=Tikamin557.CP.SecretWoodsExtraArea": "false",
+				"Secret_Woods_Shortcut_WaFF": "True",
+				"HasFlag" : "beenToWoods"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Woods",
+			"FromFile": "options/WaFF_EX_Options.tmx",
+			"FromArea": { "X": 91, "Y": 65, "Width": 2, "Height": 1 },
+			"ToArea": { "X": 47, "Y": 3, "Width": 2, "Height": 1 },
+			"PatchMode": "Replace",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+				"HasMod |contains=Tikamin557.CP.SecretWoodsExtraArea": "false",
+				"Secret_Woods_Shortcut_WaFF": "True",
+				"HasFlag" : "beenToWoods"
+			}
+		}
+	]
+}		

@@ -1,0 +1,275 @@
+{
+    "Changes": [
+	
+//	NORTH PATH
+
+//	//	ALL
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Locations",
+			"Entries": { "Custom_waterfall_path_north": "20 .7 16 .5/396 .5 398 .8/404 .4 406 .4 408 .9/414 .25 418 .4 283 .5/136 -1 142 -1 153 -1 702 -1 700 -1/136 -1 142 -1 153 -1 138 -1 702 -1 700 -1 698 -1/136 -1 140 -1 142 -1 153 -1 702 -1 700 -1/136 -1 140 -1 141 -1 153 -1 707 -1 702 -1 700 -1 698 -1/382 .06 582 .1 378 .1 102 .15 390 .25 330 1" }
+		},
+//
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_waterfall_path_north",
+			"MapProperties": { "AllowGrassSurviveInWinter": "T" }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_waterfall_path_north",
+			"MapProperties": { "EnableGrassSpread": "T" }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_waterfall_path_north",
+			"MapProperties": { "SpawnGrassFromPathsOnNewYear": "T" }
+        },
+//
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_waterfall_path_north",
+			"MapProperties": { "ClearEmptyDirtOnNewMonth": "T" }
+        },
+//
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_waterfall_path_north",
+			"MapProperties": { "Fall_Objects": "T" }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_waterfall_path_north",
+			"MapProperties": { "Spring_Objects": "T" }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_waterfall_path_north",
+			"MapProperties": { "Summer_Objects": "T" }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_waterfall_path_north",
+			"MapProperties": { "Winter_Objects": "T" }
+        },
+//
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_waterfall_path_north",
+			"MapProperties": { "ForceAllowTreePlanting": "T" }
+        },
+//
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_waterfall_path_north",
+			"MapProperties": { "IsFarm": "T" }
+        },
+//
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_waterfall_path_north",
+			"MapProperties": { "Outdoors": "T" }
+        },
+//
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_waterfall_path_north",
+			"MapProperties": { "SpawnDebrisOnNewYear": "T" }
+        },
+		
+//	//	WAFF
+
+		{
+			"Action": "EditData",
+			"Target": "Mods/Bouhm.NPCMapLocations/Locations",
+			"Entries": {
+				"Custom_waterfall_path_north": {
+					"MapVectors": [
+						{ MapX: 260, MapY: 200, TileX: 0, TileY: 0 },
+						{ MapX: 430, MapY: 230, TileX: 110, TileY: 35 }
+					],
+					"MapTooltip": {
+						"X": 231,
+						"Y": 191,
+						"Width": 200,
+						"Height": 50,
+						"PrimaryText": "Waterfall Forest North Path"
+					}
+				}
+			},
+				"When": {
+					"HasMod": "Bouhm.NPCMapLocations",
+					"FarmType": "A_TK.FarmProjectForaging/WaFF",
+					"Use_Northern_Path_WaFFLE": "True"
+					}		
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_path_north",
+			"FromFile": "options/ALL_EX_Options.tmx",
+			"FromArea": { "X": 45, "Y": 17, "Width": 35, "Height": 13 },
+			"ToArea": { "X": 75, "Y": 22, "Width": 35, "Height": 13 },
+			"PatchMode": "Replace",
+			"When": { "FarmType": "A_TK.FarmProjectForaging/WaFF" }
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_path_north",
+			"MapProperties": { "CanBuildHere": "T" },
+			"When": {
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"Use_Northern_Path_WaFF": "True"
+			}
+		},
+		
+//	//	WAFFLE
+
+		{
+			"Action": "EditData",
+			"Target": "Mods/Bouhm.NPCMapLocations/Locations",
+			"Entries": {
+				"Custom_waterfall_path_north": {
+					"MapVectors": [
+						{ MapX: 260, MapY: 200, TileX: 0, TileY: 0 },
+						{ MapX: 430, MapY: 230, TileX: 110, TileY: 35 }
+					],
+					"MapTooltip": {
+						"X": 231,
+						"Y": 191,
+						"Width": 200,
+						"Height": 50,
+						"PrimaryText": "Waterfall Forest North Path"
+					}
+				}
+			},
+				"When": {
+					"HasMod": "Bouhm.NPCMapLocations",
+					"FarmType": "A_TK.FarmProjectForaging/WaFFLE",
+					"Use_Northern_Path_WaFFLE": "True"
+					}		
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_path_north",
+			"MapProperties": { "CanBuildHere": "T" },
+			"When": {
+				"FarmType": "A_TK.FarmProjectForaging/WaFFLE",
+				"Use_Northern_Path_WaFFLE": "True"
+			}
+		},
+
+//	WARPS
+
+//	//	ALL
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_path_north",
+			"AddWarps": [
+				"99 9 Backwoods 14 39",
+				"100 9 Backwoods 14 39",
+				"101 9 Backwoods 14 39",
+				"6 35 Farm 40 0",
+				"7 35 Farm 40 0"
+			]
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_path_north",
+			"AddWarps": [
+				"1 9 Custom_waterfall_path_north 92 19",
+				"2 9 Custom_waterfall_path_north 93 19",
+				"92 17 Custom_waterfall_path_north 1 11",
+				"93 17 Custom_waterfall_path_north 2 11"
+			]
+		},
+
+//	//	WAFF
+
+        {
+            "Action": "EditMap",
+            "Target": "Maps/WaFF_Farm",
+			"MapProperties": { "BackwoodsEntry": "40 0" },
+			"When": { "Use_Northern_Path_WaFF": "False" }
+        },
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"AddWarps": [
+				"40 -1 Backwoods 14 39",
+				"41 -1 Backwoods 14 39"
+			],
+			"When": { "Use_Northern_Path_WaFF": "False" }
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"AddWarps": [
+				"40 -1 Custom_waterfall_path_north 6 34",
+				"41 -1 Custom_waterfall_path_north 6 34"
+			],
+			"When": { "Use_Northern_Path_WaFF": "True" }
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Backwoods",
+			"AddWarps": [
+				"13 40 Custom_waterfall_path_north 100 10",
+				"14 40 Custom_waterfall_path_north 100 10",
+				"15 40 Custom_waterfall_path_north 100 10"
+			],
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"Use_Northern_Path_WaFF": "True" 
+			}
+		},
+
+//	//	WAFFLE	
+
+        {
+            "Action": "EditMap",
+            "Target": "Maps/WaFFLE_Farm",
+			"MapProperties": { "BackwoodsEntry": "40 0" },
+			"When": { "Use_Northern_Path_WaFFLE": "False" }
+        },
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFFLE_Farm",
+			"AddWarps": [
+				"40 -1 Backwoods 14 39",
+				"41 -1 Backwoods 14 39"
+			],
+			"When": { "Use_Northern_Path_WaFFLE": "False" }
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFFLE_Farm",
+			"AddWarps": [
+				"40 -1 Custom_waterfall_path_north 6 34",
+				"41 -1 Custom_waterfall_path_north 6 34"
+				],
+			"When": { "Use_Northern_Path_WaFFLE": "True" }
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Backwoods",
+			"AddWarps": [
+				"13 40 Custom_waterfall_path_north 100 10",
+				"14 40 Custom_waterfall_path_north 100 10",
+				"15 40 Custom_waterfall_path_north 100 10"
+			],
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFFLE",
+				"Use_Northern_Path_WaFFLE": "True"
+			}
+		}
+	]
+}	  

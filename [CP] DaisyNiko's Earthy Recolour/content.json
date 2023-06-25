@@ -45,28 +45,32 @@
         //cursors overlay
         {
             "Action": "EditImage",
-            "Target": "LooseSprites/Cursors, LooseSprites/Cursors2",
+            "Target": "LooseSprites/Cursors",
             "FromFile": "assets/{{Target}}.png",
-            "PatchMode": "Overlay"
+            "ToArea":{"X":0,"Y":0,"Width":704,"Height":2256},
+            "PatchMode":"Overlay"
+        },
+        {
+            "Action":"EditImage",
+            "Target":"LooseSprites/Cursors2",
+            "FromFile":"assets/{{Target}}.png",
+            "ToArea":{"X":0,"Y":0,"Width":256,"Height":320},
+            "PatchMode":"Overlay"
         },
         //cursors water
         {
             "Action": "EditImage",
             "Target": "LooseSprites/Cursors",
             "FromFile": "assets/{{Target}}_water.png",
-            "PatchMode": "Replace",
-            "ToArea": {
-                "X": 0,
-                "Y": 2000,
-                "Width": 640,
-                "Height": 256
-            }
+            "ToArea": {"X": 0,"Y": 2000,"Width": 640,"Height": 256},
+            "PatchMode": "Replace"
         },
-        // debris
+        // debris overlay
         {
             "Action":"EditImage",
             "Target":"Maps/springobjects",
             "FromFile":"assets/{{Target}}.png",
+            "ToArea": {"X": 0,"Y": 0,"Width": 384,"Height": 624},
             "PatchMode":"Overlay"
         },
         //desert tiles

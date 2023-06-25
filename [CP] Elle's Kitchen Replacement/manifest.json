@@ -1,7 +1,7 @@
 {
    "Name": "Elle's Kitchen Replacement",
    "Author": "Elle/Junimods",
-   "Version": "1.1.4",
+   "Version": "1.1.5",
    "Description": "Replaces the kitchen tiles in farmhouse_tiles.xnb!",
    "UniqueID": "Elle.Kitchen",
    "MinimumApiVersion": "2.5",
@@ -32,6 +32,10 @@
    },
    {
       "UniqueID": "grapeponta.VibrantPastoralRecolor",
+      "IsRequired": false
+   },
+   {
+      "UniqueID": "DaisyNiko.EarthyInteriors",
       "IsRequired": false
    },
 ],

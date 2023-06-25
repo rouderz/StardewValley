@@ -1,5 +1,5 @@
 {
-  "Format": "1.8",
+  "Format": "1.19",
   
   "ConfigSchema": {
 	"Farmhouse Counter": {"AllowValues": "Tile, Wood",

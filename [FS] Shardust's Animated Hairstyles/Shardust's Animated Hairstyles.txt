@@ -1,15 +1,17 @@
-WHAT'S NEW:
+Shardust's Animated Hairstyles for Fashion Sense
 
-Curls-Short
-Dreads-Headband
-Dreads-Ponytail
-Dreads-Side Buzzcut
-Dreads-Twintails
-Low Ponytail-Side Bangs
-Short-Sideswept
-Vanilla Hair 11
-Vanilla Hair 14
-Vanilla Hair 27
+December 2023 update: 5 new hairstyles for a total of 100.
+
+New Hairstyles:
+
+High Ponytail-Curls
+Undercut - Long Bangs
+Vanilla Hair 17
+Vanilla Hair 29
+Vanilla Hair 31
+
+Fixed:
+Vanilla Hair 49 to 69 (correct number)
 
 To use this mod you need Fashion Sense. 
 

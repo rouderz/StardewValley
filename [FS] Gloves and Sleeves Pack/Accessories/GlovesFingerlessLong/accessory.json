@@ -462,7 +462,26 @@
       // End of Watering Can frames
 
       // Start of Slingshot frames
-      // NOTE: Purposely skipping the slingshot as it breaks all the conventions for the Accessory sprite
+      {
+        "Frame": 84,
+        "SubFrames": [
+          {
+            "Frame": 87,
+            "Handling": "SlingshotBackArm"
+          },
+          {
+            "Frame": 90,
+            "Handling": "SlingshotFrontArm"
+          }
+        ],
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "CurrentFarmerFrame",
+            "Value": 42
+          }
+        ]
+      },
       // End of Slingshot frames
 
       // Start of Panning frames
@@ -991,6 +1010,16 @@
         ]
       },
       {
+        "Frame": 87,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "CurrentFarmerFrame",
+            "Value": 44
+          }
+        ]
+      },
+      {
         "Frame": 124, // Also Fishing -> Reeling frame
         "EndWhenFarmerFrameUpdates": true,
         "Conditions": [
@@ -1099,9 +1128,23 @@
       // End of Watering Can frames
 
       // Start of Slingshot frames
-      // NOTE: Purposely skipping the slingshot as it breaks all the conventions for the Accessory sprite
+      {
+        "Frame": 86,
+        "SubFrames": [
+          {
+            "Frame": 91,
+            "Handling": "SlingshotFrontArm"
+          }
+        ],
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "CurrentFarmerFrame",
+            "Value": 44
+          }
+        ]
+      },
       // End of Slingshot frames
-
 
       // Start of Shearing frames
       {
@@ -1453,6 +1496,16 @@
         ]
       },
       {
+        "Frame": 180,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "CurrentFarmerFrame",
+            "Value": 89
+          }
+        ]
+      },
+      {
         "Frame": 101, // Also Fishing -> Reeling frame
         "EndWhenFarmerFrameUpdates": true,
         "Conditions": [
@@ -1561,9 +1614,27 @@
       // End of Watering Can frames
 
       // Start of Slingshot frames
-      // NOTE: Purposely skipping the slingshot as it breaks all the conventions for the Accessory sprite
+      {
+        "Frame": 92,
+        "SubFrames": [
+          {
+            "Frame": 88,
+            "Handling": "SlingshotBackArm"
+          },
+          {
+            "Frame": 89,
+            "Handling": "SlingshotFrontArm"
+          }
+        ],
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "CurrentFarmerFrame",
+            "Value": 43
+          }
+        ]
+      },
       // End of Slingshot frames
-
 
       // Start of Shearing frames
       {
@@ -2011,6 +2082,16 @@
         ]
       },
       {
+        "Frame": 180,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "CurrentFarmerFrame",
+            "Value": 89
+          }
+        ]
+      },
+      {
         "Frame": 101, // Also Fishing -> Reeling frame
         "EndWhenFarmerFrameUpdates": true,
         "Conditions": [
@@ -2119,9 +2200,27 @@
       // End of Watering Can frames
 
       // Start of Slingshot frames
-      // NOTE: Purposely skipping the slingshot as it breaks all the conventions for the Accessory sprite
+      {
+        "Frame": 92,
+        "SubFrames": [
+          {
+            "Frame": 88,
+            "Handling": "SlingshotBackArm"
+          },
+          {
+            "Frame": 89,
+            "Handling": "SlingshotFrontArm"
+          }
+        ],
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "CurrentFarmerFrame",
+            "Value": 43
+          }
+        ]
+      },
       // End of Slingshot frames
-
 
       // Start of Shearing frames
       {

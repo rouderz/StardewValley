@@ -1,7 +1,7 @@
 ﻿{
   "Name": "[FS] Wabi's Wardrobe",
   "Author": "Wabi",
-  "Version": "1.6.0",
+  "Version": "1.7.0",
   "Description": "Adds clothing for FS.",
   "UniqueID": "wabi.wabiswardrobe",
   "UpdateKeys": [ "Nexus:11113" ],

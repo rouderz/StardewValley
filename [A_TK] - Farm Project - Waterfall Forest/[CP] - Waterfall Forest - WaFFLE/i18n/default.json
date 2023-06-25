@@ -1,0 +1,117 @@
+{
+	"config.section.Cave_Shortcuts_WaFFLE.name": "> Cave & Shortcuts",
+
+	"config.Use_Waterfall_Cave_WaFFLE.name": "Activate the Waterfall Cave",
+	"config.Use_Waterfall_Cave_WaFFLE.description": "Make the Waterfall Cave accessible on your farm (by default, this will be in addition to the normal cave). Disabling this option will remove all of the cave extra entrances from the map.",
+	
+	"config.Replace_Normal_Cave_WaFFLE.name": "Overwrite the normal cave",
+	"config.Replace_Normal_Cave_WaFFLE.description": "WARNING! Empty your cave before activating that option as cave's content is not transferred automatically! Allow the Waterfall Cave to completely replace the farm's original cave instead of acting as an extra location (usefull for compatibility with older version of the mod). Note that this will conflict with any other mod modifying the regular cave.",
+	
+	"config.Tent_Entrance_WaFFLE.name": "Hide the cave behind a tent",
+	"config.Tent_Entrance_WaFFLE.description": "Replace the cave entrance between the farmhouse and the bus exit with a tent, similar to older versions of the mod.",
+
+	"config.Cellar_Allows_Casks_in_Cave_WaFFLE.name": "Allow casks in the cave",
+	"config.Cellar_Allows_Casks_in_Cave_WaFFLE.description": "Once the farmhouse cellar is built, extend the usage of casks to the Waterfall Cave.",
+	
+	"config.Smaller_Shortcut_Caves_WaFFLE.name": "Smaller shortcut entrances",
+	"config.Smaller_Shortcut_Caves_WaFFLE.description": "Make the shortcuts' entrances smaller. Regular horses will no longer be able to use them.",
+	
+	"config.Secret_Woods_Shortcut_WaFFLE.name": "Shortcut to Secret Woods",
+	"config.Secret_Woods_Shortcut_WaFFLE.description": "Unlock a path next to the farm's shrine that will quickly lead to the Secret Woods if the player has already been there at least once.",	
+
+	"config.section.Animals_Monsters_WaFFLE.name": "> Animals & Monsters Features",
+
+	"config.Use_Pethouse_WaFFLE.name": "Use the Pet House",
+	"config.Use_Pethouse_WaFFLE.description": "Add a pethouse (or optionally some plants) right next to the farmhouse.",
+	
+	"config.Pethouse_Type_WaFFLE.name": "Pet House design",
+	"config.Pethouse_Type_WaFFLE.description": "Change the pethouse appearance to fit different styles. Beware that plants don't come with a water bowl for your pet.",
+	"config.Pethouse_Type_WaFFLE.values.Auto": "Automatic detection",	
+	"config.Pethouse_Type_WaFFLE.values.New": "Modern pet house",
+	"config.Pethouse_Type_WaFFLE.values.Old": "Ancient pet house",
+	"config.Pethouse_Type_WaFFLE.values.Plants": "Decorative Plants",
+	
+	"config.Use_Animal_Pen_WaFFLE.name": "Add Animal pens",
+	"config.Use_Animal_Pen_WaFFLE.description": "Place one or more animal pens on the western side of the farm.",
+
+	"config.Animal_Pen_Size_WaFFLE.name": "Animal pens number & size",
+	"config.Animal_Pen_Size_WaFFLE.description": "Select the amount and size of the animal pens.",
+	"config.Animal_Pen_Size_WaFFLE.values.2_Med": "Two medium sized pens",
+	"config.Animal_Pen_Size_WaFFLE.values.1_Med": "One medium sized pen",
+	"config.Animal_Pen_Size_WaFFLE.values.1_Large": "One large sized pen",
+	
+	"config.Use_Invisible_Barriers_WaFFLE.name": "Invisible animal barriers",
+	"config.Use_Invisible_Barriers_WaFFLE.description": "Prevent animals from using stairs, bridges or leaving the pen. Disable to let them roam the farm freely.",	
+
+	"config.Add_Dark_Shrine_WaFFLE.name": "Add Dark Shrine to the farm",
+	"config.Add_Dark_Shrine_WaFFLE.description": "Generate a statue next to Grandpa's shrine that'll behave as a Dark Shrine. Useful to correct older versions of the farm where monsters spawning was incorrectly activated.",
+	
+	"config.section.Water_Features_WaFFLE.name": "> Water Features",
+	
+	"config.Beach_Type_WaFFLE.name": "Beach type",
+	"config.Beach_Type_WaFFLE.description": "Choose between a dry beach full of sand with very few water, a grassy beach with a large lake or a saltwater one with sea forage and palm trees.",
+	"config.Beach_Type_WaFFLE.values.Sea": "Sea beach",	
+	"config.Beach_Type_WaFFLE.values.Lake": "Lake beach",	
+	"config.Beach_Type_WaFFLE.values.Dry": "Dry beach",
+	"config.Beach_Type_WaFFLE.values.Dry_Pond": "Dry beach (with pond)",
+
+	"config.Beach_Bridge_WaFFLE.name": "Beach bridges type",
+	"config.Beach_Bridge_WaFFLE.description": "Turn the small bridges on the beach into either wooden planks or natural sand. Beware that the sand option will prevent you from laying path tiles over it, which may hinder mods relying on said tiles to work (like Automate).",
+	"config.Beach_Bridge_WaFFLE.values.Planks": "Wooden planks",	
+	"config.Beach_Bridge_WaFFLE.values.Sand": "Sand steps",	
+	
+	"config.Fish_Pool_WaFFLE.name": "Catchable fish",
+	"config.Fish_Pool_WaFFLE.description": "When playing on the large map, select the type of fishes that can be caught on the farm (this feature will change after Stardew Valley 1.6 update). Sea fishes can only be caught if the sea beach is active.",
+	"config.Fish_Pool_WaFFLE.values.Forest": "Forest fishes",
+	"config.Fish_Pool_WaFFLE.values.Sea": "Sea fishes (Require sea beach)",
+
+	"config.Turn_Pond_into_Spa_WaFFLE.name": "Healing pond",
+	"config.Turn_Pond_into_Spa_WaFFLE.description": "Turn the small pond south of the twin waterfalls into a healing pond.",
+	
+	"config.No_Water_Spa_WaFFLE.name": "No water effects in pond",
+	"config.No_Water_Spa_WaFFLE.description": "Remove water effects and properties from the healing pond (usefull for some mod compatibility issues, note that this is automatically actived when using the Swim mod).",	
+
+	"config.Fountain_Decoration_WaFFLE.name": "Decorated fountain area",
+	"config.Fountain_Decoration_WaFFLE.description": "Add a fountain and its decorated surroundings to the farm.",
+	
+	"config.section.Natural_Terrain_Features_WaFFLE.name": "> Natural Terrain Features",
+	
+	"config.TF_Dirt_Color_WaFFLE.name": "Southern dirt color",
+	"config.TF_Dirt_Color_WaFFLE.description": "Select the color of the dirt around the twin falls area. The automatic option will leave the dirt dark and only change it in case of compatibility issues (like mods trying to use said dirt as quarry tiles).",
+	"config.TF_Dirt_Color_WaFFLE.values.Automatic": "Automatic detection",
+	"config.TF_Dirt_Color_WaFFLE.values.Dark": "Dark dirt",
+	"config.TF_Dirt_Color_WaFFLE.values.Light": "Light dirt",
+
+	"config.Add_Cliffs_N_WaFFLE.name": "Northern Cliff",
+	"config.Add_Cliffs_N_WaFFLE.description": "Add a cliff on the farmhouse main island.",
+
+	"config.Add_Cliffs_E_WaFFLE.name": "Eastern Cliffs",
+	"config.Add_Cliffs_E_WaFFLE.description": "Add some cliffs to the south-eastern part of the map.",
+	
+	"config.Add_Small_Ridges_N_WaFFLE.name": "Northern ridge",
+	"config.Add_Small_Ridges_N_WaFFLE.description": "Add a small ridge south of the farmhouse.",
+
+	"config.Add_Small_Ridges_E_WaFFLE.name": "Eastern ridge",
+	"config.Add_Small_Ridges_E_WaFFLE.description": "Add a small ridge near the south-eastern bridge.",
+	
+	"config.Dense_Forest_Area_WaFFLE.name": "Dense forested areas",
+	"config.Dense_Forest_Area_WaFFLE.description": "Add trees and a dense foliage above the tree stumps West and East of the farm.",
+	
+	"config.section.Artificial_Terrain_Features_WaFFLE.name": "> Built Terrain Features",
+
+	"config.Fences_WaFFLE.name": "Fences amount",
+	"config.Fences_WaFFLE.description": "Handle the amount of decorative fences that will be present on the farm.",	
+	"config.Fences_WaFFLE.values.Standard": "Normal amount",
+	"config.Fences_WaFFLE.values.Less": "Less fences",
+	"config.Fences_WaFFLE.values.More": "More fences",
+	"config.Fences_WaFFLE.values.Even_More": "Even more fences",
+	
+	"config.Small_Stairs_Hills_WaFFLE.name": "Smaller hills stairs",
+	"config.Small_Stairs_Hills_WaFFLE.description": "Reverse the two hills' large stairs in the center of the map into their original smaller size.  Beware that regular horses will no longer be able to use them!",	
+	
+	"config.Old_Main_Bridge_WaFFLE.name": "Farmhouse bridge replacer",
+	"config.Old_Main_Bridge_WaFFLE.description": "Replace the bridge beween the farmhouse and the path to the bus stop by the bigger one used in previous versions of the mod.",
+	
+	"config.Use_Wooden_Bridges_WaFFLE.name": "Eastern wooden bridges",
+	"config.Use_Wooden_Bridges_WaFFLE.description": "Revert the eastern stone bridges to their previous wooden form used in previous versions of the mod."
+}

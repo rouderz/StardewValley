@@ -77,15 +77,15 @@
   },
   "BackShirt": {
     "SleeveColors": [
-      [ 206, 205, 211 ],
       [ 234, 234, 237 ],
+      [ 157, 155, 167 ],
       [ 206, 205, 211 ],
     ],
     "ColorMasks": [
       [ 157, 155, 167 ],
       [ 234, 234, 237 ],
       [ 206, 205, 211 ],
-    ],      
+    ],     
     "DisableGrayscale": false,
       "StartingPosition": {
       "X": 0,

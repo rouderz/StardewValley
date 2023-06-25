@@ -1,0 +1,439 @@
+{
+	"Changes": [
+	  
+//	NPC MAP LOCATION
+		
+		{
+			"Action": "EditData",
+			"Target": "Mods/Bouhm.NPCMapLocations/Locations",
+			"Entries": {
+				"Farm": {
+					"MapVectors": [
+						{ MapX: 200, MapY: 240, TileX: 0, TileY: 0 },
+						{ MapX: 470, MapY: 380, TileX: 160, TileY: 100 }
+					],
+					"MapTooltip": {
+						"X": 201,
+						"Y": 241,
+						"Width": 315,
+						"Height": 155,
+						"PrimaryText": "Waterfall Forest Farm"
+					}
+				}
+			},
+				"When": { 
+					"FarmType": "A_TK.FarmProjectForaging/WaFF",
+					"HasMod": "Bouhm.NPCMapLocations"
+				}		
+		},
+
+//	WORLD MAP RECOLOR
+
+//	//	DEFAULT
+
+        {
+            "Action": "Load",
+            "Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
+            "FromFile": "assets/world_map/_default_SV/all_WaFF.png",
+			"When": { 
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+				"HasMod |contains=DaisyNiko.EarthyRecolour": "false",
+				"HasMod |contains=grapeponta.VibrantPastoralRecolor": "false",
+				"HasMod |contains=grapeponta.VibrantPastoralSVE": "false",
+				"HasMod |contains=Acerbicon.Recolor": "false",
+				"World_Map_Recolor": "True"
+			}
+        },
+		{
+			"Action": "EditImage",
+			"Target": "LooseSprites/map",
+			"FromFile": "assets/world_map/_default_SV/{{season}}_WaFF.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 130, "Height": 60 },
+			"ToArea": { "X": 0, "Y": 43, "Width": 130, "Height": 60 },		
+			"PatchMode": "Replace",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"HasMod |contains=Bouhm.NPCMapLocations": "true",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+				"HasMod |contains=DaisyNiko.EarthyRecolour": "false",
+				"HasMod |contains=grapeponta.VibrantPastoralRecolor": "false",
+				"HasMod |contains=grapeponta.VibrantPastoralSVE": "false",
+				"HasMod |contains=Acerbicon.Recolor": "false",
+				"World_Map_Recolor": "True"
+			}
+		},		
+//
+		{
+            "Action": "Load",
+            "Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
+            "FromFile": "assets/world_map/_default_SV/{{season}}_WaFF_SVE.png",
+			"When": { 
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+				"HasMod |contains=DaisyNiko.EarthyRecolour": "false",
+				"HasMod |contains=grapeponta.VibrantPastoralRecolor": "false",
+				"HasMod |contains=grapeponta.VibrantPastoralSVE": "false",
+				"HasMod |contains=Acerbicon.Recolor": "false",
+				"World_Map_Recolor": "True"
+			}
+        },
+		{
+			"Action": "EditImage",
+			"Target": "LooseSprites/map",
+			"FromFile": "assets/world_map/_default_SV/{{season}}_WaFF_SVE.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 130, "Height": 60 },
+			"ToArea": { "X": 0, "Y": 43, "Width": 130, "Height": 60 },		
+			"PatchMode": "Replace",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+				"HasMod |contains=DaisyNiko.EarthyRecolour": "false",
+				"HasMod |contains=grapeponta.VibrantPastoralRecolor": "false",
+				"HasMod |contains=grapeponta.VibrantPastoralSVE": "false",
+				"HasMod |contains=Acerbicon.Recolor": "false",
+				"World_Map_Recolor": "True"
+			}
+		},
+		
+//	//	EARTHY RECOLOR
+
+        {
+            "Action": "Load",
+            "Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
+            "FromFile": "assets/world_map/Earthy_Recolour/{{season}}_WaFF.png",
+			"When": { 
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+				"HasMod |contains=DaisyNiko.EarthyRecolour": "true",
+				"World_Map_Recolor": "True"
+			}
+        },
+		{
+			"Action": "EditImage",
+			"Target": "LooseSprites/map",
+			"FromFile": "assets/world_map/Earthy_Recolour/{{season}}_WaFF.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 130, "Height": 60 },
+			"ToArea": { "X": 0, "Y": 43, "Width": 130, "Height": 60 },		
+			"PatchMode": "Replace",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"HasMod |contains=Bouhm.NPCMapLocations": "true",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+				"HasMod |contains=DaisyNiko.EarthyRecolour": "true",
+				"World_Map_Recolor": "True"
+			}
+		},		
+//
+		{
+            "Action": "Load",
+            "Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
+            "FromFile": "assets/world_map/Earthy_Recolour/{{season}}_WaFF_SVE.png",
+			"When": { 
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+				"HasMod |contains=DaisyNiko.EarthyRecolour": "true",
+				"World_Map_Recolor": "True"
+			}
+        },
+		{
+			"Action": "EditImage",
+			"Target": "LooseSprites/map",
+			"FromFile": "assets/world_map/Earthy_Recolour/{{season}}_WaFF_SVE.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 130, "Height": 60 },
+			"ToArea": { "X": 0, "Y": 43, "Width": 130, "Height": 60 },		
+			"PatchMode": "Replace",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+				"HasMod |contains=DaisyNiko.EarthyRecolour": "true",
+				"World_Map_Recolor": "True"			
+			}
+		},
+
+//	//	VIBRANT PASTORAL GREEN
+
+        {
+            "Action": "Load",
+            "Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
+            "FromFile": "assets/world_map/Vibrant_Pastoral/{{season}}_WaFF.png",
+			"When": { 
+				"Season |contains=fall": "false",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+				"HasMod |contains=grapeponta.VibrantPastoralRecolor": "true",
+				"World_Map_Recolor": "True"
+			}
+        },
+        {
+            "Action": "Load",
+            "Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
+            "FromFile": "assets/world_map/Vibrant_Pastoral/{{season}}_green_WaFF.png",
+			"When": { 
+				"Season": "fall",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+				"HasMod |contains=grapeponta.VibrantPastoralRecolor": "true",
+				"World_Map_Recolor": "True",
+				"World_Map_Colors_Alt": "False"
+			}
+        },
+		{
+			"Action": "EditImage",
+			"Target": "LooseSprites/map",
+			"FromFile": "assets/world_map/_default_SV/{{season}}_WaFF.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 130, "Height": 60 },
+			"ToArea": { "X": 0, "Y": 43, "Width": 130, "Height": 60 },		
+			"PatchMode": "Replace",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"Season |contains=fall": "false",				
+				"HasMod |contains=Bouhm.NPCMapLocations": "true",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+				"HasMod |contains=grapeponta.VibrantPastoralRecolor": "true",
+				"World_Map_Recolor": "True"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "LooseSprites/map",
+			"FromFile": "assets/world_map/_default_SV/{{season}}_green_WaFF.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 130, "Height": 60 },
+			"ToArea": { "X": 0, "Y": 43, "Width": 130, "Height": 60 },		
+			"PatchMode": "Replace",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"Season": "fall",		
+				"HasMod |contains=Bouhm.NPCMapLocations": "true",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+				"HasMod |contains=grapeponta.VibrantPastoralRecolor": "true",
+				"World_Map_Recolor": "True",
+				"World_Map_Colors_Alt": "False"
+			}
+		},
+//
+		{
+            "Action": "Load",
+            "Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
+            "FromFile": "assets/world_map/Vibrant_Pastoral/{{season}}_WaFF_SVE.png",
+			"When": { 
+				"Season |contains=fall": "false",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+				"HasMod |contains=grapeponta.VibrantPastoralSVE": "true",
+				"World_Map_Recolor": "True"
+			}
+        },
+		{
+            "Action": "Load",
+            "Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
+            "FromFile": "assets/world_map/Vibrant_Pastoral/{{season}}_green_WaFF_SVE.png",
+			"When": { 
+				"Season": "fall",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+				"HasMod |contains=grapeponta.VibrantPastoralSVE": "true",
+				"World_Map_Recolor": "True",
+				"World_Map_Colors_Alt": "False"
+			}
+        },
+		{
+			"Action": "EditImage",
+			"Target": "LooseSprites/map",
+			"FromFile": "assets/world_map/Vibrant_Pastoral/{{season}}_WaFF_SVE.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 130, "Height": 60 },
+			"ToArea": { "X": 0, "Y": 43, "Width": 130, "Height": 60 },		
+			"PatchMode": "Replace",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"Season |contains=fall": "false",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+				"HasMod |contains=grapeponta.VibrantPastoralSVE": "true",
+				"World_Map_Recolor": "True"				
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "LooseSprites/map",
+			"FromFile": "assets/world_map/Vibrant_Pastoral/{{season}}_green_WaFF_SVE.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 130, "Height": 60 },
+			"ToArea": { "X": 0, "Y": 43, "Width": 130, "Height": 60 },		
+			"PatchMode": "Replace",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"Season": "fall",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+				"HasMod |contains=grapeponta.VibrantPastoralSVE": "true",
+				"World_Map_Recolor": "True",
+				"World_Map_Colors_Alt": "False"				
+			}
+		},
+
+//	//	VIBRANT PASTORAL RED
+
+        {
+            "Action": "Load",
+            "Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
+            "FromFile": "assets/world_map/Vibrant_Pastoral/{{season}}_WaFF.png",
+			"When": { 
+				"Season": "fall",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+				"HasMod |contains=grapeponta.VibrantPastoralRecolor": "true",
+				"World_Map_Recolor": "True",
+				"World_Map_Colors_Alt": "True"
+			}
+        },
+		{
+			"Action": "EditImage",
+			"Target": "LooseSprites/map",
+			"FromFile": "assets/world_map/_default_SV/{{season}}_WaFF.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 130, "Height": 60 },
+			"ToArea": { "X": 0, "Y": 43, "Width": 130, "Height": 60 },		
+			"PatchMode": "Replace",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"Season": "fall",		
+				"HasMod": "Bouhm.NPCMapLocations",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+				"HasMod |contains=grapeponta.VibrantPastoralRecolor": "true",
+				"World_Map_Recolor": "True",
+				"World_Map_Colors_Alt": "True"
+			}
+		},
+//
+		{
+            "Action": "Load",
+            "Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
+            "FromFile": "assets/world_map/Vibrant_Pastoral/{{season}}_WaFF_SVE.png",
+			"When": { 
+				"Season": "fall",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+				"HasMod |contains=grapeponta.VibrantPastoralSVE": "true",
+				"World_Map_Recolor": "True",
+				"World_Map_Colors_Alt": "True"
+			}
+        },
+		{
+			"Action": "EditImage",
+			"Target": "LooseSprites/map",
+			"FromFile": "assets/world_map/Vibrant_Pastoral/{{season}}_WaFF_SVE.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 130, "Height": 60 },
+			"ToArea": { "X": 0, "Y": 43, "Width": 130, "Height": 60 },		
+			"PatchMode": "Replace",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"Season": "fall",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+				"HasMod |contains=grapeponta.VibrantPastoralSVE": "true",
+				"World_Map_Recolor": "True",
+				"World_Map_Colors_Alt": "True"			
+			}
+		},
+		
+//	//	WITTILY NAMED DARK
+
+        {
+            "Action": "Load",
+            "Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
+            "FromFile": "assets/world_map/Wittily_Named/all_dark_WaFF.png",
+			"When": { 
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+				"HasMod |contains=Acerbicon.Recolor": "true",
+				"World_Map_Recolor": "True",
+				"World_Map_Colors_Alt": "False"
+			}
+        },
+		{
+			"Action": "EditImage",
+			"Target": "LooseSprites/map",
+            "FromFile": "assets/world_map/Wittily_Named/all_dark_WaFF.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 130, "Height": 60 },
+			"ToArea": { "X": 0, "Y": 43, "Width": 130, "Height": 60 },		
+			"PatchMode": "Replace",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"HasMod": "Bouhm.NPCMapLocations",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+				"HasMod |contains=Acerbicon.Recolor": "true",
+				"World_Map_Recolor": "True",
+				"World_Map_Colors_Alt": "False"	
+			}
+		},		
+//
+        {
+            "Action": "Load",
+            "Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
+            "FromFile": "assets/world_map/_default_SV/{{season}}_WaFF_SVE.png",
+			"When": { 
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",			
+				"HasMod |contains=Acerbicon.Recolor": "true",
+				"World_Map_Recolor": "True",
+				"World_Map_Colors_Alt": "False"
+				}
+        },
+		{
+			"Action": "EditImage",
+			"Target": "LooseSprites/map",
+			"FromFile": "assets/world_map/_default_SV/{{season}}_WaFF_SVE.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 130, "Height": 60 },
+			"ToArea": { "X": 0, "Y": 43, "Width": 130, "Height": 60 },		
+			"PatchMode": "Replace",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",			
+				"HasMod |contains=Acerbicon.Recolor": "true",
+				"World_Map_Recolor": "True",
+				"World_Map_Colors_Alt": "False"			
+			}
+		},
+		
+//	//	WITTILY NAMED LIGHT
+
+        {
+            "Action": "Load",
+            "Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
+            "FromFile": "assets/world_map/Wittily_Named/all_light_WaFF.png",
+			"When": { 
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",				
+				"HasMod |contains=Acerbicon.Recolor": "true",
+				"World_Map_Recolor": "True",
+				"World_Map_Colors_Alt": "True"
+			}
+        },
+		{
+			"Action": "EditImage",
+			"Target": "LooseSprites/map",
+            "FromFile": "assets/world_map/Wittily_Named/all_light_WaFF.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 130, "Height": 60 },
+			"ToArea": { "X": 0, "Y": 43, "Width": 130, "Height": 60 },		
+			"PatchMode": "Replace",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"HasMod |contains=Bouhm.NPCMapLocations": "true",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+				"HasMod |contains=Acerbicon.Recolor": "true",
+				"World_Map_Recolor": "True",
+				"World_Map_Colors_Alt": "True"			
+			}
+		},
+//		
+        {
+            "Action": "Load",
+            "Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
+            "FromFile": "assets/world_map/_default_SV/{{season}}_WaFF_SVE.png",
+			"When": { 
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+				"HasMod |contains=Acerbicon.Recolor": "true",
+				"World_Map_Recolor": "True",
+				"World_Map_Colors_Alt": "True"
+			}
+        },
+		{
+			"Action": "EditImage",
+			"Target": "LooseSprites/map",
+			"FromFile": "assets/world_map/_default_SV/{{season}}_WaFF_SVE.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 130, "Height": 60 },
+			"ToArea": { "X": 0, "Y": 43, "Width": 130, "Height": 60 },		
+			"PatchMode": "Replace",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+				"HasMod |contains=Acerbicon.Recolor": "true",
+				"World_Map_Recolor": "True",
+				"World_Map_Colors_Alt": "True"				
+			}
+		}
+	]
+}	  
