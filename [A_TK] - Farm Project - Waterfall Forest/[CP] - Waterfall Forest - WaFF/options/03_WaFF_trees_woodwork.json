@@ -132,57 +132,6 @@
 				"Animal_Pen_Size_WaFF": "1_Large"
 			}
 		},
-		
-//	PETHOUSE
-
-		{
-			"Action": "EditMap",
-			"Target": "Maps/WaFF_Farm",
-			"FromFile": "options/WaFF_EX_Options.tmx",
-			"FromArea": { "X": 104, "Y": 40, "Width": 3, "Height": 3 },
-			"ToArea": { "X": 50, "Y": 3, "Width": 3, "Height": 3 },
-			"PatchMode": "Replace",
-			"When": {
-				"HasMod": "Gweniaczek.Medieval_buildings",
-				"Use_Pethouse_WaFF": "True",		
-				"Pethouse_Type_WaFF": "Auto"
-			}
-		},
-		{
-			"Action": "EditMap",
-			"Target": "Maps/WaFF_Farm",
-			"FromFile": "options/WaFF_EX_Options.tmx",
-			"FromArea": { "X": 104, "Y": 40, "Width": 3, "Height": 3 },
-			"ToArea": { "X": 50, "Y": 3, "Width": 3, "Height": 3 },
-			"PatchMode": "Replace",
-			"When": { 
-				"Use_Pethouse_WaFF": "True",				
-				"Pethouse_Type_WaFF": "Old" 
-			}
-		},
-//
-		{
-			"Action": "EditMap",
-			"Target": "Maps/WaFF_Farm",
-			"FromFile": "options/WaFF_EX_Options.tmx",
-			"FromArea": { "X": 104, "Y": 44, "Width": 3, "Height": 3 },
-			"ToArea": { "X": 50, "Y": 3, "Width": 3, "Height": 3 },
-			"PatchMode": "Replace",
-			"When": { 
-				"Use_Pethouse_WaFF": "True",			
-				"Pethouse_Type_WaFF": "Plants"
-			}
-		},
-//
-		{
-			"Action": "EditMap",
-			"Target": "Maps/WaFF_Farm",
-			"FromFile": "options/WaFF_EX_Options.tmx",
-			"FromArea": { "X": 97, "Y": 40, "Width": 6, "Height": 7 },
-			"ToArea": { "X": 50, "Y": 3, "Width": 6, "Height": 7 },
-			"PatchMode": "Replace",
-			"When": { "Use_Pethouse_WaFF": "False" }
-		},
 
 //	WOODS
 

@@ -114,6 +114,7 @@
 			"PatchMode": "Replace",
 			"When": { "FarmType": "A_TK.FarmProjectForaging/WaFF" }
 		},
+//
 		{
 			"Action": "EditMap",
 			"Target": "Maps/Custom_waterfall_path_north",
@@ -150,6 +151,7 @@
 					"Use_Northern_Path_WaFFLE": "True"
 					}		
 		},
+//
 		{
 			"Action": "EditMap",
 			"Target": "Maps/Custom_waterfall_path_north",

@@ -34,12 +34,27 @@
         {
             "Action": "Load",
             "Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
-            "FromFile": "assets/world_map/_default_SV/all_WaFF.png",
+            "FromFile": "assets/world_map/_default_SV/{{season}}_WaFF.png",
+			"When": { "World_Map_Recolor": "False" }
+        },
+		{
+			"Action": "EditImage",
+			"Target": "LooseSprites/map",
+			"FromFile": "assets/world_map/_default_SV/{{season}}_WaFF.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 130, "Height": 60 },
+			"ToArea": { "X": 0, "Y": 43, "Width": 130, "Height": 60 },		
+			"PatchMode": "Replace",
+			"When": { "World_Map_Recolor": "False" }
+		},	
+//
+        {
+            "Action": "Load",
+            "Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
+            "FromFile": "assets/world_map/_default_SV/{{season}}_WaFF.png",
 			"When": { 
 				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
 				"HasMod |contains=DaisyNiko.EarthyRecolour": "false",
 				"HasMod |contains=grapeponta.VibrantPastoralRecolor": "false",
-				"HasMod |contains=grapeponta.VibrantPastoralSVE": "false",
 				"HasMod |contains=Acerbicon.Recolor": "false",
 				"World_Map_Recolor": "True"
 			}
@@ -57,7 +72,6 @@
 				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
 				"HasMod |contains=DaisyNiko.EarthyRecolour": "false",
 				"HasMod |contains=grapeponta.VibrantPastoralRecolor": "false",
-				"HasMod |contains=grapeponta.VibrantPastoralSVE": "false",
 				"HasMod |contains=Acerbicon.Recolor": "false",
 				"World_Map_Recolor": "True"
 			}
@@ -71,7 +85,6 @@
 				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
 				"HasMod |contains=DaisyNiko.EarthyRecolour": "false",
 				"HasMod |contains=grapeponta.VibrantPastoralRecolor": "false",
-				"HasMod |contains=grapeponta.VibrantPastoralSVE": "false",
 				"HasMod |contains=Acerbicon.Recolor": "false",
 				"World_Map_Recolor": "True"
 			}
@@ -88,7 +101,6 @@
 				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
 				"HasMod |contains=DaisyNiko.EarthyRecolour": "false",
 				"HasMod |contains=grapeponta.VibrantPastoralRecolor": "false",
-				"HasMod |contains=grapeponta.VibrantPastoralSVE": "false",
 				"HasMod |contains=Acerbicon.Recolor": "false",
 				"World_Map_Recolor": "True"
 			}
@@ -213,7 +225,7 @@
 			"When": { 
 				"Season |contains=fall": "false",
 				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
-				"HasMod |contains=grapeponta.VibrantPastoralSVE": "true",
+				"HasMod |contains=grapeponta.VibrantPastoralRecolor": "true",
 				"World_Map_Recolor": "True"
 			}
         },
@@ -224,7 +236,7 @@
 			"When": { 
 				"Season": "fall",
 				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
-				"HasMod |contains=grapeponta.VibrantPastoralSVE": "true",
+				"HasMod |contains=grapeponta.VibrantPastoralRecolor": "true",
 				"World_Map_Recolor": "True",
 				"World_Map_Colors_Alt": "False"
 			}
@@ -240,7 +252,7 @@
 				"FarmType": "A_TK.FarmProjectForaging/WaFF",
 				"Season |contains=fall": "false",
 				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
-				"HasMod |contains=grapeponta.VibrantPastoralSVE": "true",
+				"HasMod |contains=grapeponta.VibrantPastoralRecolor": "true",
 				"World_Map_Recolor": "True"				
 			}
 		},
@@ -255,7 +267,7 @@
 				"FarmType": "A_TK.FarmProjectForaging/WaFF",
 				"Season": "fall",
 				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
-				"HasMod |contains=grapeponta.VibrantPastoralSVE": "true",
+				"HasMod |contains=grapeponta.VibrantPastoralRecolor": "true",
 				"World_Map_Recolor": "True",
 				"World_Map_Colors_Alt": "False"				
 			}
@@ -300,7 +312,7 @@
 			"When": { 
 				"Season": "fall",
 				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
-				"HasMod |contains=grapeponta.VibrantPastoralSVE": "true",
+				"HasMod |contains=grapeponta.VibrantPastoralRecolor": "true",
 				"World_Map_Recolor": "True",
 				"World_Map_Colors_Alt": "True"
 			}
@@ -316,7 +328,7 @@
 				"FarmType": "A_TK.FarmProjectForaging/WaFF",
 				"Season": "fall",
 				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
-				"HasMod |contains=grapeponta.VibrantPastoralSVE": "true",
+				"HasMod |contains=grapeponta.VibrantPastoralRecolor": "true",
 				"World_Map_Recolor": "True",
 				"World_Map_Colors_Alt": "True"			
 			}

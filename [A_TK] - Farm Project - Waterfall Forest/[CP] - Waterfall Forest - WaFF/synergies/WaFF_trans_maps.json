@@ -45,26 +45,6 @@
 				"Secret_Woods_Shortcut_WaFF": "True",
 				"HasFlag |contains=beenToWoods": "false"
 			}
-		},
-		
-//	SV1.5 FIXES MAILS
-
-//	//	DARK SHRINE
-
-		{
-			"Action": "EditData",
-			"Target": "Data/mail",
-			"Entries": { "A_TK_day1_bun_WaFF": "Bonjour @,^^Une étrange statue a été découvertes dans la Forêt des Cataractes, à proximité de la tombe de votre grand-père. Elle semble capable de repousser ou d'attirer les monstres!^^Afin d'en faire usage au plus vite nous vous avons envoyé cette mystérieuse patisserie qui, nous l'espérons, vous sera utile! %item object 203 1 %%[#]Découverte d'une étrange statue" },
-			"When": { "Language": "fr" },		
-		},
-
-//	//	TV
-
-		{
-			"Action": "EditData",
-			"Target": "Data/mail",
-			"Entries": { "A_TK_day1_TV_WaFF": "Nous avons appris que certains résidents avaient rencontré des problèmes avec leur TV. Dans le cas où la votre serait manquante après votre emménagement, nous vous en avons envoyé une nouvelle gratuitement!^^PS - S'il s'avère que vous ayez déjà une TV fonctionnelle il est inutile de nous la renvoyer. Vous être libre de la garder! %item furniture 1680 %%[#]Livraison de TV" },
-			"When": { "Language": "fr" },
 		}
 	]
 }	  

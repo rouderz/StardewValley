@@ -20,16 +20,6 @@
 	"config.Secret_Woods_Shortcut_WaFFLE.description": "Unlock a path next to the farm's shrine that will quickly lead to the Secret Woods if the player has already been there at least once.",	
 
 	"config.section.Animals_Monsters_WaFFLE.name": "> Animals & Monsters Features",
-
-	"config.Use_Pethouse_WaFFLE.name": "Use the Pet House",
-	"config.Use_Pethouse_WaFFLE.description": "Add a pethouse (or optionally some plants) right next to the farmhouse.",
-	
-	"config.Pethouse_Type_WaFFLE.name": "Pet House design",
-	"config.Pethouse_Type_WaFFLE.description": "Change the pethouse appearance to fit different styles. Beware that plants don't come with a water bowl for your pet.",
-	"config.Pethouse_Type_WaFFLE.values.Auto": "Automatic detection",	
-	"config.Pethouse_Type_WaFFLE.values.New": "Modern pet house",
-	"config.Pethouse_Type_WaFFLE.values.Old": "Ancient pet house",
-	"config.Pethouse_Type_WaFFLE.values.Plants": "Decorative Plants",
 	
 	"config.Use_Animal_Pen_WaFFLE.name": "Add Animal pens",
 	"config.Use_Animal_Pen_WaFFLE.description": "Place one or more animal pens on the western side of the farm.",
@@ -43,9 +33,6 @@
 	"config.Use_Invisible_Barriers_WaFFLE.name": "Invisible animal barriers",
 	"config.Use_Invisible_Barriers_WaFFLE.description": "Prevent animals from using stairs, bridges or leaving the pen. Disable to let them roam the farm freely.",	
 
-	"config.Add_Dark_Shrine_WaFFLE.name": "Add Dark Shrine to the farm",
-	"config.Add_Dark_Shrine_WaFFLE.description": "Generate a statue next to Grandpa's shrine that'll behave as a Dark Shrine. Useful to correct older versions of the farm where monsters spawning was incorrectly activated.",
-	
 	"config.section.Water_Features_WaFFLE.name": "> Water Features",
 	
 	"config.Beach_Type_WaFFLE.name": "Beach type",

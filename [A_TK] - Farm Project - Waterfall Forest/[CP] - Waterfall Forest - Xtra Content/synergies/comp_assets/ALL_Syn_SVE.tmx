@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="3" height="3" tilewidth="16" tileheight="16" infinite="0" nextlayerid="13" nextobjectid="4271">
- <tileset firstgid="1" name="Paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
-  <image source="paths" width="64" height="144"/>
+ <tileset firstgid="1" name="Paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths" width="64" height="256"/>
   <tile id="0">
    <properties>
     <property name="PathType" value="NE"/>
@@ -33,7 +33,7 @@
    </properties>
   </tile>
  </tileset>
- <tileset firstgid="37" name="untitled tile sheet" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
+ <tileset firstgid="65" name="untitled tile sheet" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
   <image source="spring_outdoorsTileSheet" width="400" height="1264"/>
   <tile id="150">
    <properties>
@@ -2358,7 +2358,7 @@
    </properties>
   </tile>
  </tileset>
- <tileset firstgid="2012" name="x20 - Daisy Extras" tilewidth="16" tileheight="16" tilecount="1800" columns="30">
+ <tileset firstgid="2040" name="x20 - Daisy Extras" tilewidth="16" tileheight="16" tilecount="1800" columns="30">
   <image source="spring_daisyextras.png" width="480" height="960"/>
   <tile id="4">
    <properties>
@@ -2769,7 +2769,7 @@
    </animation>
   </tile>
  </tileset>
- <tileset firstgid="3812" name="x22 - ALL_Syn_SVE" tilewidth="16" tileheight="16" tilecount="15" columns="5">
+ <tileset firstgid="3840" name="x22 - ALL_Syn_SVE" tilewidth="16" tileheight="16" tilecount="15" columns="5">
   <image source="ALL_Syn_SVE.png" width="80" height="48"/>
   <tile id="3">
    <animation>
@@ -2784,28 +2784,28 @@
  </tileset>
  <layer id="1" name="Back" width="3" height="3">
   <data encoding="csv">
-442,442,443,
-1009,986,1011,
-337,1035,341
+470,470,471,
+1037,1064,1039,
+365,1063,369
 </data>
  </layer>
  <layer id="11" name="Back2" width="3" height="3">
   <data encoding="csv">
-3812,0,0,
-3817,3815,3819,
-3822,3823,3824
+3840,0,0,
+3845,3843,3847,
+3850,3851,3852
 </data>
  </layer>
  <layer id="2" name="Buildings" width="3" height="3">
   <data encoding="csv">
-0,872,2316,
+0,900,0,
 0,0,0,
 0,0,0
 </data>
  </layer>
  <layer id="12" name="Buildings2" width="3" height="3">
   <data encoding="csv">
-0,3813,3814,
+0,3841,3842,
 0,0,0,
 0,0,0
 </data>

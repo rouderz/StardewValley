@@ -21,16 +21,6 @@
 
 	"config.section.Animals_Monsters_WaFFLE.name": "> Animaux & Monstres",
 
-	"config.Use_Pethouse_WaFFLE.name": "Utiliser une niche",
-	"config.Use_Pethouse_WaFFLE.description": "Ajoute une niche (ou des plantes si désiré) à proximité de la maison de ferme.",
-	
-	"config.Pethouse_Type_WaFFLE.name": "Apparence de la niche",
-	"config.Pethouse_Type_WaFFLE.description": "Change l'apparence de la niche en fonction du style désiré. Notez que choisir les plantes retire le bol d'eau de la ferme.",
-	"config.Pethouse_Type_WaFFLE.values.Auto": "Détection automatique",	
-	"config.Pethouse_Type_WaFFLE.values.New": "Aspect moderne",
-	"config.Pethouse_Type_WaFFLE.values.Old": "Aspect ancient",
-	"config.Pethouse_Type_WaFFLE.values.Plants": "Plantes décoratives",
-	
 	"config.Use_Animal_Pen_WaFFLE.name": "Ajouter des enclos",
 	"config.Use_Animal_Pen_WaFFLE.description": "Ajoute un ou plusieurs enclos à l'ouest de la ferme.",
 
@@ -43,9 +33,6 @@
 	"config.Use_Invisible_Barriers_WaFFLE.name": "Barrières invisibles",
 	"config.Use_Invisible_Barriers_WaFFLE.description": "Empêche les animaux d'utiliser les escaliers, ponts ou de quitter les enclos.",	
 
-	"config.Add_Dark_Shrine_WaFFLE.name": "Sanctuaire sombre",
-	"config.Add_Dark_Shrine_WaFFLE.description": "Ajoute un sanctuaire sombre à la ferme, aux côtés de la tombe. Utile pour corriger les versions du mod où les monstres apparaissent sur la ferme par erreur.",
-	
 	"config.section.Water_Features_WaFFLE.name": "> Options aquatiques",
 	
 	"config.Beach_Type_WaFFLE.name": "Type de plage",

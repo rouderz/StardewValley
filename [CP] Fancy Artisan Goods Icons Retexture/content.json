@@ -1,5 +1,5 @@
 {
-	"Format": "1.11.0",
+	"Format": "2.0.0",
 	"ConfigSchema": {
 	
 		
@@ -217,7 +217,95 @@
 	},
 	"Changes": [
 	
+	//1.6 recolors
 	
+	//Wine
+		{
+			"Action": "EditImage",
+			"Target": "Tilesheets/Objects_2",
+			"FromFile": "assets/wine.png",
+			"ToArea": { "X": 48, "Y": 240, "Width": 16, "Height": 16 },
+			"When": {
+				"Wine": "True",
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Tilesheets/Objects_2",
+			"FromFile": "assets/winebagi.png",
+			"ToArea": { "X": 64, "Y": 240, "Width": 16, "Height": 16 },
+			"When": {
+				"Wine": "True",
+			}
+		},
+		
+	//Juice
+		{
+			"Action": "EditImage",
+				"Target": "Tilesheets/Objects_2",
+			"FromFile": "assets/juice.png",
+			"ToArea": { "X": 80, "Y": 240, "Width": 16, "Height": 16 },
+			"When": {
+				"Juice": "True",
+			}
+		},
+		
+		{
+			"Action": "EditImage",
+			"Target": "Tilesheets/Objects_2",
+			"FromFile": "assets/juicebagi.png",
+			"ToArea": { "X": 96, "Y": 240, "Width": 16, "Height": 16 },
+			"When": {
+				"Juice": "True",
+			}
+		},
+		
+		
+		
+	//Pickles
+		{
+			"Action": "EditImage",
+			"Target": "Tilesheets/Objects_2",
+			"FromFile": "assets/pickles.png",
+			"ToArea": { "X": 0, "Y": 256, "Width": 16, "Height": 16 },
+			"When": {
+				"Pickles": "True",
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Tilesheets/Objects_2",
+			"FromFile": "assets/picklebagi.png",
+			"ToArea": { "X": 16, "Y": 256, "Width": 16, "Height": 16 },
+			"When": {
+				"Pickles": "True"
+			}
+		},
+		
+		
+		//Jelly
+		{
+			"Action": "EditImage",
+			"Target": "Tilesheets/Objects_2",
+			"FromFile": "assets/jelly.png",
+			"ToArea": { "X": 32, "Y": 256, "Width": 16, "Height": 16 },
+			"When": {
+				"Jelly": "True",
+			}
+		},
+		
+		{
+			"Action": "EditImage",
+			"Target": "Tilesheets/Objects_2",
+			"FromFile": "assets/jellybagi.png",
+			"ToArea": { "X": 48, "Y": 256, "Width": 16, "Height": 16 },
+			"When": {
+				"Jelly": "True"
+			}
+		},
+		
+		
+//--------------------------------
 
 		//FairyDust
 		{
@@ -262,27 +350,7 @@
 			}
 		},
 	
-	//Wine
-		{
-			"Action": "EditImage",
-			"Target": "Maps/springobjects",
-			"FromFile": "assets/wine.png",
-			"ToArea": { "X": 192, "Y": 224, "Width": 16, "Height": 16 },
-			"When": {
-				"Wine": "True",
-			}
-		},
-		
-	//Juice
-		{
-			"Action": "EditImage",
-			"Target": "Maps/springobjects",
-			"FromFile": "assets/juice.png",
-			"ToArea": { "X": 224, "Y": 224, "Width": 16, "Height": 16 },
-			"When": {
-				"Juice": "True",
-			}
-		},
+	
 	
 	//Truffle
 		{
@@ -546,16 +614,7 @@
 				"Honey": "True",
 			}
 		},
-	//Jelly
-		{
-			"Action": "EditImage",
-			"Target": "Maps/springobjects",
-			"FromFile": "assets/jelly.png",
-			"ToArea": { "X": 128, "Y": 224, "Width": 16, "Height": 16 },
-			"When": {
-				"Jelly": "True",
-			}
-		},
+	
 	
 	
 		
@@ -664,16 +723,7 @@
 		},
 	
 		
-	//Pickles
-		{
-			"Action": "EditImage",
-			"Target": "Maps/springobjects",
-			"FromFile": "assets/pickles.png",
-			"ToArea": { "X": 96, "Y": 224, "Width": 16, "Height": 16 },
-			"When": {
-				"Pickles": "True",
-			}
-		},
+	
 	//PineTar
 		{
 			"Action": "EditImage",

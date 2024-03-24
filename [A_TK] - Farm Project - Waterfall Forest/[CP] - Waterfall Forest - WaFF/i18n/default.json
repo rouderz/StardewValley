@@ -21,16 +21,6 @@
 
 	"config.section.Animals_Monsters_WaFF.name": "> Animals & Monsters Features",
 
-	"config.Use_Pethouse_WaFF.name": "Use the Pet House",
-	"config.Use_Pethouse_WaFF.description": "Add a pethouse (or optionally some plants) right next to the farmhouse.",
-	
-	"config.Pethouse_Type_WaFF.name": "Pet House design",
-	"config.Pethouse_Type_WaFF.description": "Change the pethouse appearance to fit different styles. Beware that plants don't come with a water bowl for your pet.",
-	"config.Pethouse_Type_WaFF.values.Auto": "Automatic detection",	
-	"config.Pethouse_Type_WaFF.values.New": "Modern pet house",
-	"config.Pethouse_Type_WaFF.values.Old": "Ancient pet house",
-	"config.Pethouse_Type_WaFF.values.Plants": "Decorative Plants",
-	
 	"config.Use_Animal_Pen_WaFF.name": "Add Animal pens",
 	"config.Use_Animal_Pen_WaFF.description": "Place one or more animal pens on the western side of the farm.",
 
@@ -43,9 +33,6 @@
 	"config.Use_Invisible_Barriers_WaFF.name": "Invisible animal barriers",
 	"config.Use_Invisible_Barriers_WaFF.description": "Prevent animals from using stairs, bridges or leaving the pen. Disable to let them roam the farm freely.",	
 
-	"config.Add_Dark_Shrine_WaFF.name": "Add Dark Shrine to the farm",
-	"config.Add_Dark_Shrine_WaFF.description": "Generate a statue next to Grandpa's shrine that'll behave as a Dark Shrine. Useful to correct older versions of the farm where monsters spawning was incorrectly activated.",
-	
 	"config.section.Water_Features_WaFF.name": "> Water Features",
 	
 	"config.Beach_Type_WaFF.name": "Beach type",
