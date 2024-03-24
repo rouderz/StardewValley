@@ -3,10 +3,7 @@
 
 	"config.Use_Waterfall_Cave_WaFFLE.name": "Activate the Waterfall Cave",
 	"config.Use_Waterfall_Cave_WaFFLE.description": "Make the Waterfall Cave accessible on your farm (by default, this will be in addition to the normal cave). Disabling this option will remove all of the cave extra entrances from the map.",
-	
-	"config.Replace_Normal_Cave_WaFFLE.name": "Overwrite the normal cave",
-	"config.Replace_Normal_Cave_WaFFLE.description": "WARNING! Empty your cave before activating that option as cave's content is not transferred automatically! Allow the Waterfall Cave to completely replace the farm's original cave instead of acting as an extra location (usefull for compatibility with older version of the mod). Note that this will conflict with any other mod modifying the regular cave.",
-	
+
 	"config.Tent_Entrance_WaFFLE.name": "Hide the cave behind a tent",
 	"config.Tent_Entrance_WaFFLE.description": "Replace the cave entrance between the farmhouse and the bus exit with a tent, similar to older versions of the mod.",
 

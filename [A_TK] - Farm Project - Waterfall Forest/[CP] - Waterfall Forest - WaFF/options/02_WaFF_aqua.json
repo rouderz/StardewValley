@@ -1,57 +1,5 @@
 {
     "Changes": [
-	  
-//	FISHING OPTIONS
-
-		{
-			"Action": "EditData",
-			"Target": "Data/Locations",
-			"Entries": { "Farm": "-1/-1/-1/-1/132 -1 137 -1 143 -1 145 -1 153 -1 702 -1 706 -1/132 -1 138 -1 144 -1 145 -1 153 -1 702 -1 704 -1 706 -1/132 -1 137 -1 139 -1 140 -1 143 -1 153 -1 269 -1 699 -1 702 -1 706 -1/132 -1 140 -1 141 -1 143 -1 144 -1 153 -1 269 -1 699 -1 702 -1 707 -1/136 -1 140 -1 142 -1 153 -1 702 -1 700 -1/136 -1 140 -1 141 -1 153 -1 707 -1 702 -1 700 -1 698 -1/382 .05 770 .1 390 .25 330 1"},
-			"When": {
-				"FarmType": "A_TK.FarmProjectForaging/WaFF",
-				"Fish_Pool_WaFF": "Forest"				
-			}
-		},
-		{
-			"Action": "EditData",
-			"Target": "Data/Locations",
-			"Entries": { "Farm": "-1/-1/-1/-1/132 -1 137 -1 143 -1 145 -1 153 -1 702 -1 706 -1/132 -1 138 -1 144 -1 145 -1 153 -1 702 -1 704 -1 706 -1/132 -1 137 -1 139 -1 140 -1 143 -1 153 -1 269 -1 699 -1 702 -1 706 -1/132 -1 140 -1 141 -1 143 -1 144 -1 153 -1 269 -1 699 -1 702 -1 707 -1/136 -1 140 -1 142 -1 153 -1 702 -1 700 -1/136 -1 140 -1 141 -1 153 -1 707 -1 702 -1 700 -1 698 -1/382 .05 770 .1 390 .25 330 1"},
-			"When": {
-				"FarmType": "A_TK.FarmProjectForaging/WaFF",
-				"Fish_Pool_WaFF": "Sea",	
-				"Beach_Type_WaFF |contains=Sea": "false"				
-			}
-		},
-//
-		{
-			"Action": "EditData",
-			"Target": "Data/Locations",
-			"Entries": { "Farm": "-1/-1/-1/-1/129 -1 131 -1 147 -1 148 -1 152 -1 267 -1 708 -1/128 -1 130 -1 146 -1 149 -1 150 -1 152 -1 155 -1 267 -1 701 -1 708 -1/129 -1 131 -1 148 -1 150 -1 152 -1 154 -1 155 -1 701 -1 705 -1/130 -1 131 -1 146 -1 147 -1 150 -1 151 -1 152 -1 154 -1 705 -1 708 -1/382 .05 770 .1 390 .25 330 1"},
-			"When": {
-				"FarmType": "A_TK.FarmProjectForaging/WaFF",
-				"Fish_Pool_WaFF": "Sea",	
-				"Beach_Type_WaFF": "Sea"				
-			}
-		},
-		
-//	FORAGE OPTIONS
-
-		{
-			"Action": "EditMap",
-			"Target": "Maps/WaFF_Farm",
-			"MapProperties": {"SpawnBeachFarmForage": "T"},
-			"When": { "Beach_Type_WaFF": "Sea" }
-		},
-//
-		{
-			"Action": "EditMap",
-			"Target": "Maps/WaFF_Farm",
-			"MapProperties": {"FarmOceanCrabPotOverride": "T"},
-			"When": { 
-				"Fish_Pool_WaFF": "Sea",	
-				"Beach_Type_WaFF": "Sea"
-			}
-		},
 
 //	BEACH OPTIONS
 

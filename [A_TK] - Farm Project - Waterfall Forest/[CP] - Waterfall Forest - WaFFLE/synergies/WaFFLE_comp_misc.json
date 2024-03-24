@@ -7,27 +7,6 @@
 			"Action": "EditData",
 			"Target": "MinecartPatcher.Minecarts",
 			"Entries": {
-				"morecarts.waterfall_farmcave": {
-					"LocationName": "FarmCave",
-					"DisplayName": "Waterfall Cave",
-					"LandingPointX": 12,
-					"LandingPointY": 4,
-					"LandingPointDirection": 2,
-					"IsUnderground": false
-				}
-			},
-			"When": { 
-				"HasMod": "mod.kitchen.minecartpatcher",
-				"FarmType": "A_TK.FarmProjectForaging/WaFFLE",				
-				"Use_Waterfall_Cave_WaFFLE": "True",
-				"Replace_Normal_Cave_WaFFLE": "True"
-			}
-		},
-//
-		{
-			"Action": "EditData",
-			"Target": "MinecartPatcher.Minecarts",
-			"Entries": {
 				"morecarts.waterfall_altcave": {
 					"LocationName": "Custom_waterfall_cave_WaFFLE",
 					"DisplayName": "Waterfall Cave",
@@ -40,8 +19,7 @@
 			"When": { 
 				"HasMod": "mod.kitchen.minecartpatcher",
 				"FarmType": "A_TK.FarmProjectForaging/WaFFLE",				
-				"Use_Waterfall_Cave_WaFFLE": "True",
-				"Replace_Normal_Cave_WaFFLE": "False"
+				"Use_Waterfall_Cave_WaFFLE": "True"
 			}
 		},
 

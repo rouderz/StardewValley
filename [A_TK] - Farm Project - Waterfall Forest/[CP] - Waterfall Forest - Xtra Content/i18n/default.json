@@ -7,14 +7,6 @@
 	"config.World_Map_Colors_Alt.name": "Use alternative colors",
 	"config.World_Map_Colors_Alt.description": "When available, will use a recolor optional colors on the map. Vibrant pastoral will show red autumn grass (instead of green) & Wittily Named Recolor will show light dirt (instead of dark)",	
 	
-	"config.section.Additional_Locations.name": "> Additional locations",
-
-	"config.Use_Northern_Path_WaFF.name": "(WaFF) Use northern path",
-	"config.Use_Northern_Path_WaFF.description": "Add a new map between WaFF's northern exit and the Backwoods.",
-	
-	"config.Use_Northern_Path_WaFFLE.name": "(WaFFLE) Use northern path",
-	"config.Use_Northern_Path_WaFFLE.description": "Add a new map between WaFFLE's northern exit and the Backwoods.",
-	
 	"config.section.Abandoned_Shed_Ex.name": "> Abandoned shed exterior",
 
 	"config.Abandoned_Shed_Appearance.name": "Shed appearance",

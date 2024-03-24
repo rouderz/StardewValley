@@ -4,9 +4,6 @@
 	"config.Use_Waterfall_Cave_WaFF.name": "Activer la Grotte des Chutes",
 	"config.Use_Waterfall_Cave_WaFF.description": "Rend la Grotte des Chutes accessible sur la ferme (par défaut ce sera sous la forme d'une seconde grotte, laissant la grotte traditionnelle intouchée). Désactiver cette option retirera toutes les entrées additionelles de la ferme.",
 	
-	"config.Replace_Normal_Cave_WaFF.name": "Suplante la grotte d'origine",
-	"config.Replace_Normal_Cave_WaFF.description": "ATTENTION! Videz votre grotte avant d'activer cette option, le contenu de la grotte ne sera pas transféré automatiquement! Cette option permet à la Grotte des Chutes de prendre la place de la grotte d'origine de la ferme au lieu de coexister avec. (utile pour assurer la compatibilité avec d'anciennes versions du mod). Notez que celà va provoquer un conflit si vous utilisez un autre mod qui modifie la grotte d'origine.",
-	
 	"config.Tent_Entrance_WaFF.name": "Camoufler avec un tente",
 	"config.Tent_Entrance_WaFF.description": "Camoufle l'entrée de la Grotte des Chutes située entre la maison de ferme et le chemin du bus avec une tente (d'une façon similaire aux anciennes versions du mod).",
 

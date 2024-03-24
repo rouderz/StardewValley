@@ -1,5 +1,5 @@
 {
-    "Format": "1.26.0",
+    "Format": "2.0.0",
 	
 //	CONFIG
 
@@ -15,19 +15,6 @@
 			"Default": "False",
 			"Description": "When available, will use a recolor optional colors on the map. Vibrant pastoral will show red autumn grass (instead of green) & Wittily Named Recolor will show light dirt (instead of dark)",
 			"Section": "Map"
-		},
-//
-		"Use_Northern_Path_WaFF": {
-			"AllowValues": "False, True",
-			"Default": "True",
-			"Description": "Add a new map between WaFF's northern exit and the Backwoods.",
-			"Section": "Additional_Locations"
-		},
-		"Use_Northern_Path_WaFFLE": {
-			"AllowValues": "False, True",
-			"Default": "True",
-			"Description": "Add a new map between WaFFLE's northern exit and the Backwoods.",
-			"Section": "Additional_Locations"
 		},
 //
 		"Abandoned_Shed_Appearance": {
@@ -123,27 +110,6 @@
 			"Section": "Abandoned_Shed_Floors"
 		}
 	},
-		
-//	LOCATIONS
-	
-	"CustomLocations": [
-		{
-			"Name": "Custom_waterfall_path_north",
-			"FromMapFile": "options/paths/ALL_Path_North.tmx"
-		},
-		{
-			"Name": "Custom_waterfall_shed_B1",
-			"FromMapFile": "options/shed/ALL_Waterfall_Shed_B1.tmx"
-		},
-		{
-			"Name": "Custom_waterfall_shed_F0",
-			"FromMapFile": "options/shed/ALL_Waterfall_Shed_F0.tmx"
-		},
-		{
-			"Name": "Custom_waterfall_shed_F1",
-			"FromMapFile": "options/shed/ALL_Waterfall_Shed_F1.tmx"
-		}
-	],	
 
     "Changes": [
 	

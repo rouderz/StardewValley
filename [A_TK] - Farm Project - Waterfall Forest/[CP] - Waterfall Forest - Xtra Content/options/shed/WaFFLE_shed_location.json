@@ -5,14 +5,13 @@
 
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"AddWarps": [
-				"14 35 Custom_waterfall_path_north 21 9",
-				"15 35 Custom_waterfall_path_north 21 9"
+				"14 35 {{ModId}}_Custom_waterfall_path_north 21 9",
+				"15 35 {{ModId}}_Custom_waterfall_path_north 21 9"
 			],
 			"When": { 
 				"FarmType": "A_TK.FarmProjectForaging/WaFFLE",
-				"Use_Northern_Path_WaFFLE": "True",
 				"Use_Shed_WaFFLE": "True",
 				"Abandoned_Shed_Location_WaFFLE": "Northern_Path"
 			}
@@ -20,7 +19,7 @@
 //
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"AddWarps": [
 				"14 35 farm 8 38",
 				"15 35 farm 9 38"
@@ -34,7 +33,7 @@
 //
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"AddWarps": [
 				"14 35 farm 69 77",
 				"15 35 farm 70 77"
@@ -52,14 +51,13 @@
 
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_path_north",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_path_north",
 			"FromFile": "options/ALL_EX_Options.tmx",
 			"FromArea": { "X": 48, "Y": 0, "Width": 8, "Height": 13 },
 			"ToArea": { "X": 18, "Y": 0, "Width": 8, "Height": 13 },
 			"PatchMode": "Replace",
 			"When": { 
 				"FarmType": "A_TK.FarmProjectForaging/WaFFLE",
-				"Use_Northern_Path_WaFFLE": "True",
 				"Use_Shed_WaFFLE": "True",
 				"Abandoned_Shed_Location_WaFFLE": "Northern_Path",
 				"FarmhouseUpgrade": 0,
@@ -113,14 +111,13 @@
 
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_path_north",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_path_north",
 			"FromFile": "options/ALL_EX_Options.tmx",
 			"FromArea": { "X": 57, "Y": 0, "Width": 8, "Height": 13 },
 			"ToArea": { "X": 18, "Y": 0, "Width": 8, "Height": 13 },
 			"PatchMode": "Replace",
 			"When": { 
 				"FarmType": "A_TK.FarmProjectForaging/WaFFLE",
-				"Use_Northern_Path_WaFFLE": "True",
 				"Use_Shed_WaFFLE": "True",
 				"Abandoned_Shed_Location_WaFFLE": "Northern_Path",
 				"FarmhouseUpgrade": "1, 2, 3",
@@ -129,7 +126,7 @@
 		},
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_path_north",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_path_north",
 			"FromFile": "options/ALL_EX_Options.tmx",
 			"FromArea": { "X": 45, "Y": 13, "Width": 2, "Height": 3 },
 			"ToArea": { "X": 21, "Y": 6, "Width": 2, "Height": 3 },
@@ -206,14 +203,13 @@
 
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_path_north",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_path_north",
 			"FromFile": "options/ALL_EX_Options.tmx",
 			"FromArea": { "X": 66, "Y": 0, "Width": 8, "Height": 13 },
 			"ToArea": { "X": 18, "Y": 0, "Width": 8, "Height": 13 },
 			"PatchMode": "Replace",
 			"When": { 
 				"FarmType": "A_TK.FarmProjectForaging/WaFFLE",
-				"Use_Northern_Path_WaFFLE": "True",
 				"Use_Shed_WaFFLE": "True",
 				"Abandoned_Shed_Location_WaFFLE": "Northern_Path",
 				"IsCommunityCenterComplete": "true",
@@ -223,14 +219,13 @@
 		},
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_path_north",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_path_north",
 			"FromFile": "options/ALL_EX_Options.tmx",
 			"FromArea": { "X": 66, "Y": 0, "Width": 8, "Height": 13 },
 			"ToArea": { "X": 18, "Y": 0, "Width": 8, "Height": 13 },
 			"PatchMode": "Replace",
 			"When": { 
 				"FarmType": "A_TK.FarmProjectForaging/WaFFLE",
-				"Use_Northern_Path_WaFFLE": "True",
 				"Use_Shed_WaFFLE": "True",
 				"Abandoned_Shed_Location_WaFFLE": "Northern_Path",
 				"IsJojaMartComplete": "true",
@@ -240,14 +235,13 @@
 		},
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_path_north",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_path_north",
 			"FromFile": "options/ALL_EX_Options.tmx",
 			"FromArea": { "X": 66, "Y": 0, "Width": 8, "Height": 13 },
 			"ToArea": { "X": 18, "Y": 0, "Width": 8, "Height": 13 },
 			"PatchMode": "Replace",
 			"When": { 
 				"FarmType": "A_TK.FarmProjectForaging/WaFFLE",
-				"Use_Northern_Path_WaFFLE": "True",
 				"Use_Shed_WaFFLE": "True",
 				"Abandoned_Shed_Location_WaFFLE": "Northern_Path",
 				"Unlock_Shed_WaFFLE": "true"
@@ -355,7 +349,6 @@
 			"PatchMode": "Overlay",
 			"When": { 
 				"FarmType": "A_TK.FarmProjectForaging/WaFFLE",
-				"Use_Northern_Path_WaFFLE": "True",
 				"Use_Shed_WaFFLE": "True",
 				"Abandoned_Shed_Location_WaFFLE": "Northern_Path",
 				"World_Map_Recolor": "True",	
@@ -407,7 +400,6 @@
 			"PatchMode": "Overlay",
 			"When": { 
 				"FarmType": "A_TK.FarmProjectForaging/WaFFLE",
-				"Use_Northern_Path_WaFFLE": "True",
 				"Use_Shed_WaFFLE": "True",
 				"Abandoned_Shed_Location_WaFFLE": "Northern_Path",
 				"World_Map_Recolor": "True",		
@@ -457,7 +449,6 @@
 			"PatchMode": "Overlay",
 			"When": { 
 				"FarmType": "A_TK.FarmProjectForaging/WaFFLE",
-				"Use_Northern_Path_WaFFLE": "True",
 				"Use_Shed_WaFFLE": "True",
 				"Abandoned_Shed_Location_WaFFLE": "Northern_Path",
 				"World_Map_Recolor": "True",		
@@ -509,7 +500,6 @@
 			"PatchMode": "Overlay",
 			"When": { 
 				"FarmType": "A_TK.FarmProjectForaging/WaFFLE",
-				"Use_Northern_Path_WaFFLE": "True",
 				"Use_Shed_WaFFLE": "True",
 				"Abandoned_Shed_Location_WaFFLE": "Northern_Path",
 				"World_Map_Recolor": "True",		

@@ -6,14 +6,6 @@
 	
 	"config.World_Map_Colors_Alt.name": "Couleurs alternatives",
 	"config.World_Map_Colors_Alt.description": "Si le changeur de textures offre le choix de couleurs alternatives, la carte du monde les utilisera à la place des couleurs de base. Vibrant pastoral montrera une herbe rouge en automne (au lieu de verte) et Wittily Named Recolor utilisera un terre claire (au lieu de sombre)",	
-	
-	"config.section.Additional_Locations.name": "> Additional locations",
-
-	"config.Use_Northern_Path_WaFF.name": "(WaFF) Chemin Nord",
-	"config.Use_Northern_Path_WaFF.description": "Ajoute une nouvelle zone sur WaFF, entre la sortie Nord de la ferme et la forêt inexploitée.",
-	
-	"config.Use_Northern_Path_WaFFLE.name": "(WaFFLE) Chemin Nord",
-	"config.Use_Northern_Path_WaFFLE.description": "Ajoute une nouvelle zone sur WaFFLE, entre la sortie Nord de la ferme et la forêt inexploitée.",
 
 	"config.section.Abandoned_Shed_Ex.name": "> Extérieur du cabanon abandonné",
 

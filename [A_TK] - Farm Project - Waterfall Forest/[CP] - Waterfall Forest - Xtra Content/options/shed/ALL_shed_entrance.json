@@ -1,15 +1,17 @@
 {
     "Changes": [
 	
+//	//	PROPERTIES
+	
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"MapProperties": { "AmbientLight": "255 255 255" }
 		},
 //
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 21, "Y": 40, "Width": 1, "Height": 2 },
 			"ToArea": { "X": 6, "Y": 1, "Width": 1, "Height": 2 },
@@ -17,7 +19,7 @@
 		},
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 21, "Y": 40, "Width": 1, "Height": 2 },
 			"ToArea": { "X": 23, "Y": 1, "Width": 1, "Height": 2 },
@@ -26,8 +28,61 @@
 //
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"MapProperties": { "NightTiles": "Front 6 1 1253 Front 6 2 1285 Front 23 1 1253 Front 23 2 1285" }
+		},
+		
+//	// DATA
+
+		{
+			"Action": "Load",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/ALL_Waterfall_Shed_F0.tmx"
+		},
+//
+		{
+			"Action": "EditData",
+			"Target": "Data/Locations",
+			"Entries": {
+				"{{ModId}}_Custom_waterfall_shed_F0": {
+					"DisplayName": "Shed Entrance",
+					"DefaultArrivalTile": {
+						"X": 15,
+						"Y": 33
+					},
+					"ExcludeFromNpcPathfinding": false,
+					"CreateOnLoad": {
+						"MapPath": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
+						"Type": null,
+						"AlwaysActive": true
+					},
+					"FormerLocationNames": [ "Custom_waterfall_shed_F0" ],
+					"CanPlantHere": false,
+					"CanHaveGreenRainSpawns": true,
+					"ArtifactSpots": [],
+					"FishAreas": {},
+					"Fish": [],
+					"Forage": [],
+					"MinDailyWeeds": 2,
+					"MaxDailyWeeds": 5,
+					"FirstDayWeedMultiplier": 15,
+					"MinDailyForageSpawn": 1,
+					"MaxDailyForageSpawn": 4,
+					"MaxSpawnedForageAtOnce": 6,
+					"ChanceForClay": 0.03,
+					"Music": [],
+					"MusicDefault": null,
+					"MusicContext": "Default",
+					"MusicIgnoredInRain": false,
+					"MusicIgnoredInSpring": false,
+					"MusicIgnoredInSummer": false,
+					"MusicIgnoredInFall": false,
+					"MusicIgnoredInFallDebris": false,
+					"MusicIgnoredInWinter": false,
+					"MusicIsTownTheme": false,
+					"CustomFields": null
+				}
+			}
 		},
 		
 //	TEXTURES
@@ -60,7 +115,7 @@
 
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 18, "Y": 36, "Width": 1, "Height": 3 },
 			"ToArea": { "X": 6, "Y": 33, "Width": 1, "Height": 3 },
@@ -76,8 +131,8 @@
 
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
-			"AddWarps": [ "6 34 Custom_waterfall_shed_B1 11 0" ],
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
+			"AddWarps": [ "6 34 {{ModId}}_Custom_waterfall_shed_B1 11 0" ],
 			"When": {
 				"FarmType": "A_TK.FarmProjectForaging/WaFF",
 				"FarmhouseUpgrade": 3,
@@ -86,8 +141,8 @@
 		},
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
-			"AddWarps": [ "6 34 Custom_waterfall_shed_B1 11 0" ],
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
+			"AddWarps": [ "6 34 {{ModId}}_Custom_waterfall_shed_B1 11 0" ],
 			"When": { 
 				"FarmType": "A_TK.FarmProjectForaging/WaFF",
 				"Unlock_Shed_WaFF": "true"
@@ -98,7 +153,7 @@
 
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 18, "Y": 40, "Width": 2, "Height": 5 },
 			"ToArea": { "X": 14, "Y": 5, "Width": 2, "Height": 5 },
@@ -113,10 +168,10 @@
 //
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"AddWarps": [ 
-				"14 6 Custom_waterfall_shed_F1 14 6",
-				"15 6 Custom_waterfall_shed_F1 15 6"
+				"14 6 {{ModId}}_Custom_waterfall_shed_F1 14 6",
+				"15 6 {{ModId}}_Custom_waterfall_shed_F1 15 6"
 			],
 			"When": { 
 				"FarmType": "A_TK.FarmProjectForaging/WaFF",
@@ -126,10 +181,10 @@
 		},	
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"AddWarps": [ 
-				"14 6 Custom_waterfall_shed_F1 14 6",
-				"15 6 Custom_waterfall_shed_F1 15 6"
+				"14 6 {{ModId}}_Custom_waterfall_shed_F1 14 6",
+				"15 6 {{ModId}}_Custom_waterfall_shed_F1 15 6"
 			],
 			"When": { 
 				"FarmType": "A_TK.FarmProjectForaging/WaFF",
@@ -139,10 +194,10 @@
 		},
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"AddWarps": [ 
-				"14 6 Custom_waterfall_shed_F1 14 6",
-				"15 6 Custom_waterfall_shed_F1 15 6"
+				"14 6 {{ModId}}_Custom_waterfall_shed_F1 14 6",
+				"15 6 {{ModId}}_Custom_waterfall_shed_F1 15 6"
 			],
 			"When": {
 				"FarmType": "A_TK.FarmProjectForaging/WaFF",
@@ -156,7 +211,7 @@
 
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 18, "Y": 36, "Width": 1, "Height": 3 },
 			"ToArea": { "X": 6, "Y": 33, "Width": 1, "Height": 3 },
@@ -172,8 +227,8 @@
 
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
-			"AddWarps": [ "6 34 Custom_waterfall_shed_B1 11 0" ],
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
+			"AddWarps": [ "6 34 {{ModId}}_Custom_waterfall_shed_B1 11 0" ],
 			"When": {
 				"FarmType": "A_TK.FarmProjectForaging/WaFFLE",
 				"FarmhouseUpgrade": 3,
@@ -182,8 +237,8 @@
 		},
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
-			"AddWarps": [ "6 34 Custom_waterfall_shed_B1 11 0" ],
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
+			"AddWarps": [ "6 34 {{ModId}}_Custom_waterfall_shed_B1 11 0" ],
 			"When": { 
 				"FarmType": "A_TK.FarmProjectForaging/WaFFLE",
 				"Unlock_Shed_WaFFLE": "true"
@@ -194,7 +249,7 @@
 
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 18, "Y": 40, "Width": 2, "Height": 5 },
 			"ToArea": { "X": 14, "Y": 5, "Width": 2, "Height": 5 },
@@ -209,10 +264,10 @@
 //
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"AddWarps": [ 
-				"14 6 Custom_waterfall_shed_F1 14 6",
-				"15 6 Custom_waterfall_shed_F1 15 6"
+				"14 6 {{ModId}}_Custom_waterfall_shed_F1 14 6",
+				"15 6 {{ModId}}_Custom_waterfall_shed_F1 15 6"
 			],
 			"When": { 
 				"FarmType": "A_TK.FarmProjectForaging/WaFFLE",
@@ -222,10 +277,10 @@
 		},	
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"AddWarps": [ 
-				"14 6 Custom_waterfall_shed_F1 14 6",
-				"15 6 Custom_waterfall_shed_F1 15 6"
+				"14 6 {{ModId}}_Custom_waterfall_shed_F1 14 6",
+				"15 6 {{ModId}}_Custom_waterfall_shed_F1 15 6"
 			],
 			"When": { 
 				"FarmType": "A_TK.FarmProjectForaging/WaFFLE",
@@ -235,10 +290,10 @@
 		},
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"AddWarps": [ 
-				"14 6 Custom_waterfall_shed_F1 14 6",
-				"15 6 Custom_waterfall_shed_F1 15 6"
+				"14 6 {{ModId}}_Custom_waterfall_shed_F1 14 6",
+				"15 6 {{ModId}}_Custom_waterfall_shed_F1 15 6"
 			],
 			"When": {
 				"FarmType": "A_TK.FarmProjectForaging/WaFFLE",
@@ -252,7 +307,7 @@
 
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 8, "Y": 0, "Width": 11, "Height": 2 },
 			"ToArea": { "X": 1, "Y": 3, "Width": 11, "Height": 2 },
@@ -264,7 +319,7 @@
 		},
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 18 },
 			"ToArea": { "X": 1, "Y": 5, "Width": 1, "Height": 18 },
@@ -277,7 +332,7 @@
 //
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 8, "Y": 3, "Width": 11, "Height": 2 },
 			"ToArea": { "X": 18, "Y": 3, "Width": 11, "Height": 2 },
@@ -289,7 +344,7 @@
 		},
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 2, "Y": 0, "Width": 1, "Height": 18 },
 			"ToArea": { "X": 28, "Y": 5, "Width": 1, "Height": 18 },
@@ -302,7 +357,7 @@
 //
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 8, "Y": 0, "Width": 11, "Height": 2 },
 			"ToArea": { "X": 1, "Y": 26, "Width": 11, "Height": 2 },
@@ -314,7 +369,7 @@
 		},
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 8, "Y": 24, "Width": 1, "Height": 6 },
 			"ToArea": { "X": 1, "Y": 28, "Width": 1, "Height": 6 },
@@ -327,7 +382,7 @@
 //
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 8, "Y": 3, "Width": 11, "Height": 2 },
 			"ToArea": { "X": 18, "Y": 26, "Width": 11, "Height": 2 },
@@ -339,7 +394,7 @@
 		},
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 10, "Y": 24, "Width": 1, "Height": 6 },
 			"ToArea": { "X": 28, "Y": 28, "Width": 1, "Height": 6 },
@@ -354,7 +409,7 @@
 
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 8, "Y": 6, "Width": 11, "Height": 2 },
 			"ToArea": { "X": 1, "Y": 3, "Width": 11, "Height": 2 },
@@ -366,7 +421,7 @@
 		},
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 4, "Y": 0, "Width": 1, "Height": 18 },
 			"ToArea": { "X": 1, "Y": 5, "Width": 1, "Height": 18 },
@@ -379,7 +434,7 @@
 //
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 8, "Y": 9, "Width": 11, "Height": 2 },
 			"ToArea": { "X": 18, "Y": 3, "Width": 11, "Height": 2 },
@@ -391,7 +446,7 @@
 		},
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 6, "Y": 0, "Width": 1, "Height": 18 },
 			"ToArea": { "X": 28, "Y": 5, "Width": 1, "Height": 18 },
@@ -404,7 +459,7 @@
 //
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 8, "Y": 6, "Width": 11, "Height": 2 },
 			"ToArea": { "X": 1, "Y": 26, "Width": 11, "Height": 2 },
@@ -416,7 +471,7 @@
 		},
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 12, "Y": 24, "Width": 1, "Height": 6 },
 			"ToArea": { "X": 1, "Y": 28, "Width": 1, "Height": 6 },
@@ -429,7 +484,7 @@
 //
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 8, "Y": 9, "Width": 11, "Height": 2 },
 			"ToArea": { "X": 18, "Y": 26, "Width": 11, "Height": 2 },
@@ -441,7 +496,7 @@
 		},
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 14, "Y": 24, "Width": 1, "Height": 6 },
 			"ToArea": { "X": 28, "Y": 28, "Width": 1, "Height": 6 },
@@ -456,7 +511,7 @@
 
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 8, "Y": 12, "Width": 11, "Height": 2 },
 			"ToArea": { "X": 1, "Y": 3, "Width": 11, "Height": 2 },
@@ -468,7 +523,7 @@
 		},
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 0, "Y": 19, "Width": 1, "Height": 18 },
 			"ToArea": { "X": 1, "Y": 5, "Width": 1, "Height": 18 },
@@ -481,7 +536,7 @@
 //
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 8, "Y": 15, "Width": 11, "Height": 2 },
 			"ToArea": { "X": 18, "Y": 3, "Width": 11, "Height": 2 },
@@ -493,7 +548,7 @@
 		},
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 2, "Y": 19, "Width": 1, "Height": 18 },
 			"ToArea": { "X": 28, "Y": 5, "Width": 1, "Height": 18 },
@@ -506,7 +561,7 @@
 //
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 8, "Y": 12, "Width": 11, "Height": 2 },
 			"ToArea": { "X": 1, "Y": 26, "Width": 11, "Height": 2 },
@@ -518,7 +573,7 @@
 		},
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 8, "Y": 31, "Width": 1, "Height": 6 },
 			"ToArea": { "X": 1, "Y": 28, "Width": 1, "Height": 6 },
@@ -531,7 +586,7 @@
 //
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 8, "Y": 15, "Width": 11, "Height": 2 },
 			"ToArea": { "X": 18, "Y": 26, "Width": 11, "Height": 2 },
@@ -543,7 +598,7 @@
 		},
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 10, "Y": 31, "Width": 1, "Height": 6 },
 			"ToArea": { "X": 28, "Y": 28, "Width": 1, "Height": 6 },
@@ -558,7 +613,7 @@
 
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 8, "Y": 18, "Width": 11, "Height": 2 },
 			"ToArea": { "X": 1, "Y": 3, "Width": 11, "Height": 2 },
@@ -570,7 +625,7 @@
 		},
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 4, "Y": 19, "Width": 1, "Height": 18 },
 			"ToArea": { "X": 1, "Y": 5, "Width": 1, "Height": 18 },
@@ -583,7 +638,7 @@
 //
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 8, "Y": 21, "Width": 11, "Height": 2 },
 			"ToArea": { "X": 18, "Y": 3, "Width": 11, "Height": 2 },
@@ -595,7 +650,7 @@
 		},
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 6, "Y": 19, "Width": 1, "Height": 18 },
 			"ToArea": { "X": 28, "Y": 5, "Width": 1, "Height": 18 },
@@ -608,7 +663,7 @@
 //
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 8, "Y": 18, "Width": 11, "Height": 2 },
 			"ToArea": { "X": 1, "Y": 26, "Width": 11, "Height": 2 },
@@ -620,7 +675,7 @@
 		},
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 12, "Y": 31, "Width": 1, "Height": 6 },
 			"ToArea": { "X": 1, "Y": 28, "Width": 1, "Height": 6 },
@@ -633,7 +688,7 @@
 //
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 8, "Y": 21, "Width": 11, "Height": 2 },
 			"ToArea": { "X": 18, "Y": 26, "Width": 11, "Height": 2 },
@@ -645,7 +700,7 @@
 		},
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 14, "Y": 31, "Width": 1, "Height": 6 },
 			"ToArea": { "X": 28, "Y": 28, "Width": 1, "Height": 6 },
@@ -664,7 +719,7 @@
 
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 8, "Y": 38, "Width": 3, "Height": 5 },
 			"ToArea": { "X": 5, "Y": 6, "Width": 3, "Height": 5 },
@@ -678,7 +733,7 @@
 		},		
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 8, "Y": 38, "Width": 3, "Height": 5 },
 			"ToArea": { "X": 5, "Y": 14, "Width": 3, "Height": 5 },
@@ -695,7 +750,7 @@
 
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 4, "Y": 38, "Width": 3, "Height": 5 },
 			"ToArea": { "X": 22, "Y": 6, "Width": 3, "Height": 5 },
@@ -709,7 +764,7 @@
 		},
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 4, "Y": 38, "Width": 3, "Height": 5 },
 			"ToArea": { "X": 22, "Y": 14, "Width": 3, "Height": 5 },
@@ -726,7 +781,7 @@
 		
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 0, "Y": 38, "Width": 3, "Height": 5 },
 			"ToArea": { "X": 5, "Y": 6, "Width": 3, "Height": 5 },
@@ -740,7 +795,7 @@
 		},		
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 0, "Y": 38, "Width": 3, "Height": 5 },
 			"ToArea": { "X": 5, "Y": 14, "Width": 3, "Height": 5 },
@@ -755,7 +810,7 @@
 //	
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 12, "Y": 38, "Width": 3, "Height": 5 },
 			"ToArea": { "X": 22, "Y": 6, "Width": 3, "Height": 5 },
@@ -769,7 +824,7 @@
 		},
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 12, "Y": 38, "Width": 3, "Height": 5 },
 			"ToArea": { "X": 22, "Y": 14, "Width": 3, "Height": 5 },
@@ -786,7 +841,7 @@
 
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 16, "Y": 24, "Width": 3, "Height": 5 },
 			"ToArea": { "X": 5, "Y": 6, "Width": 3, "Height": 5 },
@@ -800,7 +855,7 @@
 		},		
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 16, "Y": 24, "Width": 3, "Height": 5 },
 			"ToArea": { "X": 5, "Y": 14, "Width": 3, "Height": 5 },
@@ -814,7 +869,7 @@
 		},		
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 16, "Y": 30, "Width": 3, "Height": 5 },
 			"ToArea": { "X": 22, "Y": 6, "Width": 3, "Height": 5 },
@@ -828,7 +883,7 @@
 		},
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 16, "Y": 30, "Width": 3, "Height": 5 },
 			"ToArea": { "X": 22, "Y": 14, "Width": 3, "Height": 5 },
@@ -845,7 +900,7 @@
 
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 16, "Y": 36, "Width": 1, "Height": 4 },
 			"ToArea": { "X": 6, "Y": 6, "Width": 1, "Height": 4 },
@@ -858,7 +913,7 @@
 		},		
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 16, "Y": 36, "Width": 1, "Height": 4 },
 			"ToArea": { "X": 6, "Y": 14, "Width": 1, "Height": 4 },
@@ -871,7 +926,7 @@
 		},		
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 16, "Y": 41, "Width": 1, "Height": 4 },
 			"ToArea": { "X": 23, "Y": 6, "Width": 1, "Height": 4 },
@@ -884,7 +939,7 @@
 		},
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 16, "Y": 41, "Width": 1, "Height": 4 },
 			"ToArea": { "X": 23, "Y": 14, "Width": 1, "Height": 4 },
@@ -904,7 +959,7 @@
 
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 8, "Y": 38, "Width": 3, "Height": 5 },
 			"ToArea": { "X": 5, "Y": 6, "Width": 3, "Height": 5 },
@@ -918,7 +973,7 @@
 		},		
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 8, "Y": 38, "Width": 3, "Height": 5 },
 			"ToArea": { "X": 5, "Y": 14, "Width": 3, "Height": 5 },
@@ -935,7 +990,7 @@
 
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 4, "Y": 38, "Width": 3, "Height": 5 },
 			"ToArea": { "X": 22, "Y": 6, "Width": 3, "Height": 5 },
@@ -949,7 +1004,7 @@
 		},
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 4, "Y": 38, "Width": 3, "Height": 5 },
 			"ToArea": { "X": 22, "Y": 14, "Width": 3, "Height": 5 },
@@ -966,7 +1021,7 @@
 		
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 0, "Y": 38, "Width": 3, "Height": 5 },
 			"ToArea": { "X": 5, "Y": 6, "Width": 3, "Height": 5 },
@@ -980,7 +1035,7 @@
 		},		
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 0, "Y": 38, "Width": 3, "Height": 5 },
 			"ToArea": { "X": 5, "Y": 14, "Width": 3, "Height": 5 },
@@ -995,7 +1050,7 @@
 //	
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 12, "Y": 38, "Width": 3, "Height": 5 },
 			"ToArea": { "X": 22, "Y": 6, "Width": 3, "Height": 5 },
@@ -1009,7 +1064,7 @@
 		},
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 12, "Y": 38, "Width": 3, "Height": 5 },
 			"ToArea": { "X": 22, "Y": 14, "Width": 3, "Height": 5 },
@@ -1026,7 +1081,7 @@
 
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 16, "Y": 24, "Width": 3, "Height": 5 },
 			"ToArea": { "X": 5, "Y": 6, "Width": 3, "Height": 5 },
@@ -1040,7 +1095,7 @@
 		},		
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 16, "Y": 24, "Width": 3, "Height": 5 },
 			"ToArea": { "X": 5, "Y": 14, "Width": 3, "Height": 5 },
@@ -1054,7 +1109,7 @@
 		},		
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 16, "Y": 30, "Width": 3, "Height": 5 },
 			"ToArea": { "X": 22, "Y": 6, "Width": 3, "Height": 5 },
@@ -1068,7 +1123,7 @@
 		},
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 16, "Y": 30, "Width": 3, "Height": 5 },
 			"ToArea": { "X": 22, "Y": 14, "Width": 3, "Height": 5 },
@@ -1085,7 +1140,7 @@
 
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 16, "Y": 36, "Width": 1, "Height": 4 },
 			"ToArea": { "X": 6, "Y": 6, "Width": 1, "Height": 4 },
@@ -1098,7 +1153,7 @@
 		},		
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 16, "Y": 36, "Width": 1, "Height": 4 },
 			"ToArea": { "X": 6, "Y": 14, "Width": 1, "Height": 4 },
@@ -1111,7 +1166,7 @@
 		},		
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 16, "Y": 41, "Width": 1, "Height": 4 },
 			"ToArea": { "X": 23, "Y": 6, "Width": 1, "Height": 4 },
@@ -1124,7 +1179,7 @@
 		},
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_waterfall_shed_F0",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
 			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
 			"FromArea": { "X": 16, "Y": 41, "Width": 1, "Height": 4 },
 			"ToArea": { "X": 23, "Y": 14, "Width": 1, "Height": 4 },
